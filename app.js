@@ -6,6 +6,7 @@
 		'brief',
 		'project',
 		'photoshop',
-		'special'
+		'special',
+		'auto-active'
 	])
 })(angular);
