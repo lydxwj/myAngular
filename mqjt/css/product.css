@@ -1,0 +1,25 @@
+/*------------------------------------------------------------*/
+/*第二分区*/
+.section2-zong{width:12.6rem; height:1.66rem; background: #171717; padding-left: 0.2rem;}
+.section2{width: 12.4rem; height:1.6rem; border-bottom: 0.06rem solid #0f0f0f; position: relative;}
+.section2-left{width: 10.8rem; padding-left: 0.2rem; position: relative;}
+.section2-left:after{content:"产品列表"; color:#fff; font-size: 0.6rem; position: absolute; left: 1.28rem; top: 0.06rem;}
+.section2-right{width: 1.8rem; height:1.6rem; border-left: 1px solid #484848; position: absolute; right: 0; top: 0;}
+.more{width: 1.8rem; height:1.6rem; text-align: center; display: block; padding-top: 0.44rem;}
+
+
+.section2-left .title-img{position: absolute; left: 0.12rem; top: 0.06rem;}
+
+/*第三分区*/
+.section3{width: 12.0rem; background: #171717; padding:0 0.4rem;}
+.section3 li{width: 12.0rem; height: 3.32rem; border-bottom: 0.04rem solid #222222; padding-top: 0.8rem; padding-bottom: 0.48rem;}
+.section3 li .section3-img{width: 3.32rem; height: 3.32rem; display:block; float: left;}
+.section3 li .section3-wenzi{font-size: 0.48rem; height: 2.52rem; color:#fff; width: 8.0rem; display:block; float: right; padding-top: 0.8rem;}
+.section3 li:nth-of-type(6){height: 5.0rem;}
+
+
+/*第四分区*/
+.section4{width:11.6rem; height: 2.5rem; background: #171717; color:#fff; padding:0.5rem 0.6rem 0;}
+.section4 .prev,.section4 .next{width: 2.8rem; height: 1.04rem; color:#fff; display:inline-block; border: 1px solid #8a8a8a; text-align: center; line-height: 1.04rem;}
+
+.section4 span{text-align: center;}

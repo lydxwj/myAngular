@@ -1,0 +1,55 @@
+/*------------------------------------------------------------*/
+
+
+/*第二分区*/
+.section2-zong{width:12.6rem; height:1.66rem; background: #171717; padding-left: 0.2rem;}
+.section2{width: 12.4rem; height:1.6rem; border-bottom: 0.06rem solid #0f0f0f; position: relative;}
+.section2-left{width: 10.8rem; padding-left: 0.2rem; position: relative;}
+.section2-left:after{content:"留言板"; color:#fff; font-size: 0.6rem; position: absolute; left: 1.28rem; top: 0.06rem;}
+.section2-right{width: 1.8rem; height:1.6rem; border-left: 1px solid #484848; position: absolute; right: 0; top: 0;}
+.more{width: 1.8rem; height:1.6rem; text-align: center; display: block; padding-top: 0.44rem;}
+
+
+.section2-left .title-img{position: absolute; left: 0.12rem; top: 0.06rem;}
+
+/*第三分区*/
+.section3{width: 11.6rem; background: #171717; padding:0.6rem 0.6rem 1.0rem;}
+.section3-header{height:1.6rem; line-height: 1.6rem; color:#fff; text-align: center; font-size: .6rem; position: relative;}
+
+
+.section3-header:before{content:"\e605"; font-family: 'iconfont'; position: absolute; left: 50%; margin-left: -2.0rem; top: 0;}
+.section3 .input{width: 11.6rem; height: 1.4rem; background: #fff; border-top: 1px solid #ccc; position: relative;}
+.section3 input,.section3 textarea{font-size: 0.6rem; width: 9.84rem; height: 1.4rem; line-height: 1.4rem; padding-left: 1.76rem;}
+.section3 textarea{height: 4.0rem;}
+.section3 .input:before{font-family: 'iconfont'; position: absolute; left: 0.9rem; top: 0.12rem; font-size: 0.72rem;}
+.section3 .input:nth-of-type(1):before{content:"\e606";}
+.section3 .input:nth-of-type(2):before{content:"\e601";}
+.section3 .input:nth-of-type(3):before{content:"\e604";}
+.section3 .input:nth-of-type(4):before{content:"\e602";}
+.section3 .input:nth-of-type(5):before{content:"\e603";}
+.section3 .input:nth-of-type(6):before{content:"\e607";}
+.section3 .input:nth-of-type(7):before{content:"\e600";}
+
+.section3 .input:nth-of-type(7){height: 4.0rem;}
+
+.section3 .input:nth-of-type(8){height: 2.0rem; line-height: 2.0rem; margin: 0.4rem 0;}
+.section3 .input:nth-of-type(8) input{width:11.2rem; padding-left: 0.4rem; height:2.0rem;}
+
+.section3 .input:nth-of-type(8) span{width: 2.72rem; height: 1.4rem; position: absolute; right: 0; top: 0;}
+.section3 .input:nth-of-type(9) input{width:11.6rem; padding-left: 0; background: #790d40; color:#fff;}
+.section3 .input:nth-of-type(9){border:0 none;}
+
+/*第四分区*/
+.section4{width: 12.0rem; height:10.24rem; background: #171717; padding:0 0.4rem; color:#fff;}
+.section4 .user{width: 12.0rem; height: 2.0rem; line-height: 2.0rem; text-align: center; position: relative; font-size: .6rem;}
+.section4 .user:before{content:"\e608"; font-family: 'iconfont'; position: absolute; left: 50%; margin-left: -2.12rem; top: 0; font-size: .8rem;}
+.section4 li{width:11.6rem; height: 4.4rem; background: #2b2c29; margin-bottom: 0.4rem; padding:0 0.2rem;}
+.section4 .name-date{height: 1.92rem; line-height: 1.92rem;}
+.section4 .name-date span:nth-of-type(2){float: right;}
+
+/*第五分区*/
+.section5{width:11.6rem; height: 2.5rem; background: #171717; color:#fff; padding:0.5rem 0.6rem 0;}
+.section5 .prev,.section5 .next{width: 2.8rem; height: 1.04rem; color:#fff; display:inline-block; border: 1px solid #8a8a8a; text-align: center; line-height: 1.04rem;}
+
+.section5 span{text-align: center;}
+

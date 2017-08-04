@@ -1,0 +1,51 @@
+@charset "utf-8";
+/* CSS Document */
+/*网页主体*/
+/*焦点图开始*/
+.banner{ height: 6.4rem; width: 12.8rem;}
+.focus{ height: 6.4rem; width: 12.8rem; margin:0 auto; position:relative; overflow:hidden;  }
+.focus .hd{ width:100%; height: 0.4rem;  position:absolute; z-index:1; bottom: 0.36rem; text-align:center;  }
+.focus .hd ul{ display:inline-block; height:0.28rem; padding:0.04rem 0.1rem; background-color:rgba(255,255,255,0.7); -webkit-border-radius:0.2rem; -moz-border-radius:0.2rem; border-radius:0.2rem; font-size:0; vertical-align:top;}
+.focus .hd ul li{ display:inline-block; width:0.2rem; height:0.2rem; -webkit-border-radius:50%; -moz-border-radius:50%; border-radius:50%; background:#8C8C8C; margin:0.04rem 0.12rem;  vertical-align:top; overflow:hidden;cursor: pointer; }
+.focus .hd ul .on{ background:#d81818;  }
+.focus .bd{ position:relative; z-index:0; }
+.focus .bd li img{ width:12.8rem;  height:6.4rem; }
+.focus .bd li a{ -webkit-tap-highlight-color:rgba(0, 0, 0, 0); /* 取消链接高亮 */ }
+/*焦点图结束*/
+/*功能菜单开始*/
+.menu{ height: 3.2rem; width: 12.8rem; padding-top: 0.2rem;}
+.menu2{ padding-top: 0px; padding-bottom: 0.2rem;}
+.menu a{ text-align:center; height: 1.2rem; display: block; padding-top: 2rem; position:relative; }
+.menu a:before{ content:"\e601"; font-family: "iconfont"; position:absolute; top: 0.28rem; left: 1.08rem; font-size: 1rem; color:#302ccb;}
+.menu .menu-zy a:before{ content:"\e600";  color:#67c49f; left:1.04rem}
+.menu .menu-xg a:before{ content:"\e607";  color:#99c7e9; font-size: 1.2rem; left:1.0rem; top: 0.24rem;}
+.menu .menu-lq a:before{ content:"\e611";  color:#4a8ab9; font-size: 1.44rem; top: 0.08rem; left:  0.84rem;}
+     /*第二层*/
+.menu .menu-wl a:before{ content:"\e604";  color:#cd1c4e; font-size: 1.2rem; left: 0.96rem; top: 0.12rem;}
+.menu .menu-sz a:before{ content:"\e610";  color:#5bd0dc; font-size: 1.2rem; left: 0.96rem; top: 0.12rem;}
+.menu .menu-hy a:before{ content:"\e605";  color:#be3a6a; font-size: 1.2rem; top: 0.16rem;left: 1.0rem;}
+.menu .menu-zw a:before{ content:"\e602";  color:#f23575; font-size: 1.48rem; top: -0.12rem; left: 0.88rem;}
+/*功能菜单结束*/
+/*优途名师课开始*/
+.teacher{ color: #fff;}
+.teacher-hd{ height: 4rem;}
+.teacher-hd a{ display:block; height: 100%; background-image:url(../img/teacher.png); background-size: cover; background-position: center; background-repeat: no-repeat;}
+       /*一楼*/
+.teacher-mn-f1{ padding-bottom: 0.2rem; background: #3b87d3; border-bottom: 1px solid #ccc;}
+.teacher-mn-l a{ height: 3.76rem; width: 5.32rem; display: block; margin: 0.2rem 0 0 0.2rem; background-image:url(../img/teacher-l01.png); background-size: cover; background-position: center; background-repeat: no-repeat;}
+.teacher-mn-r p{ line-height: 0.72rem;}
+.teacher-mn-r .hd{ font-weight: 700; line-height: 0.8rem; height:1.6rem;padding-right: 0.1rem;display:table-cell; vertical-align: middle;} 
+.teacher-mn-r p span{ color:#ffe400;}
+.teacher-mn-r a{ color: #fff;}
+         /*二楼*/
+.teacher-mn-f2 .teacher-mn-l a{	background-image: url(../img/teacher-l02.png);}	 
+/*优途名师课结束*/
+/*名师博文开始*/
+.article-teacher{ margin-top: 0.2rem;}
+.article-hd{ height: 4.8rem;}
+.article-hd a{ display:block; height: 100%; background-image:url(../img/article-teacher-hd.png); background-size: cover; background-position: center; background-repeat: no-repeat;}
+.article-mn .art-mn-example{ padding-left: 0.4rem; padding-right: 0.4rem; background-color: #ebebeb; margin-top: 0.4rem; line-height: 0.8rem;}
+.article-mn .art-mn-example span{ white-space: nowrap; text-overflow: ellipsis; overflow: hidden;}
+.art-mn-example a{ display: block;}
+.art-mn-example .example-hd-r{ text-align: right;}
+/*名师博文结束*/

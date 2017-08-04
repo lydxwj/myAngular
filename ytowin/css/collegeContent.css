@@ -1,0 +1,50 @@
+@charset "utf-8";
+/* CSS Document */
+/*找大学详情页内容开始*/
+    /*找大学详情页头部开始*/
+.cc-hd{  margin-top: 0.4rem; line-height: 0.68rem;}
+.cc-hd a{ display:block;}
+.college-logo a{  width:2.0rem; height: 2.0rem;  background-image:url(../img/college-bj.jpeg); background-size: cover; background-position: center; background-repeat: no-repeat; margin-left: 1.0rem;}
+.college-tb{ display:inline-block; width: 0.7rem; height: 0.6rem;background-image:url(../img/college-tub1.png); background-size: cover; background-position: center; background-repeat: no-repeat; }
+.college-tub2{ background-image:url(../img/college-tub2.png); }
+.college-tub3{ background-image:url(../img/college-tub3.png); }
+.cc-hd-ft{background-color: #d3d3d3; padding-left: 1rem; padding-right: 1rem; margin-bottom: 0.4rem; margin-top: 0.4rem; line-height: 0.8rem; text-align: center;}
+.cc-hd-ft a{ padding-left: 0.4rem; width: 4.9rem; margin-top: 0.2rem; text-align: left;}
+.cc-hd-ft .official{ text-align: right; padding-left: 0; border-right: 1px solid #000;padding-right: 0.4rem;}
+    /*找大学详情页头部结束*/
+    /*大学详情导航开始*/
+.cc-nav{ text-align: center; background-color: #2bbfd6; color:#fff; line-height: 1rem;}
+.cc-nav a{ color:#fff;}
+.cc-nav .tab span,.cc-nav .tab-nav span{ margin-left: 0.4rem; margin-right: 0.4rem; display: block;}
+.cc-nav .tab.on span{ background: #ff7357;}
+.cc-nav .tab-nav.on span{ background: #ff7357;}
+    /*大学详情导航开结束*/
+    /*三分钟看懂院校开始*/
+.cc-detail-hd{ height: 1.0rem; line-height: 1.0rem; padding-left: 0.6rem; background: #21abff; color:#fff; margin-top: 0.4rem; margin-bottom: 0.4rem; font-size: 0.6rem;}
+.cc-detail-mn{ line-height: 0.6rem; padding-right: 0.6rem; padding-left: 0.6rem;}
+        /*校区规划开始*/     
+.table-plan{ border: 1px solid #ccc; text-align: center; line-height: 0.8rem; font-size: 0.32rem;}
+.table-plan .tr1,.table-plan .tr2{ border-right: 1px solid #ccc;display:flex;-webkit-box-align: center;  -moz-box-align: center;-ms-flex-align: center;-webkit-align-items: center; align-items: center;   display: -webkit-box;  display: -moz-box; display: -ms-flexbox; display: -webkit-flex;-webkit-box-pack: center; -moz-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center;justify-content: center;}
+.table-plan .tr3{ display:flex;-webkit-box-align: center;  -moz-box-align: center;-ms-flex-align: center;-webkit-align-items: center; align-items: center;   display: -webkit-box;  display: -moz-box; display: -ms-flexbox; display: -webkit-flex;-webkit-box-pack: center; -moz-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center;justify-content: center;}
+.table2{ border-top: 0 none;}   
+.cc-detail-list.chart .cc-detail-mn{ padding-left: 0.2rem; padding-right: 0.2rem; overflow:hidden;}
+        /*校区规划结束*/
+        /*院系设置开始*/
+.cc-detail-list.department .cc-detail-mn span{ display: inline-block; white-space: nowrap; padding-right: 0.4rem;}  
+        /*院系设置结束*/
+    /*三分钟看懂院校结束*/
+    /*考上该校有多难开始*/
+.table-search{ padding-bottom: 0.4rem;}    
+.table-search select{ border: 1px solid #ccc; padding-left: 0.2rem; height:0.8rem; line-height: 0.8rem; border-radius: 0.1rem; margin-right: 0.4rem; box-sizing: border-box;}
+.table-admissions{border: 1px solid #ccc; text-align: center; line-height: 0.8rem; font-size: 0.28rem;}
+.table-admissions{ background-color: #2bbfd6;}
+.table-admissions .tr{  border-right: 1px solid #ccc; display:flex;-webkit-box-align: center;  -moz-box-align: center;-ms-flex-align: center;-webkit-align-items: center; align-items: center;   display: -webkit-box;  display: -moz-box; display: -ms-flexbox; display: -webkit-flex;-webkit-box-pack: center; -moz-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center;justify-content: center;}
+.table-admissions.table2{ border-top: 0 none; background-color: #fff;background-color: #fff;}
+.table-admissions .tr.bor-rn{ border-right: 0 none;}
+    /*考上该校有多难结束*/
+    /*招生专业有哪些开始*/
+.cc-detail-mn.border{border: 1px solid #ccc; border-radius: 0.1rem; margin-left: 0.4rem; margin-right: 0.4rem; padding-bottom: 0.4rem;}
+.cc-detail-mn .major-hd{ font-weight: 700; padding-bottom: 0.4rem; padding-top: 0.4rem;}
+.cc-detail-mn .major a{ display: inline-block; padding-right: 0.2rem; padding-left: 0.2rem;white-space: nowrap;line-height: 0.8rem;border-radius: 0.1rem;border: 1px solid #2fbbd6; color:#2fbbd6;margin-top: 0.2rem;}
+    /*招生专业有哪些结束*/
+/*找大学详情页内容结束*/

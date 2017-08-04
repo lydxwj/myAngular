@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telphone=no, email=no" />
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="MobileOptimized" content="320">
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-orientation" content="portrait">
+    <meta name="full-screen" content="yes">
+    <meta name="x5-fullscreen" content="true">
+    <meta name="browsermode" content="application">
+    <meta name="x5-page-mode" content="app">
+    <meta name="msapplication-tap-highlight" content="no">
+    <title>行业职业库</title>
+	<link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="css/base.css" />
+    <link rel="stylesheet" type="text/css" href="css/industry.css" />
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/device.min.js"></script>
+    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+	<script type="application/javascript" src="http://cdn.bootcss.com/fastclick/1.0.6/fastclick.js"></script>
+    <script type="text/javascript" src="js/base.js"></script>
+    <script type="text/javascript" src="js/industry.js"></script>
+</head>
+<body>
+<section class="wrap return">   	
+	<section class="fixed"> 
+    <!--头部开始-->
+    	<header class="header clearfix">
+            <div class="pageup fl"><a href="javascript:history.go(-1);"></a></div>
+    		<h1 class="fl">行业职业库</h1>
+            <nav class="nav fr">
+                <div class="nav-mn">
+                    <div class="nav-btn"></div>
+                    <ul class="nav-tap">
+                        <li>
+                            <a class="nav-tap-login" href="login.html">登录</a>
+                            <a class="nav-tap-info" href="users.html">个人中心</a>
+                        </li>
+                        <li class="nav-tabLi">
+                            <a class="nav-tap-login" href="register.html">注册</a>
+                            <a class="nav-tap-info" href="javascript:;">退出</a>
+                        </li>
+                        <li><a href="index.html">首页</a></li>
+                        <li><a href="college.html">找大学</a></li>
+                        <!-- <li><a href="voluntary.html">志愿模拟填报</a></li> -->
+                        <li><a href="evaluation.html">性格与专业测</a></li>
+                        <li><a href="major.html">搜专业</a></li>
+                        <li><a href="branch.html">文理分科测</a></li>
+                        <li><a href="admission.html">录取信息查询</a></li>
+                        <li><a href="industry.html">行业职业库</a></li>
+                        <li><a href="insight.html">自我洞悉</a></li>
+                        
+                    </ul>
+                </div>
+            </nav>
+    	</header>
+	</section>          
+    <!--头部结束-->
+	<section class="main">
+        <!-- 行业职业库内容开始 -->
+            <!-- 行业职业库按钮开始 -->
+        <div class="industry-tab row">
+            <div class="industry-hot col col-50">
+                <a class="tabOn" href="javascript:;">
+                    <span class="name-ku">热门行业</span>
+                </a>
+            </div>
+            <div class="industry-tradition col col-50">
+                <a href="javascript:;">
+                    <span class="name-ku">传统行业</span>
+                </a>
+            </div>
+        </div>
+            <!-- 行业职业库按钮结束 -->
+            <!-- 搜索框开始 -->
+        <div class="search">
+            <form action="" method="post">
+                <input name="industry-search" type="search" placeholder="请输入行业职业名称" id="indy-search" class="search-ipt" list="tip" required="required" />
+                <datalist id="tip">
+                    <option value="传媒">传媒</option>
+                    <option value="金融">金融</option>
+                    <option value="IT">IT</option>
+                    <option value="采购">采购</option>
+                    <option value="房产">房产</option>
+                    <option value="设计">设计</option>
+                    <option value="互联网">互联网</option>
+                    <option value="通信">通信</option>
+                    <option value="贸易">贸易</option>
+                    <option value="交通">交通</option>
+                    <option value="物流">物流</option>
+                    <option value="建筑">建筑</option>
+                    <option value="物业管理">物业管理</option>
+                    <option value="财务">财务</option>
+                    <option value="人力资源">人力资源</option>
+                    <option value="行政">行政</option>
+                    <option value="客服">客服</option>
+                    <option value="销售">销售</option>
+                    <option value="市场">市场</option>
+                    <option value="生产">生产</option>
+                    <option value="制造">制造</option>
+                    <option value="咨询">咨询</option>
+                    <option value="法律">法律</option>
+                    <option value="教育">教育</option>
+                    <option value="翻译">翻译</option>
+                    <option value="能源">能源</option>
+                    <option value="环保">环保</option>
+                    <option value="农业">农业</option>
+                 </datalist>
+                <label for="col-search" class="ico-search"></label> 
+                <input type="submit" value="查找" class="search-submit" /> 
+            </form>
+        </div>
+            <!-- 搜索框结束 -->
+            <!-- 行业职业库分类选择开始 -->
+        <div class="industry-contain row">
+                <!-- 左侧分类开始 -->
+            <div class="industry-contain-l col col-40">
+                <ul class="left-mn left-hot">    
+                    <li class="active">传媒|印刷|艺术|设计</li>    
+                    <li>金融</li>
+                    <li>IT|互联网|通信</li>
+                    <li>采购|贸易|交通|物流</li>
+                    <li>房产|建筑|物业管理</li>
+                </ul>
+                <ul class="left-mn left-tradition">       
+                    <li class="active">财务|人力资源|行政</li>
+                    <li>销售|客服|市场</li>
+                    <li>生产|制造</li>
+                    <li>服务业</li>
+                    <li>咨询|法律|教育|翻译</li>
+                    <li>能源|环保|农业|科研</li>
+                    <li>项目|质量|高级管理</li>
+                </ul> 
+            </div>
+                <!-- 左侧分类结束 -->
+                <!-- 右侧分类开始 -->
+            <div class="industry-contain-r col col-60">
+                <div class="contain-r-mn">
+                <!-- 热门分类开始 -->
+                    <!-- 传媒|印刷|艺术|设计开始 -->
+                    <div class="contain-r-cm hot-details">
+                        <div class="classes">
+                            <div class="classes-hd">艺术/设计<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="industryContent.html">平面设计</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">影视/媒体/出版/印刷<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">摄影师</a></li>
+                                <li><a href="#">导演/编导/影视制作</a></li>
+                                <li><a href="#">影视策划/制作人员</a></li>
+                                <li><a href="#">文案/策划</a></li>
+                                <li><a href="#">记者/采编</a></li>
+                                <li><a href="#">编辑/撰稿</a></li>
+                                <li><a href="#">编辑</a></li>
+                            </ul>
+                        </div>
+                    </div> 
+                    <!-- 传媒|印刷|艺术|设计结束 --> 
+                    <!-- 金融开始 -->
+                    <div class="contain-r-jr hot-details">
+                        <div class="classes">
+                            <div class="classes-hd">核保<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">保险理赔</a></li>
+                                <li><a href="#">理赔专员</a></li>
+                                <li><a href="#">核保理赔</a></li>
+                                <li><a href="#">保险核保</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">证券业务<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">投资顾问</a></li>
+                                <li><a href="#">投资/理财服务</a></li>
+                                <li><a href="#">理财顾问</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">投融资<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">业务经理</a></li>
+                                <li><a href="#">投资/理财服务</a></li>
+                                <li><a href="#">融资经理/主管</a></li>
+                                <li><a href="#">金融产品经理</a></li>
+                                <li><a href="#">融资专员</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">保险开发<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">金融产品经理</a></li>
+                                <li><a href="#">产品经理</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">拍卖<i></i></div>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">保险业务<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">保险顾问/财务规划师</a></li>
+                                <li><a href="#">保险培训师</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">银行业务<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">大堂经理</a></li>
+                                <li><a href="#">出纳员</a></li>
+                            </ul>
+                        </div>
+                    </div> 
+                    <!-- 金融结束 -->
+                    <!-- IT|互联网|通信开始 -->
+                    <div class="contain-r-it hot-details">
+                        <div class="classes">
+                            <div class="classes-hd">IT质量管理/测试/配置管理<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">测试经理</a></li>
+                                <li><a href="#">软件测试工程师</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">IT管理/项目协调<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">项目经理</a></li>
+                                <li><a href="#">技术总监/经理</a></li>
+                                <li><a href="#">项目总监</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">产品<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">产品运营总监</a></li>
+                                <li><a href="#">产品运营经理</a></li>
+                                <li><a href="#">产品运营主管</a></li>
+                                <li><a href="#">产品运营</a></li>
+                                <li><a href="#">产品策划</a></li>
+                                <li><a href="#">产品助理</a></li>
+                                <li><a href="#">无线产品经理</a></li>
+                                <li><a href="#">产品运营专员</a></li>
+                                <li><a href="#">产品总监</a></li>
+                                <li><a href="#">产品专员</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">IT运维/技术支持<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">技术支持工程师</a></li>
+                                <li><a href="#">系统工程师</a></li>
+                                <li><a href="#">维护工程师</a></li>
+                                <li><a href="#">网络管理员</a></li>
+                                <li><a href="#">信息技术专员</a></li>
+                                <li><a href="#">数据库管理员</a></li>
+                                <li><a href="#">网络工程师</a></li>
+                                <li><a href="#">技术支持</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">电信/通信技术开发及应用<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">网络优化工程师</a></li>
+                                <li><a href="#">网络工程师</a></li>
+                                <li><a href="#">通信电源工程师</a></li>
+                                <li><a href="#">无线网络优化工程师</a></li>
+                                <li><a href="#">数据通信工程师</a></li>
+                                <li><a href="#">无线通信工程师</a></li>
+                                <li><a href="#">通信工程师</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">硬件开发<i></i></div>
+                        </div>
+                    </div>
+                    <!-- IT|互联网|通信结束 -->
+                    <!-- 采购|贸易|交通|物流开始 -->
+                    <div class="contain-r-cg hot-details">
+                        <div class="classes">
+                            <div class="classes-hd">物流/仓储<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">仓库/物料管理员</a></li>
+                                <li><a href="#">物流专员/助理</a></li>
+                                <li><a href="#">物流主管</a></li>
+                                <li><a href="#">仓管员</a></li>
+                                <li><a href="#">仓库主管</a></li>
+                                <li><a href="#">物流经理</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">采购/贸易<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">业务跟单</a></li>
+                                <li><a href="#">采购经理</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- 采购|贸易|交通|物流结束 -->
+                    <!-- 房产|建筑|物业管理开始 -->
+                    <div class="contain-r-fc hot-details">
+                        <div class="classes">
+                            <div class="classes-hd">物业管理<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">物业经理</a></li>
+                                <li><a href="#">物业管理经理/主管</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- 房产|建筑|物业管理结束 -->
+                <!-- 热门分类结束 -->
+                <!-- 传统分类开始 -->
+                    <!-- 财务|人力资源|行政开始 -->
+                    <div class="contain-r-cw tradition-details">
+                        <div class="classes">
+                            <div class="classes-hd">行政/后勤/文秘<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">办公室文员</a></li>
+                                <li><a href="#">行政专员</a></li>
+                                <li><a href="#">经理助理/秘书</a></li>
+                                <li><a href="#">行政文员</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">人力资源<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">招聘经理/主管</a></li>
+                                <li><a href="#">人事专员</a></li>
+                                <li><a href="#">人事经理</a></li>
+                                <li><a href="#">人力资源专员/助理</a></li>
+                                <li><a href="#">人力资源经理/主管</a></li>
+                                <li><a href="#">人力资源总监</a></li>
+                                <li><a href="#">人事主管</a></li>
+                                <li><a href="#">人事助理</a></li>
+                                <li><a href="#">招聘专员/助理</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">财务/审计/税务<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">会计经理/主管</a></li>
+                                <li><a href="#">财务/出纳员</a></li>
+                                <li><a href="#">出纳</a></li>
+                                <li><a href="#">会计</a></li>
+                                <li><a href="#">财务主管</a></li>
+                                <li><a href="#">财务总监</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- 财务|人力资源|行政结束 -->
+                    <!-- 销售|客服|市场开始 -->
+                    <div class="contain-r-xs tradition-details">
+                        <div class="classes">
+                            <div class="classes-hd">销售行政/商务<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">商务助理</a></li>
+                                <li><a href="#">业务助理</a></li>
+                                <li><a href="#">销售助理</a></li>
+                                <li><a href="#">销售行政专员/助理</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">广告<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">文案/策划</a></li>
+                                <li><a href="#">平面设计</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">销售管理<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">市场助理</a></li>
+                                <li><a href="#">业务拓展主管/经理</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">市场<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">产品经理</a></li>
+                                <li><a href="#">市场助理</a></li>
+                                <li><a href="#">市场营销经理</a></li>
+                                <li><a href="#">市场经理</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                     <!-- 销售|客服|市场结束 -->
+                     <!-- 生产|制造开始 -->
+                    <div class="contain-r-sc tradition-details">
+                        <div class="classes">
+                            <div class="classes-hd">汽车维护<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">汽车修理人员</a></li>
+                                <li><a href="#">汽车维修</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">医药研发<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">软件工程师</a></li>
+                                <li><a href="#">化验员</a></li>
+                                <li><a href="#">医疗器械维修人员</a></li>
+                                <li><a href="#">药品生产/质量管理</a></li>
+                                <li><a href="#">医药质检</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">电子/电器/半导体/仪器仪表<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">工艺工程师</a></li>
+                                <li><a href="#">软件工程师</a></li>
+                                <li><a href="#">维修工程师</a></li>
+                                <li><a href="#">结构工程师</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">医药推广<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">医药销售经理/主管</a></li>
+                                <li><a href="#">销售助理</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">化工<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">技术研发工程师</a></li>
+                                <li><a href="#">化验员</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">机械设计/制造/维修<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">技术研发工程师</a></li>
+                                <li><a href="#">模具工程师</a></li>
+                                <li><a href="#">机械设计师</a></li>
+                                <li><a href="#">制造工程师</a></li>
+                                <li><a href="#">设备工程师</a></li>
+                                <li><a href="#">结构工程师</a></li>
+                                <li><a href="#">工程机械主管</a></li>
+                                <li><a href="#">维修工程师</a></li>
+                                <li><a href="#">机电工程师</a></li>
+                                <li><a href="#">机械工程师</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">生产<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">生产跟单</a></li>
+                                <li><a href="#">业务跟单</a></li>
+                                <li><a href="#">QC</a></li>
+                                <li><a href="#">跟单员</a></li>
+                                <li><a href="#">营业担当</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">汽车制造<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">结构工程师</a></li>
+                                <li><a href="#">汽车设计工程师</a></li>
+                                <li><a href="#">制造工程师</a></li>
+                                <li><a href="#">工艺工程师</a></li>
+                                <li><a href="#">产品工程师</a></li>
+                                <li><a href="#">技术研发工程师</a></li>
+                                <li><a href="#">设计工程师</a></li>
+                                <li><a href="#">机械工程师</a></li>
+                                <li><a href="#">汽车质量管理</a></li>
+                                <li><a href="#">汽车装配工艺工程师</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">汽车销售<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">销售总监</a></li>
+                                <li><a href="#">销售助理</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                     <!-- 生产|制造结束 -->
+                     <!-- 服务业开始 -->
+                    <div class="contain-r-fw tradition-details">
+                        <div class="classes">
+                            <div class="classes-hd">旅游业务<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">旅游顾问</a></li>
+                                <li><a href="#">导游/旅行顾问</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">调度<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">计调</a></li>
+                                <li><a href="#">计调助理</a></li>
+                                <li><a href="#">计调经理</a></li>
+                                <li><a href="#">计调专员</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">票务<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">导游/计调</a></li>
+                                <li><a href="#">地接导游</a></li>
+                                <li><a href="#">导游</a></li>
+                                <li><a href="#">英文导游</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">护理<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">健康管理师</a></li>
+                                <li><a href="#">护士长</a></li>
+                                <li><a href="#">营养师</a></li>
+                                <li><a href="#">护士</a></li>
+                                <li><a href="#">康复治疗师</a></li>
+                                <li><a href="#">护士/护理人员</a></li>
+                                <li><a href="#">护师</a></li>
+                                <li><a href="#">护理</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">食品研发<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">质检</a></li>
+                                <li><a href="#">化验员</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">医生<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">药剂师</a></li>
+                                <li><a href="#">麻醉医生</a></li>
+                                <li><a href="#">外科医生</a></li>
+                                <li><a href="#">内科医生</a></li>
+                                <li><a href="#">儿科医生</a></li>
+                                <li><a href="#">检验师</a></li>
+                                <li><a href="#">专科医生</a></li>
+                                <li><a href="#">化验/检验</a></li>
+                                <li><a href="#">药师</a></li>
+                                <li><a href="#">牙科医生</a></li>
+                                <li><a href="#">中医科医生</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">保健/美容/美发/健身<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">美容顾问</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">管理<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">营运经理</a></li>
+                                <li><a href="#">酒店管理</a></li>
+                                <li><a href="#">营运主管</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- 服务业结束 -->
+                    <!-- 咨询|法律|教育|翻译开始 -->
+                    <div class="contain-r-zx tradition-details">
+                        <div class="classes">
+                            <div class="classes-hd">翻译（口译与笔译）<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">阿拉伯语翻译</a></li>
+                                <li><a href="#">意大利语翻译</a></li>
+                                <li><a href="#">英语翻译</a></li>
+                                <li><a href="#">法语翻译</a></li>
+                                <li><a href="#">日语翻译</a></li>
+                                <li><a href="#">德语翻译</a></li>
+                                <li><a href="#">西班牙语翻译</a></li>
+                                <li><a href="#">俄语翻译</a></li>
+                                <li><a href="#">韩语/朝鲜语翻译</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">教育/培训<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">幼教</a></li>
+                                <li><a href="#">英语教师</a></li>
+                                <li><a href="#">讲师/助教</a></li>
+                                <li><a href="#">小学教师</a></li>
+                                <li><a href="#">中学教师</a></li>
+                                <li><a href="#">教学/教务管理人员</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- 咨询|法律|教育|翻译结束 -->
+                    <!-- 能源|环保|农业|科研开始 -->
+                    <div class="contain-r-ny tradition-details">
+                        <div class="classes">
+                            <div class="classes-hd">畜牧<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">化验员</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">环境科学/环保<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">污水处理工程师</a></li>
+                                <li><a href="#">水处理工程师</a></li>
+                                <li><a href="#">环保工程师</a></li>
+                                <li><a href="#">检测工程师</a></li>
+                                <li><a href="#">环保技术</a></li>
+                                <li><a href="#">项目经理</a></li>
+                                <li><a href="#">水质检测员</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">能源/矿产/地质勘查<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">电力工程师/技术员</a></li>
+                                <li><a href="#">核力/火力工程师</a></li>
+                                <li><a href="#">地质勘查</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">公务员/事业单位/科研机构<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">医药技术研发人员</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- 能源|环保|农业|科研结束 -->
+                    <!-- 项目|质量|高级管理开始 -->
+                    <div class="contain-r-xm tradition-details">
+                        <div class="classes">
+                            <div class="classes-hd">质量管理/安全防护<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">品质主管</a></li>
+                                <li><a href="#">质量管理</a></li>
+                                <li><a href="#">安全管理</a></li>
+                                <li><a href="#">QA</a></li>
+                                <li><a href="#">质检员</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">项目管理/项目协调<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">项目经理助理</a></li>
+                                <li><a href="#">技术主管</a></li>
+                                <li><a href="#">项目工程师</a></li>
+                                <li><a href="#">项目专员</a></li>
+                                <li><a href="#">项目经理</a></li>
+                                <li><a href="#">项目管理/产品管理</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- 项目|质量|高级管理结束 -->
+                <!-- 传统分类结束 -->
+                </div>
+            </div>
+                <!-- 右侧分类结束 -->
+        </div>
+            <!-- 行业职业库分类选择结束 -->
+        <!-- 行业职业内容结束 -->
+        <!--版权开始-->
+        <footer class="copyright">
+            <div class="copyright-l-hd row">
+            	<a class="about col col-50" href="about.html">关于</a>
+                <a class="contact col col-50" href="feedback.html">反馈</a>
+            </div>
+            <div class="copyright-l-ft">
+             Copyright © 2014 ( 粤ICP备14080709号-2 )
+             <br />utowin from 优途	
+            </div>
+        </footer>
+        <!--版权结束-->
+        <!-- 回到顶部 -->
+        <div class="toTop"></div>
+	</section>
+</section>     
+</body>
+</html>

@@ -1,0 +1,13 @@
+@charset "utf-8";
+/* CSS Document */
+html,body{ height: auto;}
+/*注册页面第一页开始*/
+    /*ico位置*/
+.ico-verify{ top:1.94rem;}
+.reg-ico-passw{ top:3.75rem;}
+.ico-passw2{ top:5.58rem;}
+    /*注册框样式*/
+.verify{ width: 5.2rem;}
+.register-btn{ background: #67c5e3; height: 1.2rem; line-height: 1.2rem; margin-bottom: 0.6rem; font-size: 0.48rem; margin-left: 0.4rem; padding-left: 0.26rem; padding-right: 0.26rem; border: 1px solid #ccc; color: #fff; border-radius: 0.1rem;}
+.register-ipt-ft a{ color:#fe4141; }
+/*注册页面第一页结束*/

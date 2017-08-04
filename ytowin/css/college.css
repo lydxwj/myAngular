@@ -1,0 +1,57 @@
+@charset "utf-8";
+/* CSS Document */
+/*找大学内容开始*/
+    /*搜索开始*/
+.search{ padding: 0.4rem 0.8rem; position:relative;}
+.search-ipt,.search-submit{ line-height: 1.2rem; height: 1.2rem; padding-top: 0.2rem; padding-bottom: 0.2rem;  font-size: 0.48rem;  border: 1px solid #ccc; border-radius: 0.1rem; padding-left: 0.8rem; width: 7.6rem; box-sizing: border-box;}
+.search-submit{ width: auto; background: #ec6941;padding:0 0.8rem; text-align: center; margin-left: 0.56rem;color:#fff;}
+.ico-search{ width: 0.8rem; height: 0.8rem;position: absolute; top:0.56rem; left:1.0rem;}
+.ico-search:before{ width: 0.8rem; height: 0.8rem; content:"\e603"; font-family: "iconfont"; position:absolute; top: 0; left: 0; font-size: 0.6rem; color:#a9a9a9;}
+    /*搜索结束*/
+    /*筛选部分开始*/
+.choose{  background: #e2e3e3; height: 0.72rem; width: 12.8rem; text-align: center; line-height: 0.72rem; padding-top: 0.14rem;padding-bottom: 0.14rem; overflow: hidden; }
+.choose .col-25{ height: 0.72rem; margin-top: auto;margin-bottom: auto; border-right:1px solid #a0a0a0; color: #737373;font-size: 0.32rem; overflow:hidden; }
+.choose .level{ border-right:0;}
+.choose .col-25 i{ width: 0.4rem; height: 0.4rem; display:inline-block; position:relative; padding-left: 0.08rem; }
+.choose .col-25 i:before{ width: 0.4rem; height: 0.4rem; content:"\e606"; font-family: "iconfont"; position:absolute; top: 0; left: 0.08rem; font-size: 0.4rem; }
+    /*筛选部分结束*/
+    /*大学展示开始*/
+.college-show{ padding-left: 0.4rem; padding-right: 0.4rem;}
+.college-list{ border: 1px solid #ccc; padding:0.2rem; margin-top: 0.4rem;border-radius: 0.2rem;}
+.college-logo{ height: 2.0rem; width:2.0rem;}
+.college-logo img{ height:100%; width: 100%;}
+
+.college-logo a{ display:block; width:100%; height: 100%;}
+.college-name{width: 7.8rem;padding-left: 0.2rem;}
+.college-name .name{ border-bottom: 1px solid #ccc;line-height: 0.9rem; font-weight: 700; display: inline-block;}
+.college-collect{display:inline-block; padding-right: 0.4rem; padding-left: 0.4rem;white-space: nowrap;line-height: 0.8rem;border-radius: 0.1rem; border: 1px solid #2fbbd6; margin-top: 0.2rem;}
+.college-collect.current{ background-color: #FD3919; color:#fff;border-color: #FD3919;}
+.college-tb{ display:inline-block; width: 0.7rem; height: 0.6rem;background-image:url(../img/college-tub1.png); background-size: cover; background-position: center; background-repeat: no-repeat; margin-top: 0.3rem;}
+.college-tub2{ background-image:url(../img/college-tub2.png); }
+.college-tub3{ background-image:url(../img/college-tub3.png); }
+.college-tub4{ background-image:url(../img/college-tub4.png); }
+.college-details a{ display: inline-block; width: 1.2rem; text-align: center; line-height: 1rem; background: #f24a09; color:#fff;border-radius: 0.1rem;}
+.college-more a{ display:block; width: 9.6rem; height: 1.0rem; font-size: 0.4rem; line-height: 1.0rem; margin-top: 0.4rem; margin-left: auto; margin-right: auto;background:#e84c33; color:#fff; text-align: center;border-radius: 0.1rem;}
+
+        /*弹窗部分开始*/
+.popup{ opacity: .5; background-color: #000; width: 100%; height: 54.0rem; position: fixed; top: 0; left: 0; z-index: 10; display:none;}
+.popup-choose{ position: fixed; top: 2.0rem; left: auto; width: 9.8rem; margin-left: 1.1rem; z-index: 12;background: #fff; padding: 0.4rem; display:none;} 
+.popup-choose .hd{ color: #2bbfd6; font-weight: 700; position: relative; height:0.8rem;border-bottom: 1px solid #ccc; line-height: 0.56rem; margin-bottom: 0.4rem; }
+.popup-choose .hd i{ height:0.8rem; width:0.8rem; position: absolute; top: 0; right:0;}
+.popup-choose .hd i:before{ width: 0.8rem; height: 0.8rem; content:"\e615"; font-family: "iconfont"; position:absolute; top: 0; left: 0; font-size: 0.6rem; }
+.popup-choose .mn a{ border:1px solid #ccc; border-radius: 0.1rem; display: block; float:left; padding-left: 0.54rem; padding-right: 0.54rem; line-height: 1rem; margin-right: 0.3rem; margin-bottom: 0.4rem;}
+.popup-choose .mn a.current{  background: #2bbfd6; color: #fff;}
+        /*弹窗部分结束*/
+
+
+    /*大学展示结束*/
+
+
+
+
+
+
+
+
+
+/*找大学内容结束*/

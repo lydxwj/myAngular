@@ -1,0 +1,2748 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telphone=no, email=no" />
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="MobileOptimized" content="320">
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-orientation" content="portrait">
+    <meta name="full-screen" content="yes">
+    <meta name="x5-fullscreen" content="true">
+    <meta name="browsermode" content="application">
+    <meta name="x5-page-mode" content="app">
+    <meta name="msapplication-tap-highlight" content="no">
+    <title>搜专业</title>
+	<link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="css/base.css" />
+    <link rel="stylesheet" type="text/css" href="css/major.css" />
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/device.min.js"></script>
+    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+	<script type="application/javascript" src="http://cdn.bootcss.com/fastclick/1.0.6/fastclick.js"></script>
+    <script type="text/javascript" src="js/base.js"></script>
+    <script type="text/javascript" src="js/major.js"></script>
+</head>
+<body>
+<section class="wrap return">   	
+	<section class="fixed"> 
+    <!--头部开始-->
+    	<header class="header clearfix">
+            <div class="pageup fl"><a href="javascript:history.go(-1);"></a></div>
+    		<h1 class="fl">搜专业</h1>
+            <nav class="nav fr">
+                <div class="nav-mn">
+                    <div class="nav-btn"></div>
+                    <ul class="nav-tap">
+                        <li>
+                            <a class="nav-tap-login" href="login.html">登录</a>
+                            <a class="nav-tap-info" href="users.html">个人中心</a>
+                        </li>
+                        <li class="nav-tabLi">
+                            <a class="nav-tap-login" href="register.html">注册</a>
+                            <a class="nav-tap-info" href="javascript:;">退出</a>
+                        </li>
+                        <li><a href="index.html">首页</a></li>
+                        <li><a href="college.html">找大学</a></li>
+                        <!-- <li><a href="voluntary.html">志愿模拟填报</a></li> -->
+                        <li><a href="evaluation.html">性格与专业测</a></li>
+                        <li><a href="major.html">搜专业</a></li>
+                        <li><a href="branch.html">文理分科测</a></li>
+                        <li><a href="admission.html">录取信息查询</a></li>
+                        <li><a href="industry.html">行业职业库</a></li>
+                        <li><a href="insight.html">自我洞悉</a></li>
+                        
+                    </ul>
+                </div>
+            </nav>
+    	</header>
+	</section>          
+    <!--头部结束-->
+	<section class="main">
+        <!-- 查专业内容开始 -->
+            <!-- 专业库按钮开始 -->
+        <div class="major-tab row">
+            <div class="major-bachelor col col-50">
+                <a class="tabOn" href="javascript:;">
+                    <span class="name-ku">本科专业库</span>
+                    <span>748个本科专业</span>
+                </a>
+            </div>
+            <div class="major-junior col col-50">
+                <a href="javascript:;">
+                    <span class="name-ku">大专高职专业库</span>
+                    <span>1082个大专高职专业</span>
+                </a>
+            </div>
+        </div>
+            <!-- 专业库按钮结束 -->
+            <!-- 搜索框开始 -->
+        <div class="search">
+            <form action="" method="post">
+                <input name="maj-search" type="search" placeholder="请输入专业名称" id="maj-search" class="search-ipt" list="tip" required="required" />
+                <datalist id="tip">
+                    <option value="哲学">哲学</option>
+                    <option value="经济学">经济学</option>
+                    <option value="法学">法学</option>
+                    <option value="教育学">教育学</option>
+                    <option value="文学">文学</option>
+                    <option value="历史学">历史学</option>
+                    <option value="理学">理学</option>
+                    <option value="工学">工学</option>
+                    <option value="农学">农学</option>
+                    <option value="医学">医学</option>
+                    <option value="管理学">管理学</option>
+                    <option value="金融学">金融学</option>
+                    <option value="国际经济与贸易">国际经济与贸易</option>
+                    <option value="财政学">财政学</option>
+                    <option value="经济与金融">经济与金融</option>
+                    <option value="信息与计算科学">信息与计算科学</option>
+                    <option value="人力资源管理">人力资源管理</option>
+                    <option value="工商管理">工商管理</option>
+                    <option value="财务管理">财务管理</option>
+                    <option value="市场营销">市场营销</option>
+                    <option value="电子商务">电子商务</option>
+                    <option value="旅游管理">旅游管理</option>
+                    <option value="物流管理">物流管理</option>
+                    <option value="工程造价">工程造价</option>
+                    <option value="信息管理与信息系统">信息管理与信息系统</option>
+                    <option value="护理学">护理学</option>
+                    <option value="应用药学">应用药学</option>
+                    <option value="生物工程">生物工程</option>
+                 </datalist>
+                <label for="col-search" class="ico-search"></label> 
+                <input type="submit" value="查找" class="search-submit" /> 
+            </form>
+        </div>
+            <!-- 搜索框结束 -->
+            <!-- 专业库分类选择开始 -->
+        <div class="major-contain row">
+                <!-- 左侧分类开始 -->
+            <div class="major-contain-l col col-34">
+                <ul class="left-mn left-bachelor">    
+                    <li class="active">哲学 (01) </li>    
+                    <li>经济学 (02) </li>
+                    <li>法学 (03) </li>
+                    <li>教育学 (04) </li>
+                    <li>文学 (05) </li>
+                    <li>历史学 (06) </li>
+                    <li>理学 (07) </li>
+                    <li>工学 (08) </li>    
+                    <li>农学 (09) </li>
+                    <li>医学 (10) </li>
+                    <li>管理学 (12) </li>
+                </ul>
+                <ul class="left-mn left-junior">       
+                    <li class="active">农林牧渔</li>
+                    <li>交通运输</li>
+                    <li>生化与药品</li>
+                    <li>资源开发与测绘</li>
+                    <li>材料与能源</li>
+                    <li>土建</li>
+                    <li>水利</li>
+                    <li>制造</li>
+                    <li>电子信息</li>
+                    <li>环保、气象与安全</li>
+                    <li>轻纺食品</li>
+                    <li>财经</li>
+                    <li>医药卫生</li>
+                    <li>旅游</li>
+                    <li>公共事业</li>
+                    <li>文化教育</li>
+                    <li>艺术设计传媒</li>
+                    <li>公安</li>
+                    <li>法律</li>
+                </ul> 
+            </div>
+                <!-- 左侧分类结束 -->
+                <!-- 右侧分类开始 -->
+            <div class="major-contain-r col col-66">
+                <div class="contain-r-mn">
+                <!-- 本科分类开始 -->
+                    <!-- 哲学类开始 -->
+                    <div class="contain-r-zx bachelor-details">
+                        <div class="classes">
+                            <div class="classes-hd">哲学类 (0101)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="majorContent.html">哲学基地班</a></li>
+                                <li><a href="majorContent.html">哲学</a></li>
+                                <li><a href="#">逻辑学</a></li>
+                                <li><a href="#">宗教学</a></li>
+                                <li><a href="#">伦理学</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">其他类 (0117)<i></i></div>
+                        </div>
+                    </div> 
+                    <!-- 哲学类结束 --> 
+                    <!-- 经济学类开始 -->
+                    <div class="contain-r-jjx bachelor-details">
+                        <div class="classes">
+                            <div class="classes-hd">经济学类 (0201)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">经济学基地班</a></li>
+                                <li><a href="#">经济学</a></li>
+                                <li><a href="#">国际经济与贸易</a></li>
+                                <li><a href="#">财政学</a></li>
+                                <li><a href="#">金融学</a></li>
+                                <li><a href="#">国民经济管理</a></li>
+                                <li><a href="#">贸易经济</a></li>
+                                <li><a href="#">保险</a></li>
+                                <li><a href="#">金融工程</a></li>
+                                <li><a href="#">税务</a></li>
+                                <li><a href="#">信用管理</a></li>
+                                <li><a href="#">网络经济学</a></li>
+                                <li><a href="#">体育经济</a></li>
+                                <li><a href="#">投资学</a></li>
+                                <li><a href="#">环境资源与发展经济学</a></li>
+                                <li><a href="#">海洋经济学</a></li>
+                                <li><a href="#">国际文化贸易</a></li>
+                                <li><a href="#">经济与金融</a></li>
+                                <li><a href="#">能源经济</a></li>
+                                <li><a href="#">经济学类（中外合作办学）</a></li>
+                            </ul>
+                        </div>
+                    </div> 
+                    <!-- 经济学类结束 -->
+                    <!-- 法学类开始 -->
+                    <div class="contain-r-fx bachelor-details">
+                        <div class="classes">
+                            <div class="classes-hd">法学类 (0301)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">法学</a></li>
+                                <li><a href="#">知识产权法</a></li>
+                                <li><a href="#">知识产权</a></li>
+                                <li><a href="#">监狱学</a></li>
+                                <li><a href="#">法学类（中外合作办学）</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">马克思主义理论类 (0302)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">科学社会主义与国际共产主义运动</a></li>
+                                <li><a href="#">中国革命史与中国共产党党史</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">社会学类 (0303)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">社会学</a></li>
+                                <li><a href="#">社会工作</a></li>
+                                <li><a href="#">家政学</a></li>
+                                <li><a href="#">人类学</a></li>
+                                <li><a href="#">女性学</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">政治学类 (0304)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">政治学与行政学</a></li>
+                                <li><a href="#">国际政治</a></li>
+                                <li><a href="#">外交学</a></li>
+                                <li><a href="#">思想政治教育</a></li>
+                                <li><a href="#">国际文化交流</a></li>
+                                <li><a href="#">国际政治经济学</a></li>
+                                <li><a href="#">国际事务</a></li>
+                                <li><a href="#">国际事务与国际关系</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">公安学类 (0305)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">治安学</a></li>
+                                <li><a href="#">侦查学</a></li>
+                                <li><a href="#">边防管理</a></li>
+                                <li><a href="#">火灾勘查</a></li>
+                                <li><a href="#">禁毒学</a></li>
+                                <li><a href="#">警犬技术</a></li>
+                                <li><a href="#">经济犯罪侦查</a></li>
+                                <li><a href="#">边防指挥</a></li>
+                                <li><a href="#">消防指挥</a></li>
+                                <li><a href="#">警卫学</a></li>
+                                <li><a href="#">公安情报学</a></li>
+                                <li><a href="#">犯罪学</a></li>
+                                <li><a href="#">公安管理学</a></li>
+                                <li><a href="#">涉外警务</a></li>
+                                <li><a href="#">国内安全保卫</a></li>
+                                <li><a href="#">警务指挥与战术</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- 法学类结束 -->
+                    <!-- 教育学类开始 -->
+                    <div class="contain-r-jyx bachelor-details">
+                        <div class="classes">
+                            <div class="classes-hd">教育学类 (0401)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">教育学</a></li>
+                                <li><a href="#">学前教育</a></li>
+                                <li><a href="#">特殊教育</a></li>
+                                <li><a href="#">教育技术学</a></li>
+                                <li><a href="#">小学教育</a></li>
+                                <li><a href="#">艺术教育</a></li>
+                                <li><a href="#">人文教育</a></li>
+                                <li><a href="#">科学教育</a></li>
+                                <li><a href="#">言语听觉科学</a></li>
+                                <li><a href="#">华文教育</a></li>
+                                <li><a href="#">教育学类(中外合作办学)</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">体育学类 (0402)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">体育教育</a></li>
+                                <li><a href="#">运动训练</a></li>
+                                <li><a href="#">社会体育</a></li>
+                                <li><a href="#">运动人体科学</a></li>
+                                <li><a href="#">民族传统体育</a></li>
+                                <li><a href="#">运动康复与健康</a></li>
+                                <li><a href="#">休闲体育</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">其他类 (0403)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">农艺教育</a></li>
+                                <li><a href="#">园艺教育</a></li>
+                                <li><a href="#">特用作物教育</a></li>
+                                <li><a href="#">畜禽生产教育</a></li>
+                                <li><a href="#">水产养殖教育</a></li>
+                                <li><a href="#">应用生物教育</a></li>
+                                <li><a href="#">农产品储运与加工教育</a></li>
+                                <li><a href="#">农业经营管理教育</a></li>
+                                <li><a href="#">机械制造工艺教育</a></li>
+                                <li><a href="#">机械维修及检测技术教育</a></li>
+                                <li><a href="#">机电技术教育</a></li>
+                                <li><a href="#">电气技术教育</a></li>
+                                <li><a href="#">汽车维修工程教育</a></li>
+                                <li><a href="#">应用电子技术教育</a></li>
+                                <li><a href="#">食品工艺教育</a></li>
+                                <li><a href="#">建筑工程教育</a></li>
+                                <li><a href="#">服装设计与工艺教育</a></li>
+                                <li><a href="#">装潢设计与工艺教育</a></li>
+                                <li><a href="#">旅游管理与服务教育</a></li>
+                                <li><a href="#">食品营养与检验教育</a></li>
+                                <li><a href="#">烹饪与营养教育</a></li>
+                                <li><a href="#">财务会计教育</a></li>
+                                <li><a href="#">文秘教育</a></li>
+                                <li><a href="#">市场营销教育</a></li>
+                                <li><a href="#">职业技术教育管理</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- 教育学类结束 -->
+                    <!-- 文学类开始 -->
+                    <div class="contain-r-wx bachelor-details">
+                        <div class="classes">
+                            <div class="classes-hd">中国语言文学类 (0501)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">中国语言文学基地班</a></li>
+                                <li><a href="#">汉语言文学</a></li>
+                                <li><a href="#">汉语言</a></li>
+                                <li><a href="#">对外汉语</a></li>
+                                <li><a href="#">中国少数民族语言文学</a></li>
+                                <li><a href="#">古典文献</a></li>
+                                <li><a href="#">中国语言文化</a></li>
+                                <li><a href="#">应用语言学</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">外国语言文学类 (0502)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">英语</a></li>
+                                <li><a href="#">俄语</a></li>
+                                <li><a href="#">德语</a></li>
+                                <li><a href="#">法语</a></li>
+                                <li><a href="#">西班牙语</a></li>
+                                <li><a href="#">阿拉伯语</a></li>
+                                <li><a href="#">日语</a></li>
+                                <li><a href="#">波斯语</a></li>
+                                <li><a href="#">朝鲜语</a></li>
+                                <li><a href="#">菲律宾语</a></li>
+                                <li><a href="#">梵语巴利语</a></li>
+                                <li><a href="#">印度尼西亚语</a></li>
+                                <li><a href="#">印地语</a></li>
+                                <li><a href="#">柬埔寨语</a></li>
+                                <li><a href="#">老挝语</a></li>
+                                <li><a href="#">缅甸语</a></li>
+                                <li><a href="#">马来语</a></li>
+                                <li><a href="#">蒙古语</a></li>
+                                <li><a href="#">僧加罗语</a></li>
+                                <li><a href="#">泰语</a></li>
+                                <li><a href="#">乌尔都语</a></li>
+                                <li><a href="#">希伯莱语</a></li>
+                                <li><a href="#">越南语</a></li>
+                                <li><a href="#">豪萨语</a></li>
+                                <li><a href="#">斯瓦希里语</a></li>
+                                <li><a href="#">阿尔巴尼亚语</a></li>
+                                <li><a href="#">保加利亚语</a></li>
+                                <li><a href="#">波兰语</a></li>
+                                <li><a href="#">捷克语</a></li>
+                                <li><a href="#">罗马尼亚语</a></li>
+                                <li><a href="#">葡萄牙语</a></li>
+                                <li><a href="#">瑞典语</a></li>
+                                <li><a href="#">塞尔维亚—克罗地亚语</a></li>
+                                <li><a href="#">土耳其语</a></li>
+                                <li><a href="#">希腊语</a></li>
+                                <li><a href="#">匈牙利语</a></li>
+                                <li><a href="#">意大利语</a></li>
+                                <li><a href="#">捷克语—斯洛伐克语</a></li>
+                                <li><a href="#">泰米尔语</a></li>
+                                <li><a href="#">普什图语</a></li>
+                                <li><a href="#">世界语</a></li>
+                                <li><a href="#">孟加拉语</a></li>
+                                <li><a href="#">尼泊尔语</a></li>
+                                <li><a href="#">荷兰语</a></li>
+                                <li><a href="#">芬兰语</a></li>
+                                <li><a href="#">乌克兰语</a></li>
+                                <li><a href="#">韩国语</a></li>
+                                <li><a href="#">商务英语</a></li>
+                                <li><a href="#">塞尔维亚语</a></li>
+                                <li><a href="#">克罗地亚语</a></li>
+                                <li><a href="#">挪威语</a></li>
+                                <li><a href="#">丹麦语</a></li>
+                                <li><a href="#">冰岛语</a></li>
+                                <li><a href="#">翻译</a></li>
+                                <li><a href="#">外国语言文学类（中外合作办学）</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">新闻传播学类 (0503)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">新闻学</a></li>
+                                <li><a href="#">广播电视新闻学</a></li>
+                                <li><a href="#">广告学</a></li>
+                                <li><a href="#">编辑出版学</a></li>
+                                <li><a href="#">传播学</a></li>
+                                <li><a href="#">媒体创意</a></li>
+                                <li><a href="#">新媒体与信息网络</a></li>
+                                <li><a href="#">数字出版</a></li>
+                                <li><a href="#">新闻传播学类（中外合作办学）</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">艺术类 (0504)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">音乐学</a></li>
+                                <li><a href="#">作曲与作曲技术理论</a></li>
+                                <li><a href="#">音乐表演</a></li>
+                                <li><a href="#">绘画</a></li>
+                                <li><a href="#">雕塑</a></li>
+                                <li><a href="#">美术学</a></li>
+                                <li><a href="#">艺术设计学</a></li>
+                                <li><a href="#">艺术设计</a></li>
+                                <li><a href="#">舞蹈学</a></li>
+                                <li><a href="#">舞蹈编导</a></li>
+                                <li><a href="#">戏剧学</a></li>
+                                <li><a href="#">表演</a></li>
+                                <li><a href="#">导演</a></li>
+                                <li><a href="#">戏剧影视文学</a></li>
+                                <li><a href="#">戏剧影视美术设计</a></li>
+                                <li><a href="#">摄影</a></li>
+                                <li><a href="#">录音艺术</a></li>
+                                <li><a href="#">动画</a></li>
+                                <li><a href="#">播音与主持艺术</a></li>
+                                <li><a href="#">广播电视编导</a></li>
+                                <li><a href="#">艺术学</a></li>
+                                <li><a href="#">影视学</a></li>
+                                <li><a href="#">广播影视编导</a></li>
+                                <li><a href="#">书法学</a></li>
+                                <li><a href="#">照明艺术</a></li>
+                                <li><a href="#">会展艺术与技术</a></li>
+                                <li><a href="#">音乐科技与艺术</a></li>
+                                <li><a href="#">中国画</a></li>
+                                <li><a href="#">公共艺术</a></li>
+                                <li><a href="#">数字游戏设计</a></li>
+                                <li><a href="#">艺术类(中外合作办学)</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- 文学类结束 -->
+                    <!-- 历史学类开始 -->
+                    <div class="contain-r-lsx bachelor-details">
+                        <div class="classes">
+                            <div class="classes-hd">历史学类 (0601)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">历史学基地班</a></li>
+                                <li><a href="#">历史学</a></li>
+                                <li><a href="#">世界历史</a></li>
+                                <li><a href="#">考古学</a></li>
+                                <li><a href="#">博物馆学</a></li>
+                                <li><a href="#">民族学</a></li>
+                                <li><a href="#">文物保护技术</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- 历史学类结束 -->
+                    <!-- 理学类开始 -->
+                    <div class="contain-r-lx bachelor-details">
+                        <div class="classes">
+                            <div class="classes-hd">数学类 (0701)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">数学基地班</a></li>
+                                <li><a href="#">数学与应用数学</a></li>
+                                <li><a href="#">信息与计算科学</a></li>
+                                <li><a href="#">数理基础科学</a></li>
+                                <li><a href="#">数学类（中外合作办学）</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">物理学类 (0702)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">物理学基地班</a></li>
+                                <li><a href="#">物理学</a></li>
+                                <li><a href="#">应用物理学</a></li>
+                                <li><a href="#">声学</a></li>
+                                <li><a href="#">核物理</a></li>
+                                <li><a href="#">物理学类(中外合作办学)</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">化学类 (0703)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">化学基地班</a></li>
+                                <li><a href="#">化学</a></li>
+                                <li><a href="#">应用化学</a></li>
+                                <li><a href="#">化学生物学</a></li>
+                                <li><a href="#">分子科学与工程</a></li>
+                                <li><a href="#">化学类（中外合作办学）</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">生物科学类 (0704)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">生物学基地班</a></li>
+                                <li><a href="#">生物科学</a></li>
+                                <li><a href="#">生物技术</a></li>
+                                <li><a href="#">生物信息学</a></li>
+                                <li><a href="#">生物信息技术</a></li>
+                                <li><a href="#">生物科学与生物技术</a></li>
+                                <li><a href="#">动植物检疫</a></li>
+                                <li><a href="#">生物化学与分子生物学</a></li>
+                                <li><a href="#">医学信息学</a></li>
+                                <li><a href="#">植物生物技术</a></li>
+                                <li><a href="#">生命科学与技术基地班</a></li>
+                                <li><a href="#">动物生物技术</a></li>
+                                <li><a href="#">生物资源科学</a></li>
+                                <li><a href="#">生物安全</a></li>
+                                <li><a href="#">生物医学英语</a></li>
+                                <li><a href="#">生物科学类（中外合作办学）</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">天文学类 (0705)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">天文学</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">地质学类 (0706)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">地质学基地班</a></li>
+                                <li><a href="#">地质学</a></li>
+                                <li><a href="#">地球化学</a></li>
+                                <li><a href="#">古生物学</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">地理科学类 (0707)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">地理学基地班</a></li>
+                                <li><a href="#">地理科学</a></li>
+                                <li><a href="#">资源环境与城乡规划管理</a></li>
+                                <li><a href="#">地理信息系统</a></li>
+                                <li><a href="#">地球信息科学与技术</a></li>
+                                <li><a href="#">地理科学类（中外合作办学）</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">地球物理学类 (0708)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">地球物理学</a></li>
+                                <li><a href="#">地球与空间科学</a></li>
+                                <li><a href="#">空间科学与技术</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">大气科学类 (0709)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">大气科学</a></li>
+                                <li><a href="#">应用气象学</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">海洋科学类 (0710)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">海洋科学</a></li>
+                                <li><a href="#">海洋技术</a></li>
+                                <li><a href="#">海洋管理</a></li>
+                                <li><a href="#">军事海洋学</a></li>
+                                <li><a href="#">海洋生物资源与环境</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">力学类 (0711)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">理论与应用力学</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">电子信息科学类 (0712)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">电子信息科学与技术</a></li>
+                                <li><a href="#">微电子学</a></li>
+                                <li><a href="#">光信息科学与技术</a></li>
+                                <li><a href="#">科技防卫</a></li>
+                                <li><a href="#">信息安全</a></li>
+                                <li><a href="#">信息科学技术</a></li>
+                                <li><a href="#">光电子技术科学</a></li>
+                                <li><a href="#">电子信息科学类（中外合作办学）</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">材料科学类 (0713)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">材料物理</a></li>
+                                <li><a href="#">材料化学</a></li>
+                                <li><a href="#">材料科学类（中外合作办学）</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">环境科学类 (0714)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">环境科学</a></li>
+                                <li><a href="#">生态学</a></li>
+                                <li><a href="#">资源环境科学</a></li>
+                                <li><a href="#">地球环境科学</a></li>
+                                <li><a href="#">环境科学类（中外合作办学）</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">心理学类 (0715)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">心理学</a></li>
+                                <li><a href="#">应用心理学</a></li>
+                                <li><a href="#">心理学类(中外合作办学)</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">统计学类 (0716)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">统计学</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">系统科学类 (0717)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">系统理论</a></li>
+                                <li><a href="#">系统科学与工程</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- 理学类结束 -->
+                    <!-- 工学类开始 -->
+                    <div class="contain-r-gx bachelor-details">
+                        <div class="classes">
+                            <div class="classes-hd">地矿类 (0801)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">采矿工程</a></li>
+                                <li><a href="#">石油工程</a></li>
+                                <li><a href="#">矿物加工工程</a></li>
+                                <li><a href="#">勘查技术与工程</a></li>
+                                <li><a href="#">资源勘查与开发</a></li>
+                                <li><a href="#">地质工程</a></li>
+                                <li><a href="#">矿物资源工程</a></li>
+                                <li><a href="#">煤及煤层气工程</a></li>
+                                <li><a href="#">地下水科学与工程</a></li>
+                                <li><a href="#">海洋油气工程</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">材料类 (0802)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">冶金工程</a></li>
+                                <li><a href="#">金属材料工程</a></li>
+                                <li><a href="#">无机非金属材料工程</a></li>
+                                <li><a href="#">高分子材料与工程</a></li>
+                                <li><a href="#">材料科学与工程</a></li>
+                                <li><a href="#">复合材料与工程</a></li>
+                                <li><a href="#">焊接技术与工程</a></li>
+                                <li><a href="#">宝石及材料工艺学</a></li>
+                                <li><a href="#">粉体材料科学与工程</a></li>
+                                <li><a href="#">再生资源科学与技术</a></li>
+                                <li><a href="#">稀土工程</a></li>
+                                <li><a href="#">高分子材料加工工程</a></li>
+                                <li><a href="#">生物功能材料</a></li>
+                                <li><a href="#">电子封装技术</a></li>
+                                <li><a href="#">功能材料</a></li>
+                                <li><a href="#">纳米材料与技术</a></li>
+                                <li><a href="#">新能源材料与器件</a></li>
+                                <li><a href="#">资源循环科学与工程</a></li>
+                                <li><a href="#">材料类（中外合作办学）</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">机械类 (0803)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">机械设计制造及其自动化</a></li>
+                                <li><a href="#">材料成型及控制工程</a></li>
+                                <li><a href="#">工业设计</a></li>
+                                <li><a href="#">过程装备与控制工程</a></li>
+                                <li><a href="#">机械工程及自动化</a></li>
+                                <li><a href="#">车辆工程</a></li>
+                                <li><a href="#">机械电子工程</a></li>
+                                <li><a href="#">汽车服务工程</a></li>
+                                <li><a href="#">制造自动化与测控技术</a></li>
+                                <li><a href="#">微机电系统工程</a></li>
+                                <li><a href="#">制造工程</a></li>
+                                <li><a href="#">体育装备工程</a></li>
+                                <li><a href="#">机械工程</a></li>
+                                <li><a href="#">机械类（中外合作办学）</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">仪器仪表类 (0804)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">测控技术与仪器</a></li>
+                                <li><a href="#">电子信息技术及仪器</a></li>
+                                <li><a href="#">仪器仪表类（中外合作办学）</a></li>                        
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">能源动力类 (0805)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">热能与动力工程</a></li>
+                                <li><a href="#">核工程与核技术</a></li>
+                                <li><a href="#">工程物理</a></li>
+                                <li><a href="#">能源与环境系统工程</a></li>
+                                <li><a href="#">能源工程及自动化</a></li>
+                                <li><a href="#">能源动力系统及自动化</a></li>
+                                <li><a href="#">风能与动力工程</a></li>
+                                <li><a href="#">核技术</a></li>
+                                <li><a href="#">辐射防护与环境工程</a></li>
+                                <li><a href="#">核化工与核燃料工程</a></li>
+                                <li><a href="#">核反应堆工程</a></li>
+                                <li><a href="#">新能源科学与工程</a></li>
+                                <li><a href="#">能源动力类(中外合作办学)</a></li>   
+                                
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">电气信息类 (0806)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">电气工程及其自动化</a></li>
+                                <li><a href="#">自动化</a></li>
+                                <li><a href="#">电子信息工程</a></li>
+                                <li><a href="#">通信工程</a></li>
+                                <li><a href="#">计算机科学与技术</a></li>
+                                <li><a href="#">电子科学与技术</a></li>
+                                <li><a href="#">生物医学工程</a></li>
+                                <li><a href="#">电气工程与自动化</a></li>
+                                <li><a href="#">信息工程</a></li>
+                                <li><a href="#">光源与照明</a></li>
+                                <li><a href="#">软件工程</a></li>
+                                <li><a href="#">影视艺术技术</a></li>
+                                <li><a href="#">网络工程</a></li>
+                                <li><a href="#">信息显示与光电技术</a></li>
+                                <li><a href="#">集成电路设计与集成系统</a></li>
+                                <li><a href="#">光电信息工程</a></li>
+                                <li><a href="#">广播电视工程</a></li>
+                                <li><a href="#">电气信息工程</a></li>
+                                <li><a href="#">计算机软件</a></li>
+                                <li><a href="#">电力工程与管理</a></li>
+                                <li><a href="#">微电子制造工程</a></li>
+                                <li><a href="#">假肢矫形工程</a></li>
+                                <li><a href="#">数字媒体艺术</a></li>
+                                <li><a href="#">医学信息工程</a></li>
+                                <li><a href="#">信息物理工程</a></li>
+                                <li><a href="#">医疗器械工程</a></li>
+                                <li><a href="#">智能科学与技术</a></li>
+                                <li><a href="#">数字媒体技术</a></li>
+                                <li><a href="#">医学影像工程</a></li>
+                                <li><a href="#">真空电子技术</a></li>
+                                <li><a href="#">电磁场与无线技术</a></li>
+                                <li><a href="#">电信工程及管理</a></li>
+                                <li><a href="#">电气工程与智能控制</a></li>
+                                <li><a href="#">信息与通信工程</a></li>
+                                <li><a href="#">电波传播与天线</a></li>
+                                <li><a href="#">船舶电子电气工程</a></li>
+                                <li><a href="#">仿真科学与技术</a></li>
+                                <li><a href="#">电机电器智能化</a></li>
+                                <li><a href="#">物联网工程</a></li>
+                                <li><a href="#">传感网技术</a></li>
+                                <li><a href="#">光电子材料与器件</a></li>
+                                <li><a href="#">水声工程</a></li>
+                                <li><a href="#">智能电网信息工程</a></li>
+                                <li><a href="#">微电子科学与工程</a></li>
+                                <li><a href="#">交通设备与控制工程</a></li>
+                                <li><a href="#">电气信息类（中外合作办学）</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">土建类 (0807)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">建筑学</a></li>
+                                <li><a href="#">城市规划</a></li>
+                                <li><a href="#">土木工程</a></li>
+                                <li><a href="#">建筑环境与设备工程</a></li>
+                                <li><a href="#">给水排水工程</a></li>
+                                <li><a href="#">城市地下空间工程</a></li>
+                                <li><a href="#">历史建筑保护工程</a></li>
+                                <li><a href="#">景观建筑设计</a></li>
+                                <li><a href="#">水务工程</a></li>
+                                <li><a href="#">建筑设施智能技术</a></li>
+                                <li><a href="#">给排水科学与工程</a></li>
+                                <li><a href="#">建筑电气与智能化</a></li>
+                                <li><a href="#">景观学</a></li>
+                                <li><a href="#">风景园林</a></li>
+                                <li><a href="#">总图设计与工业运输</a></li>
+                                <li><a href="#">建筑节能技术与工程</a></li>
+                                <li><a href="#">道路桥梁与渡河工程</a></li>
+                                <li><a href="#">建筑工程管理</a></li>
+                                <li><a href="#">土建类（中外合作办学）</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">水利类 (0808)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">水利水电工程</a></li>
+                                <li><a href="#">水文与水资源工程</a></li>
+                                <li><a href="#">港口航道与海岸工程</a></li>
+                                <li><a href="#">港口海岸及治河工程</a></li>
+                                <li><a href="#">水资源与海洋工程</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">测绘类 (0809)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">测绘工程</a></li>
+                                <li><a href="#">遥感科学与技术</a></li>
+                                <li><a href="#">空间信息与数字技术</a></li>
+                                <li><a href="#">导航工程</a></li>
+                                <li><a href="#">地理国情监测</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">环境与安全类 (0810)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">环境工程</a></li>
+                                <li><a href="#">安全工程</a></li>
+                                <li><a href="#">水质科学与技术</a></li>
+                                <li><a href="#">灾害防治工程</a></li>
+                                <li><a href="#">环境科学与工程</a></li>
+                                <li><a href="#">环境监察</a></li>
+                                <li><a href="#">雷电防护科学与技术</a></li>
+                                <li><a href="#">核安全工程</a></li>
+                                <li><a href="#">环保设备工程</a></li>
+                                <li><a href="#">环境与安全类（中外合作办学）</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">化工与制药类 (0811)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">化学工程与工艺</a></li>
+                                <li><a href="#">制药工程</a></li>
+                                <li><a href="#">化工与制药</a></li>
+                                <li><a href="#">化学工程与工业生物工程</a></li>
+                                <li><a href="#">资源科学与工程</a></li>
+                                <li><a href="#">能源化学工程</a></li>
+                                <li><a href="#">生物制药</a></li>
+                                <li><a href="#">化工与制药类(中外合作办学)</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">交通运输类 (0812)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">交通运输</a></li>
+                                <li><a href="#">交通工程</a></li>
+                                <li><a href="#">油气储运工程</a></li>
+                                <li><a href="#">飞行技术</a></li>
+                                <li><a href="#">航海技术</a></li>
+                                <li><a href="#">轮机工程</a></li>
+                                <li><a href="#">物流工程</a></li>
+                                <li><a href="#">海事管理</a></li>
+                                <li><a href="#">交通设备信息工程</a></li>
+                                <li><a href="#">交通建设与装备</a></li>
+                                <li><a href="#">救助与打捞工程</a></li>
+                                <li><a href="#">交通信息与控制工程</a></li>
+                                <li><a href="#">交通运输类（中外合作办学）</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">海洋工程类 (0813)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">船舶与海洋工程</a></li>
+                                <li><a href="#">海洋工程与技术</a></li>
+                                <li><a href="#">海洋资源开发技术</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">轻工纺织食品类 (0814)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">食品科学与工程</a></li>
+                                <li><a href="#">轻化工程</a></li>
+                                <li><a href="#">包装工程</a></li>
+                                <li><a href="#">印刷工程</a></li>
+                                <li><a href="#">纺织工程</a></li>
+                                <li><a href="#">服装设计与工程</a></li>
+                                <li><a href="#">食品质量与安全</a></li>
+                                <li><a href="#">酿酒工程</a></li>
+                                <li><a href="#">葡萄与葡萄酒工程</a></li>
+                                <li><a href="#">轻工生物技术</a></li>
+                                <li><a href="#">农产品质量与安全</a></li>
+                                <li><a href="#">非织造材料与工程</a></li>
+                                <li><a href="#">数字印刷</a></li>
+                                <li><a href="#">植物资源工程</a></li>
+                                <li><a href="#">粮食工程</a></li>
+                                <li><a href="#">乳品工程</a></li>
+                                <li><a href="#">轻工纺织食品类（中外合作办学）</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">航空航天类 (0815)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">飞行器设计工程</a></li>
+                                <li><a href="#">飞行器动力工程</a></li>
+                                <li><a href="#">飞行器制造工程</a></li>
+                                <li><a href="#">飞行器环境与生命保障工程</a></li>
+                                <li><a href="#">航空航天工程</a></li>
+                                <li><a href="#">工程力学与航天航空工程</a></li>
+                                <li><a href="#">航天运输与控制</a></li>
+                                <li><a href="#">质量与可靠性工程</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">武器类 (0816)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">武器系统与发射工程</a></li>
+                                <li><a href="#">探测制导与控制技术</a></li>
+                                <li><a href="#">弹药工程与爆炸技术</a></li>
+                                <li><a href="#">特种能源工程与烟火技术</a></li>
+                                <li><a href="#">地面武器机动工程</a></li>
+                                <li><a href="#">信息对抗技术</a></li>
+                                <li><a href="#">武器系统与工程</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">工程力学类 (0817)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">工程力学</a></li>
+                                <li><a href="#">工程结构分析</a></li>
+                                <li><a href="#">工程力学类(中外合作办学)</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">生物工程类 (0818)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">生物工程</a></li>
+                                <li><a href="#">生物工程类（中外合作办学）</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">农业工程类 (0819)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">农业机械化及其自动化</a></li>
+                                <li><a href="#">农业电气化与自动化</a></li>
+                                <li><a href="#">农业建筑环境与能源工程</a></li>
+                                <li><a href="#">农业水利工程</a></li>
+                                <li><a href="#">农业工程</a></li>
+                                <li><a href="#">生物系统工程</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">林业工程类 (0820)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">森林工程</a></li>
+                                <li><a href="#">木材科学与工程</a></li>
+                                <li><a href="#">林产化工</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">公安技术类 (0821)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">刑事科学技术</a></li>
+                                <li><a href="#">消防工程</a></li>
+                                <li><a href="#">安全防范工程</a></li>
+                                <li><a href="#">交通管理工程</a></li>
+                                <li><a href="#">核生化消防</a></li>
+                                <li><a href="#">公安视听技术</a></li>
+                                <li><a href="#">网络安全与执法</a></li>
+                                <li><a href="#">抢险救援指挥与技术</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- 工学类结束 -->
+                    <!-- 农学类开始 -->
+                    <div class="contain-r-nx bachelor-details">
+                        <div class="classes">
+                            <div class="classes-hd">植物生产类 (0901)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="/Major/MajorContent?ID=090101" target="_blank">农学</a></li>
+                                <li><a href="#">园艺</a></li>
+                                <li><a href="#">植物保护</a></li>
+                                <li><a href="#">茶学</a></li>
+                                <li><a href="#">烟草</a></li>
+                                <li><a href="#">植物科学与技术</a></li>
+                                <li><a href="#">种子科学与工程</a></li>
+                                <li><a href="#">应用生物科学</a></li>
+                                <li><a href="#">设施农业科学与工程</a></li>
+                                <li><a href="#">植物生产类（中外合作办学）</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">草业科学类 (0902)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">草业科学</a></li>
+                                <li><a href="#">草业科学类（中外合作办学）</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">森林资源类 (0903)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">林学</a></li>
+                                <li><a href="#">森林资源保护与游憩</a></li>
+                                <li><a href="#">野生动物与自然保护区管理</a></li>
+                                <li><a href="#">森林资源类（中外合作办学）</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">环境生态类 (0904)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">园林</a></li>
+                                <li><a href="#">水土保持与荒漠化防治</a></li>
+                                <li><a href="#">农业资源与环境</a></li>
+                                <li><a href="#">环境生态类（中外合作办学）</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">动物生产类 (0905)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">动物科学</a></li>
+                                <li><a href="#">蚕学</a></li>
+                                <li><a href="#">蜂学</a></li>
+                                <li><a href="#">动物生产类（中外合作办学）</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">动物医学类 (0906)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">动物医学</a></li>
+                                <li><a href="#">动物药学</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">水产类 (0907)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">水产养殖学</a></li>
+                                <li><a href="#">海洋渔业科学与技术</a></li>
+                                <li><a href="#">水族科学与技术</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- 农学类结束 -->
+                    <!-- 医学类开始 -->
+                    <div class="contain-r-yx bachelor-details">
+                        <div class="classes">
+                            <div class="classes-hd">基础医学类 (1001)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">基础医学基地班</a></li>
+                                <li><a href="#">基础医学</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">预防医学类 (1002)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">预防医学</a></li>
+                                <li><a href="#">卫生检验</a></li>
+                                <li><a href="#">妇幼保健医学</a></li>
+                                <li><a href="#">营养学</a></li>
+                                <li><a href="#">卫生监督</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">临床医学与医学技术类 (1003)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">临床医学</a></li>
+                                <li><a href="#">麻醉医学</a></li>
+                                <li><a href="#">医学影像学</a></li>
+                                <li><a href="#">医学检验</a></li>
+                                <li><a href="#">放射医学</a></li>
+                                <li><a href="#">眼视光学</a></li>
+                                <li><a href="#">康复治疗学</a></li>
+                                <li><a href="#">精神医学</a></li>
+                                <li><a href="#">医学技术</a></li>
+                                <li><a href="#">听力学</a></li>
+                                <li><a href="#">医学实验学</a></li>
+                                <li><a href="#">医学美容技术</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">口腔医学类 (1004)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">口腔医学</a></li>
+                                <li><a href="#">口腔修复工艺学</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">中医学类 (1005)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">中医学</a></li>
+                                <li><a href="#">针灸推拿学</a></li>
+                                <li><a href="#">蒙医学</a></li>
+                                <li><a href="#">藏医学</a></li>
+                                <li><a href="#">中西医临床医学</a></li>
+                                <li><a href="#">维医学</a></li>
+                                <li><a href="#">壮医学</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">法医学类 (1006)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">法医学</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">护理学类 (1007)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">护理学</a></li>
+                                <li><a href="#">护理学类（中外合作办学）</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">药学类 (1008)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">基础药学基地班</a></li>
+                                <li><a href="#">药学</a></li>
+                                <li><a href="#">中药学</a></li>
+                                <li><a href="#">药物制剂</a></li>
+                                <li><a href="#">中草药栽培与鉴定</a></li>
+                                <li><a href="#">藏药学</a></li>
+                                <li><a href="#">中药资源与开发</a></li>
+                                <li><a href="#">应用药学</a></li>
+                                <li><a href="#">临床药学</a></li>
+                                <li><a href="#">海洋药学</a></li>
+                                <li><a href="#">药事管理</a></li>
+                                <li><a href="#">蒙药学</a></li>
+                                <li><a href="#">药物分析</a></li>
+                                <li><a href="#">药物化学</a></li>
+                                <li><a href="#">中药制药</a></li>
+                                <li><a href="#">药学类（中外合作办学）</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- 医学类结束 -->
+                    <!-- 管理学类开始 -->
+                    <div class="contain-r-glx bachelor-details">
+                        <div class="classes">
+                            <div class="classes-hd">管理科学与工程类 (1201)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">管理科学</a></li>
+                                <li><a href="#">信息管理与信息系统</a></li>
+                                <li><a href="#">工程管理</a></li>
+                                <li><a href="#">房地产经营管理</a></li>
+                                <li><a href="#">工程造价</a></li>
+                                <li><a href="#">产品质量工程</a></li>
+                                <li><a href="#">项目管理</a></li>
+                                <li><a href="#">管理科学与工程类（中外合作办学）</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">工商管理类 (1202)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">工商管理</a></li>
+                                <li><a href="#">市场营销</a></li>
+                                <li><a href="#">会计学</a></li>
+                                <li><a href="#">财务管理</a></li>
+                                <li><a href="#">国际商务</a></li>
+                                <li><a href="#">人力资源管理</a></li>
+                                <li><a href="#">审计学</a></li>
+                                <li><a href="#">资产评估</a></li>
+                                <li><a href="#">物业管理</a></li>
+                                <li><a href="#">文化产业管理</a></li>
+                                <li><a href="#">劳动关系</a></li>
+                                <li><a href="#">电子商务及法律</a></li>
+                                <li><a href="#">商务策划管理</a></li>
+                                <li><a href="#">工商管理类（中外合作办学）</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">农业经济管理类 (1203)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">农林经济管理</a></li>
+                                <li><a href="#">农村区域发展</a></li>
+                                <li><a href="#">公共政策学</a></li>
+                                <li><a href="#">公共管理</a></li>
+                                <li><a href="#">国防教育与管理</a></li>
+                                <li><a href="#">航运管理</a></li>
+                                <li><a href="#">公共安全管理</a></li>
+                                <li><a href="#">体育产业管理</a></li>
+                                <li><a href="#">食品经济管理</a></li>
+                                <li><a href="#">应急管理</a></li>
+                                <li><a href="#">农业经济管理类（中外合作办学）</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">公共管理类 (1204)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">公共事业管理</a></li>
+                                <li><a href="#">行政管理</a></li>
+                                <li><a href="#">劳动与社会保障</a></li>
+                                <li><a href="#">土地资源管理</a></li>
+                                <li><a href="#">城市管理</a></li>
+                                <li><a href="#">海关管理</a></li>
+                                <li><a href="#">公共关系学</a></li>
+                                <li><a href="#">公共管理类（中外合作办学）</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">图书档案学类 (1205)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">图书馆学</a></li>
+                                <li><a href="#">档案学</a></li>
+                                <li><a href="#">信息资源管理</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">物流管理与工程类 (1206)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">物流管理</a></li>
+                                <li><a href="#">采购管理</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">工业工程类 (1207)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">工业工程</a></li>
+                                <li><a href="#">标准化工程</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">电子商务类 (1208)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">电子商务</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">旅游管理类 (1209)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">旅游管理</a></li>
+                                <li><a href="#">酒店管理</a></li>
+                                <li><a href="#">会展经济与管理</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- 管理学类结束 -->
+                <!-- 本科分类结束 -->
+                <!-- 专科分类开始 -->
+                    <!-- 农林牧渔类开始 -->
+                    <div class="contain-r-nlmy junior-details">
+                        <div class="classes">
+                            <div class="classes-hd">农业技术类 (5101)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">作物生产技术</a></li>
+                                <li><a href="#">种子生产与经营</a></li>
+                                <li><a href="#">设施农业技术</a></li>
+                                <li><a href="#">观光农业</a></li>
+                                <li><a href="#">园艺技术</a></li>
+                                <li><a href="#">茶叶生产加工技术</a></li>
+                                <li><a href="#">中草药栽培技术</a></li>
+                                <li><a href="#">烟草栽培技术</a></li>
+                                <li><a href="#">植物保护</a></li>
+                                <li><a href="#">植物检疫</a></li>
+                                <li><a href="#">农产品质量检测</a></li>
+                                <li><a href="#">茶艺</a></li>
+                                <li><a href="#">绿色食品生产与经营</a></li>
+                                <li><a href="#">绿色食品生产与检验</a></li>
+                                <li><a href="#">都市园艺</a></li>
+                                <li><a href="#">热带作物生产技术</a></li>
+                                <li><a href="#">药用植物栽培加工</a></li>
+                                <li><a href="#">食药用菌</a></li>
+                                <li><a href="#">农产品加工与品质管理</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">林业技术类 (5102)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">林业技术</a></li>
+                                <li><a href="#">园林技术</a></li>
+                                <li><a href="#">森林资源保护</a></li>
+                                <li><a href="#">野生植物资源开发与利用</a></li>
+                                <li><a href="#">野生动物保护</a></li>
+                                <li><a href="#">自然保护区建设与管理</a></li>
+                                <li><a href="#">森林生态旅游</a></li>
+                                <li><a href="#">林产化工技术</a></li>
+                                <li><a href="#">木材加工技术</a></li>
+                                <li><a href="#">森林采运工程</a></li>
+                                <li><a href="#">商品花卉</a></li>
+                                <li><a href="#">森林工程技术</a></li>
+                                <li><a href="#">城市园林</a></li>
+                                <li><a href="#">人造板自动化生产技术</a></li>
+                                <li><a href="#">家具卖场设计与管理</a></li>
+                                <li><a href="#">园林建筑</a></li>
+                                <li><a href="#">高尔夫场地管理</a></li>
+                                <li><a href="#">林业信息技术</a></li>
+                                <li><a href="#">经济林培育与利用</a></li>
+                                <li><a href="#">森林防火指挥与通讯</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">畜牧兽医类 (5103)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">畜牧兽医</a></li>
+                                <li><a href="#">畜牧</a></li>
+                                <li><a href="#">饲料与动物营养</a></li>
+                                <li><a href="#">特种动物养殖</a></li>
+                                <li><a href="#">兽医</a></li>
+                                <li><a href="#">兽医医药</a></li>
+                                <li><a href="#">动物防疫与检疫</a></li>
+                                <li><a href="#">兽药生产与营销</a></li>
+                                <li><a href="#">动物医学</a></li>
+                                <li><a href="#">养禽与禽病防治</a></li>
+                                <li><a href="#">宠物养护与疫病防治</a></li>
+                                <li><a href="#">猪生产与疾病防制</a></li>
+                                <li><a href="#">宠物医学</a></li>
+                                <li><a href="#">宠物护理与美容</a></li>
+                                <li><a href="#">动物医药</a></li>
+                                <li><a href="#">宠物医疗与保健</a></li>
+                                <li><a href="#">蚕桑技术</a></li>
+                                <li><a href="#">动物科学与技术</a></li>
+                                <li><a href="#">运动马驯养与管理</a></li>
+                                <li><a href="#">现代畜牧业经营管理</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">水产养殖类 (5104)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">水产养殖技术</a></li>
+                                <li><a href="#">水生动植物保护</a></li>
+                                <li><a href="#">海洋捕捞技术</a></li>
+                                <li><a href="#">渔业综合技术</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">农林管理类 (5105)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">农业经济管理</a></li>
+                                <li><a href="#">农村行政管理</a></li>
+                                <li><a href="#">乡镇企业管理</a></li>
+                                <li><a href="#">林业经济信息管理</a></li>
+                                <li><a href="#">渔业资源与渔政管理</a></li>
+                                <li><a href="#">农业技术与管理</a></li>
+                                <li><a href="#">林业信息工程与管理</a></li>
+                                <li><a href="#">数字林业科技</a></li>
+                                <li><a href="#">都市林业资源与林政管理</a></li>
+                                <li><a href="#">农村行政与经济管理</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- 农林牧渔类结束 -->
+                    <!-- 交通运输开始 -->
+                    <div class="contain-r-jtys junior-details">
+                        <div class="classes">
+                            <div class="classes-hd">公路运输类 (5201)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">公路运输与管理</a></li>
+                                <li><a href="#">高等级公路维护与管理</a></li>
+                                <li><a href="#">路政管理</a></li>
+                                <li><a href="#">汽车运用技术</a></li>
+                                <li><a href="#">交通安全与智能控制</a></li>
+                                <li><a href="#">城市交通运输</a></li>
+                                <li><a href="#">公路监理</a></li>
+                                <li><a href="#">道路桥梁工程技术</a></li>
+                                <li><a href="#">工程机械控制技术</a></li>
+                                <li><a href="#">工程机械运用与维护</a></li>
+                                <li><a href="#">工程机械技术服务与营销</a></li>
+                                <li><a href="#">公路机械化施工技术</a></li>
+                                <li><a href="#">公路工程管理</a></li>
+                                <li><a href="#">公路工程检测技术</a></li>
+                                <li><a href="#">道桥工程检测技术</a></li>
+                                <li><a href="#">桥隧检测与加固工程技术</a></li>
+                                <li><a href="#">公路运输类(中外合作办学)</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">铁道运输类 (5202)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">高速铁道技术</a></li>
+                                <li><a href="#">电气化铁道技术</a></li>
+                                <li><a href="#">铁道车辆</a></li>
+                                <li><a href="#">铁道机车车辆</a></li>
+                                <li><a href="#">铁道通信信号</a></li>
+                                <li><a href="#">铁道交通运营管理</a></li>
+                                <li><a href="#">铁道运输经济</a></li>
+                                <li><a href="#">铁道工程技术</a></li>
+                                <li><a href="#">高速动车组检修技术</a></li>
+                                <li><a href="#">高速动车组驾驶</a></li>
+                                <li><a href="#">高速铁路工程及维护技术</a></li>
+                                <li><a href="#">动车组技术</a></li>
+                                <li><a href="#">国际工程施工技术</a></li>
+                                <li><a href="#">高速动车组驾驶与维修</a></li>
+                                <li><a href="#">高速铁路动车乘务</a></li>
+                                <li><a href="#">高速铁路信号控制</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">城市轨道运输类 (5203)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">城市轨道交通车辆</a></li>
+                                <li><a href="#">城市轨道交通控制</a></li>
+                                <li><a href="#">城市轨道交通工程技术</a></li>
+                                <li><a href="#">城市轨道交通运营管理</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">水上运输类 (5204)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">航海技术</a></li>
+                                <li><a href="#">水运管理</a></li>
+                                <li><a href="#">国际航运业务管理</a></li>
+                                <li><a href="#">海事管理</a></li>
+                                <li><a href="#">轮机工程技术</a></li>
+                                <li><a href="#">船舶工程技术</a></li>
+                                <li><a href="#">船舶检验</a></li>
+                                <li><a href="#">航道工程技术</a></li>
+                                <li><a href="#">船机制造与维修</a></li>
+                                <li><a href="#">国际邮轮乘务</a></li>
+                                <li><a href="#">船舶舾装</a></li>
+                                <li><a href="#">船舶电气工程技术</a></li>
+                                <li><a href="#">船舶电子电气技术</a></li>
+                                <li><a href="#">游艇设计与制造</a></li>
+                                <li><a href="#">海洋工程技术</a></li>
+                                <li><a href="#">游艇维修技术</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">民航运输类 (5205)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">民航运输</a></li>
+                                <li><a href="#">飞行技术</a></li>
+                                <li><a href="#">空中乘务</a></li>
+                                <li><a href="#">航空服务</a></li>
+                                <li><a href="#">民航商务</a></li>
+                                <li><a href="#">航空机电设备维修</a></li>
+                                <li><a href="#">航空电子设备维修</a></li>
+                                <li><a href="#">民航特种车辆维修</a></li>
+                                <li><a href="#">航空通信技术</a></li>
+                                <li><a href="#">空中交通管理</a></li>
+                                <li><a href="#">民航安全技术管理</a></li>
+                                <li><a href="#">航空油料管理和应用</a></li>
+                                <li><a href="#">飞机制造技术</a></li>
+                                <li><a href="#">航空港管理</a></li>
+                                <li><a href="#">航空电子电气技术</a></li>
+                                <li><a href="#">飞机维修</a></li>
+                                <li><a href="#">飞机控制设备与仪表</a></li>
+                                <li><a href="#">航空发动机装配与试车</a></li>
+                                <li><a href="#">民航空中安全保卫</a></li>
+                                <li><a href="#">飞机结构修理</a></li>
+                                <li><a href="#">航空港安全检查</a></li>
+                                <li><a href="#">航空物流</a></li>
+                                <li><a href="#">航空保安</a></li>
+                                <li><a href="#">无人机应用技术</a></li>
+                                <li><a href="#">航天器制造技术</a></li>
+                                <li><a href="#">通用航空器维修</a></li>
+                                <li><a href="#">航空电子信息技术</a></li>
+                                <li><a href="#">民航运输类(中外合作办学)</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">港口运输类 (5206)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">港口业务管理</a></li>
+                                <li><a href="#">港口物流设备与自动控制</a></li>
+                                <li><a href="#">集装箱运输管理</a></li>
+                                <li><a href="#">港口工程技术</a></li>
+                                <li><a href="#">报关与国际货运</a></li>
+                                <li><a href="#">港口与航运管理</a></li>
+                                <li><a href="#">港口机械应用技术</a></li>
+                                <li><a href="#">港口物流管理</a></li>
+                                <li><a href="#">港口电气技术</a></li>
+                                <li><a href="#">港口与航道工程技术</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">管道运输类 (5207)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">管道工程技术</a></li>
+                                <li><a href="#">管道工程施工</a></li>
+                                <li><a href="#">管道运输管理</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                     <!-- 交通运输结束 -->
+                     <!-- 生化与药品开始 -->
+                    <div class="contain-r-shyyp junior-details">
+                        <div class="classes">
+                            <div class="classes-hd">生物技术类 (5301)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">生物技术及应用</a></li>
+                                <li><a href="#">生物实验技术</a></li>
+                                <li><a href="#">生物化工工艺</a></li>
+                                <li><a href="#">微生物技术及应用</a></li>
+                                <li><a href="#">天然产物提取技术及应用</a></li>
+                                <li><a href="#">生物技术类(中外合作办学)</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">化工技术类 (5302)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">应用化工技术</a></li>
+                                <li><a href="#">有机化工生产技术</a></li>
+                                <li><a href="#">高聚物生产技术</a></li>
+                                <li><a href="#">化纤生产技术</a></li>
+                                <li><a href="#">精细化学品生产技术</a></li>
+                                <li><a href="#">石油化工生产技术</a></li>
+                                <li><a href="#">炼油技术</a></li>
+                                <li><a href="#">工业分析与检验</a></li>
+                                <li><a href="#">化工设备维修技术</a></li>
+                                <li><a href="#">化工装备技术</a></li>
+                                <li><a href="#">化工设备与机械</a></li>
+                                <li><a href="#">海洋化工生产技术</a></li>
+                                <li><a href="#">油品分析</a></li>
+                                <li><a href="#">花炮生产与管理</a></li>
+                                <li><a href="#">火工工艺技术</a></li>
+                                <li><a href="#">烟花爆竹安全与质量技术</a></li>
+                                <li><a href="#">化妆品技术与管理</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">制药技术类 (5303)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">生化制药技术</a></li>
+                                <li><a href="#">生物制药技术</a></li>
+                                <li><a href="#">化学制药技术</a></li>
+                                <li><a href="#">中药制药技术</a></li>
+                                <li><a href="#">药物制剂技术</a></li>
+                                <li><a href="#">药物分析技术</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">食品药品管理类 (5304)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">食品药品监督管理</a></li>
+                                <li><a href="#">药品质量检测技术</a></li>
+                                <li><a href="#">药品经营与管理</a></li>
+                                <li><a href="#">保健品开发与管理</a></li>
+                                <li><a href="#">化妆品营销与使用技术</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                     <!-- 生化与药品结束 -->
+                     <!-- 资源开发与测绘开始 -->
+                    <div class="contain-r-zykfych junior-details">
+                        <div class="classes">
+                            <div class="classes-hd">资源勘查类 (5401)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">国土资源调查</a></li>
+                                <li><a href="#">区域地质调查及矿产普查</a></li>
+                                <li><a href="#">煤田地质与勘查技术</a></li>
+                                <li><a href="#">油气地质与勘查技术</a></li>
+                                <li><a href="#">水文地质与勘查技术</a></li>
+                                <li><a href="#">金属矿产地质与勘查技术</a></li>
+                                <li><a href="#">铀矿地质与勘查技术</a></li>
+                                <li><a href="#">非金属矿产地质与勘查技术</a></li>
+                                <li><a href="#">岩矿分析与鉴定技术</a></li>
+                                <li><a href="#">宝玉石鉴定与加工技术</a></li>
+                                <li><a href="#">宝玉石鉴定与营销</a></li>
+                                <li><a href="#">珠宝鉴定与营销</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">地质工程与技术类 (5402)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">矿山地质</a></li>
+                                <li><a href="#">工程地质勘查</a></li>
+                                <li><a href="#">水文与工程地质</a></li>
+                                <li><a href="#">钻探技术</a></li>
+                                <li><a href="#">地球物理勘查技术</a></li>
+                                <li><a href="#">地球物理测井技术</a></li>
+                                <li><a href="#">地球化学勘查技术</a></li>
+                                <li><a href="#">地质灾害与防治技术</a></li>
+                                <li><a href="#">环境地质工程技术</a></li>
+                                <li><a href="#">地质信息技术</a></li>
+                                <li><a href="#">岩土工程技术</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">矿业工程类 (5403)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">煤矿开采技术</a></li>
+                                <li><a href="#">金属矿开采技术</a></li>
+                                <li><a href="#">非金属矿开采技术</a></li>
+                                <li><a href="#">固体矿床露天开采技术</a></li>
+                                <li><a href="#">沙矿床开采技术</a></li>
+                                <li><a href="#">矿井建设</a></li>
+                                <li><a href="#">矿山机电</a></li>
+                                <li><a href="#">矿井通风与安全</a></li>
+                                <li><a href="#">矿井运输与提升</a></li>
+                                <li><a href="#">矿山安全技术与监察</a></li>
+                                <li><a href="#">综合机械化采煤</a></li>
+                                <li><a href="#">矿物资源技术</a></li>
+                                <li><a href="#">采矿工程技术</a></li>
+                                <li><a href="#">煤层气抽采技术</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">石油与天然气类<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">钻井技术</a></li>
+                                <li><a href="#">油气开采技术</a></li>
+                                <li><a href="#">油气储运技术</a></li>
+                                <li><a href="#">油气藏分析技术</a></li>
+                                <li><a href="#">油田化学应用技术</a></li>
+                                <li><a href="#">石油与天然气地质勘探技术</a></li>
+                                <li><a href="#">石油工程技术</a></li>
+                                <li><a href="#">天然气开采技术</a></li>
+                                <li><a href="#">井下作业技术</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">矿物加工类 (5405)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">矿物加工技术</a></li>
+                                <li><a href="#">选矿技术</a></li>
+                                <li><a href="#">选煤技术</a></li>
+                                <li><a href="#">煤炭深加工与利用</a></li>
+                                <li><a href="#">煤质分析技术</a></li>
+                                <li><a href="#">选矿机电技术</a></li>
+                                <li><a href="#">煤化工生产技术</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">测绘类 (5406)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">工程测量技术</a></li>
+                                <li><a href="#">工程测量与监理</a></li>
+                                <li><a href="#">摄影测量与遥感技术</a></li>
+                                <li><a href="#">大地测量与卫星定位技术</a></li>
+                                <li><a href="#">地理信息系统与地图制图技术</a></li>
+                                <li><a href="#">地籍测绘与土地管理信息技术</a></li>
+                                <li><a href="#">矿山测量</a></li>
+                                <li><a href="#">测绘与地理信息技术</a></li>
+                                <li><a href="#">测绘工程技术</a></li>
+                                <li><a href="#">测绘与地质工程技术</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- 资源开发与测绘结束 -->
+                    <!-- 材料与能源开始 -->
+                    <div class="contain-r-clyny junior-details">
+                        <div class="classes">
+                            <div class="classes-hd">材料类 (5501)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">金属材料与热处理技术</a></li>
+                                <li><a href="#">冶金技术</a></li>
+                                <li><a href="#">高分子材料应用技术</a></li>
+                                <li><a href="#">复合材料加工与应用技术</a></li>
+                                <li><a href="#">材料工程技术</a></li>
+                                <li><a href="#">建筑装饰材料及检测</a></li>
+                                <li><a href="#">无机非金属材料工程技术</a></li>
+                                <li><a href="#">建筑材料工程技术</a></li>
+                                <li><a href="#">磨料磨具制造</a></li>
+                                <li><a href="#">光伏材料加工与应用技术</a></li>
+                                <li><a href="#">轧钢技术</a></li>
+                                <li><a href="#">炭素加工技术</a></li>
+                                <li><a href="#">钒钛资源利用技术</a></li>
+                                <li><a href="#">硅材料技术</a></li>
+                                <li><a href="#">首饰设计与工艺</a></li>
+                                <li><a href="#">钢铁冶炼技术</a></li>
+                                <li><a href="#">建筑材料检测技术</a></li>
+                                <li><a href="#">石材开发与应用</a></li>
+                                <li><a href="#">金属压力加工</a></li>
+                                <li><a href="#">光伏材料生产技术</a></li>
+                                <li><a href="#">材料类(中外合作办学)</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">能源类 (5502)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">城市热能应用技术</a></li>
+                                <li><a href="#">热能动力设备与应用</a></li>
+                                <li><a href="#">城市热能应用技术</a></li>
+                                <li><a href="#">农村能源与环境技术</a></li>
+                                <li><a href="#">制冷与冷藏技术</a></li>
+                                <li><a href="#">制冷与空调技术</a></li>
+                                <li><a href="#">工业热工控制技术</a></li>
+                                <li><a href="#">风能与动力技术</a></li>
+                                <li><a href="#">新能源应用技术</a></li>
+                                <li><a href="#">节能工程技术</a></li>
+                                <li><a href="#">热工检测及控制技术</a></li>
+                                <li><a href="#">光伏发电技术及应用</a></li>
+                                <li><a href="#">太阳能光热技术及应用</a></li>
+                                <li><a href="#">太阳能应用技术</a></li>
+                                <li><a href="#">化学电源技术及应用</a></li>
+                                <li><a href="#">建筑新能源工程技术</a></li>
+                                <li><a href="#">风力发电设备及电网自动化</a></li>
+                                <li><a href="#">新能源发电技术</a></li>
+                                <li><a href="#">工业节能管理</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">电力技术类 (5503)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">发电厂及电力系统</a></li>
+                                <li><a href="#">电厂设备运行与维护</a></li>
+                                <li><a href="#">电厂热能动力装置</a></li>
+                                <li><a href="#">火电厂集控运行</a></li>
+                                <li><a href="#">小型水电站及电力网</a></li>
+                                <li><a href="#">供用电技术</a></li>
+                                <li><a href="#">电网监控技术</a></li>
+                                <li><a href="#">电力系统继电保护与自动化</a></li>
+                                <li><a href="#">高压输配电线路施工运行与维护</a></li>
+                                <li><a href="#">农村电气化技术</a></li>
+                                <li><a href="#">电厂化学</a></li>
+                                <li><a href="#">输变电工程技术</a></li>
+                                <li><a href="#">太阳能光电应用技术</a></li>
+                                <li><a href="#">电力客户服务与管理</a></li>
+                                <li><a href="#">电力电子技术</a></li>
+                                <li><a href="#">核电站动力装置</a></li>
+                                <li><a href="#">风电系统运行维护与检修技术</a></li>
+                                <li><a href="#">高电压技术</a></li>
+                                <li><a href="#">核电站设备运行与维护</a></li>
+                                <li><a href="#">电力工程技术</a></li>
+                                <li><a href="#">电力技术类(中外合作办学)</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- 材料与能源结束 -->
+                    <!-- 土建开始 -->
+                    <div class="contain-r-tj junior-details">
+                        <div class="classes">
+                            <div class="classes-hd">建筑设计类 (5601)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">建筑设计技术</a></li>
+                                <li><a href="#">建筑装饰工程技术</a></li>
+                                <li><a href="#">中国古建筑工程技术</a></li>
+                                <li><a href="#">室内设计技术</a></li>
+                                <li><a href="#">环境艺术设计</a></li>
+                                <li><a href="#">园林工程技术</a></li>
+                                <li><a href="#">建筑动画设计与制作</a></li>
+                                <li><a href="#">建筑设计类(中外合作办学)</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">城镇规划与管理类 (5602)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">城镇规划</a></li>
+                                <li><a href="#">城市管理与监察</a></li>
+                                <li><a href="#">城镇建设</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">土建施工类 (5603)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">建筑工程技术</a></li>
+                                <li><a href="#">地下工程与隧道工程技术</a></li>
+                                <li><a href="#">基础工程技术</a></li>
+                                <li><a href="#">土木工程检测技术</a></li>
+                                <li><a href="#">建筑钢结构工程技术</a></li>
+                                <li><a href="#">光伏建筑一体化技术与应用</a></li>
+                                <li><a href="#">盾构施工技术</a></li>
+                                <li><a href="#">高尔夫球场建造与维护</a></li>
+                                <li><a href="#">土建施工类(中外合作办学)</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">建筑设备类 (5604)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">建筑设备工程技术</a></li>
+                                <li><a href="#">供热通风与空调工程技术</a></li>
+                                <li><a href="#">建筑电气工程技术</a></li>
+                                <li><a href="#">楼宇智能化工程技术</a></li>
+                                <li><a href="#">工业设备安装工程技术</a></li>
+                                <li><a href="#">机电安装工程</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">工程管理类 (5605)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">建筑工程管理</a></li>
+                                <li><a href="#">工程造价</a></li>
+                                <li><a href="#">建筑经济管理</a></li>
+                                <li><a href="#">工程监理</a></li>
+                                <li><a href="#">电力工程管理</a></li>
+                                <li><a href="#">工程质量监督与管理</a></li>
+                                <li><a href="#">建筑工程项目管理</a></li>
+                                <li><a href="#">建筑工程质量与安全技术管理</a></li>
+                                <li><a href="#">建筑材料供应与管理</a></li>
+                                <li><a href="#">国际工程造价</a></li>
+                                <li><a href="#">建筑信息管理</a></li>
+                                <li><a href="#">安装工程造价</a></li>
+                                <li><a href="#">工程招标采购与投标管理</a></li>
+                                <li><a href="#">工程商务</a></li>
+                                <li><a href="#">工程管理类(中外合作办学)</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">市政工程类 (5606)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">市政工程技术</a></li>
+                                <li><a href="#">城市燃气工程技术</a></li>
+                                <li><a href="#">给排水工程技术</a></li>
+                                <li><a href="#">水工业技术</a></li>
+                                <li><a href="#">消防工程技术</a></li>
+                                <li><a href="#">建筑水电技术</a></li>
+                                <li><a href="#">给排水与环境工程技术</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">房地产类 (5607)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">房地产经营与估价</a></li>
+                                <li><a href="#">物业管理</a></li>
+                                <li><a href="#">物业设施管理</a></li>
+                                <li><a href="#">酒店物业管理</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- 土建结束 -->
+                    <!-- 水利开始 -->
+                    <div class="contain-r-sl junior-details">
+                        <div class="classes">
+                            <div class="classes-hd">水文与水资源类 (5701)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">水文与水资源</a></li>
+                                <li><a href="#">水文自动化测报技术</a></li>
+                                <li><a href="#">水信息技术</a></li>
+                                <li><a href="#">水政水资源管理</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">水利工程与管理类 (5702)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">水利工程</a></li>
+                                <li><a href="#">水利工程施工技术</a></li>
+                                <li><a href="#">水利水电建筑工程</a></li>
+                                <li><a href="#">灌溉与排水技术</a></li>
+                                <li><a href="#">港口航道与治河工程</a></li>
+                                <li><a href="#">河务工程与管理</a></li>
+                                <li><a href="#">城市水利</a></li>
+                                <li><a href="#">水利水电工程管理</a></li>
+                                <li><a href="#">水务管理</a></li>
+                                <li><a href="#">水利工程监理</a></li>
+                                <li><a href="#">农业水利技术</a></li>
+                                <li><a href="#">水利工程实验与检测技术</a></li>
+                                <li><a href="#">水利水电工程造价管理</a></li>
+                                <li><a href="#">农业水利工程技术</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">水利水电设备类 (5703)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">水电站动力设备与管理</a></li>
+                                <li><a href="#">机电设备运行与维护</a></li>
+                                <li><a href="#">机电排灌设备与管理</a></li>
+                                <li><a href="#">水电站设备与管理</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">水土保持与水环境类 (5704)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">水土保持</a></li>
+                                <li><a href="#">水环境监测与分析</a></li>
+                                <li><a href="#">防沙治沙工程</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- 水利结束 -->
+                    <!-- 制造开始 -->
+                    <div class="contain-r-zz junior-details">
+                        <div class="classes">
+                            <div class="classes-hd">机械设计制造类 (5801)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">机械设计与制造</a></li>
+                                <li><a href="#">机械制造与自动化</a></li>
+                                <li><a href="#">数控技术</a></li>
+                                <li><a href="#">电机与电器</a></li>
+                                <li><a href="#">玩具设计与制造</a></li>
+                                <li><a href="#">模具设计与制造</a></li>
+                                <li><a href="#">材料成型与控制技术</a></li>
+                                <li><a href="#">焊接技术及自动化</a></li>
+                                <li><a href="#">工业设计</a></li>
+                                <li><a href="#">计算机辅助设计与制造</a></li>
+                                <li><a href="#">精密机械技术</a></li>
+                                <li><a href="#">医疗器械制造与维护</a></li>
+                                <li><a href="#">光电制造技术</a></li>
+                                <li><a href="#">激光加工技术</a></li>
+                                <li><a href="#">飞行器制造工艺</a></li>
+                                <li><a href="#">钢结构建造技术</a></li>
+                                <li><a href="#">家具设计与制造</a></li>
+                                <li><a href="#">假肢与矫形器设计与制造</a></li>
+                                <li><a href="#">机械质量管理与检测技术</a></li>
+                                <li><a href="#">内燃机制造与维修</a></li>
+                                <li><a href="#">药剂设备制造与维护</a></li>
+                                <li><a href="#">服装机械及其自动化</a></li>
+                                <li><a href="#">武器制造技术</a></li>
+                                <li><a href="#">机械制造工艺及设备</a></li>
+                                <li><a href="#">风力发电设备制造与安装</a></li>
+                                <li><a href="#">焊接质量检测技术</a></li>
+                                <li><a href="#">金属制品加工技术</a></li>
+                                <li><a href="#">风能发电设备制造与维修</a></li>
+                                <li><a href="#">电线电缆制造技术</a></li>
+                                <li><a href="#">农业机械制造与装配</a></li>
+                                <li><a href="#">起重运输机械设计与制造</a></li>
+                                <li><a href="#">低压电器制造及应用</a></li>
+                                <li><a href="#">智能化农机装备技术</a></li>
+                                <li><a href="#">动车制造技术</a></li>
+                                <li><a href="#">航空机械制造与自动化</a></li>
+                                <li><a href="#">机械设计制造类(中外合作办学)</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">自动化类 (5802)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">机电一体化技术</a></li>
+                                <li><a href="#">电气自动化技术</a></li>
+                                <li><a href="#">生产过程自动化技术</a></li>
+                                <li><a href="#">电力系统自动化技术</a></li>
+                                <li><a href="#">计算机控制技术</a></li>
+                                <li><a href="#">工业网络技术</a></li>
+                                <li><a href="#">检测技术及应用</a></li>
+                                <li><a href="#">理化测试及质检技术</a></li>
+                                <li><a href="#">液压与气动技术</a></li>
+                                <li><a href="#">包装自动化技术</a></li>
+                                <li><a href="#">电气工程技术</a></li>
+                                <li><a href="#">电梯工程技术</a></li>
+                                <li><a href="#">低空无人机操控技术</a></li>
+                                <li><a href="#">工业自动化仪表</a></li>
+                                <li><a href="#">智能控制技术</a></li>
+                                <li><a href="#">工业机器人技术</a></li>
+                                <li><a href="#">油田自动化技术</a></li>
+                                <li><a href="#">自动化类(中外合作办学)</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">机电设备类 (5803)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">机电设备维修与管理</a></li>
+                                <li><a href="#">数控设备应用与维护</a></li>
+                                <li><a href="#">自动化生产设备应用</a></li>
+                                <li><a href="#">医用电子仪器与维护</a></li>
+                                <li><a href="#">医学影像设备管理与维护</a></li>
+                                <li><a href="#">医疗电子工程</a></li>
+                                <li><a href="#">设备安装技术</a></li>
+                                <li><a href="#">医用治疗设备应用技术</a></li>
+                                <li><a href="#">导弹维修</a></li>
+                                <li><a href="#">放射治疗技术及设备</a></li>
+                                <li><a href="#">冶金设备应用与维护</a></li>
+                                <li><a href="#">电气设备应用与维护</a></li>
+                                <li><a href="#">物流工程技术</a></li>
+                                <li><a href="#">光机电应用技术</a></li>
+                                <li><a href="#">冶金动力工程</a></li>
+                                <li><a href="#">电梯维护与管理</a></li>
+                                <li><a href="#">机床再制造技术</a></li>
+                                <li><a href="#">医学检验仪器管理与维护</a></li>
+                                <li><a href="#">起重运输机械应用与维修</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">汽车类 (5804)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">汽车制造与装配技术</a></li>
+                                <li><a href="#">汽车检测与维修技术</a></li>
+                                <li><a href="#">汽车电子技术</a></li>
+                                <li><a href="#">汽车改装技术</a></li>
+                                <li><a href="#">汽车技术服务与营销</a></li>
+                                <li><a href="#">汽车整形技术</a></li>
+                                <li><a href="#">汽车运用与维修</a></li>
+                                <li><a href="#">汽车营销与维修</a></li>
+                                <li><a href="#">农业机械应用技术</a></li>
+                                <li><a href="#">汽车服务与管理</a></li>
+                                <li><a href="#">二手车鉴定与评估</a></li>
+                                <li><a href="#">汽车定损与评估</a></li>
+                                <li><a href="#">新能源汽车维修技术</a></li>
+                                <li><a href="#">汽车试验技术</a></li>
+                                <li><a href="#">汽车类(中外合作办学)</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- 制造结束 -->
+                    <!-- 电子信息开始 -->
+                    <div class="contain-r-dzxx junior-details">
+                        <div class="classes">
+                            <div class="classes-hd">计算机类 (5901)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">计算机应用技术</a></li>
+                                <li><a href="#">计算机网络技术</a></li>
+                                <li><a href="#">计算机多媒体技术</a></li>
+                                <li><a href="#">计算机系统维护</a></li>
+                                <li><a href="#">计算机硬件与外设</a></li>
+                                <li><a href="#">计算机信息管理</a></li>
+                                <li><a href="#">网络系统管理</a></li>
+                                <li><a href="#">软件技术</a></li>
+                                <li><a href="#">图形图像制作</a></li>
+                                <li><a href="#">动漫设计与制作</a></li>
+                                <li><a href="#">计算机网络与安全管理</a></li>
+                                <li><a href="#">网站规划与开发技术</a></li>
+                                <li><a href="#">游戏软件</a></li>
+                                <li><a href="#">软件开发与项目管理</a></li>
+                                <li><a href="#">广告媒体开发</a></li>
+                                <li><a href="#">三维动画设计</a></li>
+                                <li><a href="#">计算机音乐制作</a></li>
+                                <li><a href="#">软件测试技术</a></li>
+                                <li><a href="#">嵌入式技术与应用</a></li>
+                                <li><a href="#">计算机网络安全与管理</a></li>
+                                <li><a href="#">网络软件开发技术</a></li>
+                                <li><a href="#">软件外包服务</a></li>
+                                <li><a href="#">物流信息技术</a></li>
+                                <li><a href="#">物联网应用技术</a></li>
+                                <li><a href="#">医用软件与网络技术</a></li>
+                                <li><a href="#">网络营销</a></li>
+                                <li><a href="#">数据库管理与开发</a></li>
+                                <li><a href="#">计算机类(中外合作办学)</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">电子信息类 (5902)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">电子信息工程技术</a></li>
+                                <li><a href="#">应用电子技术</a></li>
+                                <li><a href="#">电子测量技术与仪器</a></li>
+                                <li><a href="#">电子仪器仪表与维修</a></li>
+                                <li><a href="#">电子设备与运行管理</a></li>
+                                <li><a href="#">电子声像技术</a></li>
+                                <li><a href="#">电子工艺与管理</a></li>
+                                <li><a href="#">信息安全技术</a></li>
+                                <li><a href="#">图文信息技术</a></li>
+                                <li><a href="#">微电子技术</a></li>
+                                <li><a href="#">无线电技术</a></li>
+                                <li><a href="#">广播电视网络技术</a></li>
+                                <li><a href="#">有线电视工程技术</a></li>
+                                <li><a href="#">光电子技术</a></li>
+                                <li><a href="#">智能产品开发</a></li>
+                                <li><a href="#">信息技术应用</a></li>
+                                <li><a href="#">电光源技术</a></li>
+                                <li><a href="#">电子产品质量检测</a></li>
+                                <li><a href="#">飞行器电子装配技术</a></li>
+                                <li><a href="#">信息技术应用</a></li>
+                                <li><a href="#">数字媒体技术</a></li>
+                                <li><a href="#">无损检测技术</a></li>
+                                <li><a href="#">电子组装技术与设备</a></li>
+                                <li><a href="#">嵌入式系统工程</a></li>
+                                <li><a href="#">电子电路设计与工艺</a></li>
+                                <li><a href="#">单片机与应用电子技术</a></li>
+                                <li><a href="#">汽车智能技术</a></li>
+                                <li><a href="#">液晶显示与光电技术</a></li>
+                                <li><a href="#">测控仪器与仪表</a></li>
+                                <li><a href="#">移动互联应用技术</a></li>
+                                <li><a href="#">计算机速录</a></li>
+                                <li><a href="#">半导体照明技术与应用</a></li>
+                                <li><a href="#">光伏产品检测技术</a></li>
+                                <li><a href="#">智能手机软件应用技术</a></li>
+                                <li><a href="#">光伏应用技术</a></li>
+                                <li><a href="#">电子信息类(中外合作办学)</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">通信类 (5903)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">通信技术</a></li>
+                                <li><a href="#">移动通信技术</a></li>
+                                <li><a href="#">计算机通信</a></li>
+                                <li><a href="#">程控交换技术</a></li>
+                                <li><a href="#">通信网络与设备</a></li>
+                                <li><a href="#">通信系统运行管理</a></li>
+                                <li><a href="#">通信线路</a></li>
+                                <li><a href="#">光纤通信</a></li>
+                                <li><a href="#">邮政通信</a></li>
+                                <li><a href="#">呼叫中心服务与管理</a></li>
+                                <li><a href="#">通信工程设计与管理</a></li>
+                                <li><a href="#">电信商务</a></li>
+                                <li><a href="#">移动通信运营与服务</a></li>
+                                <li><a href="#">通信工程监理</a></li>
+                                <li><a href="#">传感网技术</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- 电子信息结束 -->
+                    <!-- 环保、气象与安全开始 -->
+                    <div class="contain-r-hbqxyaq junior-details">
+                        <div class="classes">
+                            <div class="classes-hd">环保类 (6001)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">环境监测与治理技术</a></li>
+                                <li><a href="#">环境监测与评价</a></li>
+                                <li><a href="#">农业环境保护技术</a></li>
+                                <li><a href="#">资源环境与城市管理</a></li>
+                                <li><a href="#">城市检测与工程技术</a></li>
+                                <li><a href="#">水环境监测与保护</a></li>
+                                <li><a href="#">城市水净化技术</a></li>
+                                <li><a href="#">室内检测与控制技术</a></li>
+                                <li><a href="#">环境工程技术</a></li>
+                                <li><a href="#">环境监测与减排技术</a></li>
+                                <li><a href="#">核辐射检测与防护技术</a></li>
+                                <li><a href="#">环境信息技术</a></li>
+                                <li><a href="#">环保类(中外合作办学)</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">气象类 (6002)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">大气科学技术</a></li>
+                                <li><a href="#">大气探测技术</a></li>
+                                <li><a href="#">应用气象技术</a></li>
+                                <li><a href="#">防雷技术</a></li>
+                                <li><a href="#">生态与农业气象技术</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">安全类 (6003)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">工业环保与安全技术</a></li>
+                                <li><a href="#">救援技术</a></li>
+                                <li><a href="#">安全技术管理</a></li>
+                                <li><a href="#">化工生产安全技术</a></li>
+                                <li><a href="#">工程安全评价与监理</a></li>
+                                <li><a href="#">安全生产监测监控</a></li>
+                                <li><a href="#">安全控制技术</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- 环保、气象与安全结束 -->
+                    <!-- 轻纺食品开始 -->
+                    <div class="contain-r-qfsp junior-details">
+                        <div class="classes">
+                            <div class="classes-hd">轻化工类 (6101)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">染整技术</a></li>
+                                <li><a href="#">高分子材料加工技术</a></li>
+                                <li><a href="#">制浆造纸技术</a></li>
+                                <li><a href="#">香料香精工艺</a></li>
+                                <li><a href="#">表面精饰工艺</a></li>
+                                <li><a href="#">皮革加工技术</a></li>
+                                <li><a href="#">皮革制品设计与工艺</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">纺织服装类 (6102)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">现代纺织技术</a></li>
+                                <li><a href="#">针织技术与针织服装</a></li>
+                                <li><a href="#">丝绸技术</a></li>
+                                <li><a href="#">服装设计</a></li>
+                                <li><a href="#">染织艺术设计</a></li>
+                                <li><a href="#">纺织品装饰艺术设计</a></li>
+                                <li><a href="#">新型纺织机电技术</a></li>
+                                <li><a href="#">纺织品检验与贸易</a></li>
+                                <li><a href="#">纺织品设计</a></li>
+                                <li><a href="#">服装工艺技术</a></li>
+                                <li><a href="#">服装设计与加工</a></li>
+                                <li><a href="#">服装制版与工艺</a></li>
+                                <li><a href="#">服用材料设计与应用</a></li>
+                                <li><a href="#">服装营销与管理</a></li>
+                                <li><a href="#">棉花检验加工与经营</a></li>
+                                <li><a href="#">鞋类与皮具设计</a></li>
+                                <li><a href="#">服装陈列与展示设计</a></li>
+                                <li><a href="#">针织品工艺与贸易</a></li>
+                                <li><a href="#">鞋类设计与工艺</a></li>
+                                <li><a href="#">纺织服装类(中外合作办学)</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">食品类 (6103)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">食品加工技术</a></li>
+                                <li><a href="#">食品营养与检测</a></li>
+                                <li><a href="#">食品贮运与营销</a></li>
+                                <li><a href="#">食品机械与管理</a></li>
+                                <li><a href="#">食品生物技术</a></li>
+                                <li><a href="#">农畜特产品加工</a></li>
+                                <li><a href="#">粮食工程</a></li>
+                                <li><a href="#">食品卫生检验</a></li>
+                                <li><a href="#">食品分析与检验</a></li>
+                                <li><a href="#">食品分析与检验2</a></li>
+                                <li><a href="#">食品加工及管理</a></li>
+                                <li><a href="#">食品检测及管理</a></li>
+                                <li><a href="#">酿酒技术</a></li>
+                                <li><a href="#">粮油储藏与检测技术</a></li>
+                                <li><a href="#">乳品工艺</a></li>
+                                <li><a href="#">发酵技术</a></li>
+                                <li><a href="#">食品工艺与检测</a></li>
+                                <li><a href="#">营养与食品卫生</a></li>
+                                <li><a href="#">马铃薯生产加工</a></li>
+                                <li><a href="#">制糖生产技术与管理</a></li>
+                                <li><a href="#">功能性食品生产技术</a></li>
+                                <li><a href="#">食品质量与安全监管</a></li>
+                                <li><a href="#">黄酒酿造</a></li>
+                                <li><a href="#">葡萄酒生产与营销</a></li>
+                                <li><a href="#">葡萄与葡萄酒工程</a></li>
+                                <li><a href="#">食品类(中外合作办学)</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">包装印刷类 (6104)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">包装技术与设计</a></li>
+                                <li><a href="#">印刷技术</a></li>
+                                <li><a href="#">印刷图文信息处理</a></li>
+                                <li><a href="#">印刷设备及工艺</a></li>
+                                <li><a href="#">出版与发行</a></li>
+                                <li><a href="#">电子出版技术</a></li>
+                                <li><a href="#">版面编辑与校对</a></li>
+                                <li><a href="#">出版信息管理</a></li>
+                                <li><a href="#">出版与电脑编辑技术</a></li>
+                                <li><a href="#">数字印刷技术</a></li>
+                                <li><a href="#">数字出版</a></li>
+                                <li><a href="#">数字媒体设备管理</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- 轻纺食品结束 -->
+                    <!-- 财经开始 -->
+                    <div class="contain-r-cj junior-details">
+                        <div class="classes">
+                            <div class="classes-hd">财政金融类 (6201)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">财政</a></li>
+                                <li><a href="#">税务</a></li>
+                                <li><a href="#">金融管理与实务</a></li>
+                                <li><a href="#">国际金融</a></li>
+                                <li><a href="#">金融与证券</a></li>
+                                <li><a href="#">金融保险</a></li>
+                                <li><a href="#">保险实务</a></li>
+                                <li><a href="#">医疗保险实务</a></li>
+                                <li><a href="#">资产评估与管理</a></li>
+                                <li><a href="#">证券投资与管理</a></li>
+                                <li><a href="#">投资与理财</a></li>
+                                <li><a href="#">证券与期货</a></li>
+                                <li><a href="#">信用管理</a></li>
+                                <li><a href="#">农村合作金融</a></li>
+                                <li><a href="#">村镇银行经营管理</a></li>
+                                <li><a href="#">机动车保险实务</a></li>
+                                <li><a href="#">物流金融</a></li>
+                                <li><a href="#">服务外包</a></li>
+                                <li><a href="#">边境贸易</a></li>
+                                <li><a href="#">财政金融类(中外合作办学)</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">财务会计类 (6202) (0302)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">财务管理</a></li>
+                                <li><a href="#">财务信息管理</a></li>
+                                <li><a href="#">会计</a></li>
+                                <li><a href="#">会计电算化</a></li>
+                                <li><a href="#">会计与统计核算</a></li>
+                                <li><a href="#">会计与审计</a></li>
+                                <li><a href="#">审计实务</a></li>
+                                <li><a href="#">统计实务</a></li>
+                                <li><a href="#">卫生财会统计</a></li>
+                                <li><a href="#">成本管理与控制</a></li>
+                                <li><a href="#">财务会计类(中外合作办学)</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">经济贸易类 (6203)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">经济管理</a></li>
+                                <li><a href="#">经济信息管理</a></li>
+                                <li><a href="#">国际经济与贸易</a></li>
+                                <li><a href="#">国际贸易实务</a></li>
+                                <li><a href="#">国际商务</a></li>
+                                <li><a href="#">商务经纪与代理</a></li>
+                                <li><a href="#">商务信息管理</a></li>
+                                <li><a href="#">经济贸易类(中外合作办学)</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">市场营销类 (6204)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">市场营销</a></li>
+                                <li><a href="#">市场开发与营销</a></li>
+                                <li><a href="#">营销与策划</a></li>
+                                <li><a href="#">医药营销</a></li>
+                                <li><a href="#">电子商务</a></li>
+                                <li><a href="#">广告经营与管理</a></li>
+                                <li><a href="#">茶叶评审与营销</a></li>
+                                <li><a href="#">市场营销类(中外合作办学)</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">工商管理类 (6205)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">工商企业管理</a></li>
+                                <li><a href="#">工商行政管理</a></li>
+                                <li><a href="#">商务管理</a></li>
+                                <li><a href="#">连锁经营管理</a></li>
+                                <li><a href="#">物流管理</a></li>
+                                <li><a href="#">企业资源计划管理</a></li>
+                                <li><a href="#">客户服务管理</a></li>
+                                <li><a href="#">创业管理</a></li>
+                                <li><a href="#">采购供应管理</a></li>
+                                <li><a href="#">速递服务与管理</a></li>
+                                <li><a href="#">移动商务</a></li>
+                                <li><a href="#">冷链物流技术与管理</a></li>
+                                <li><a href="#">项目管理</a></li>
+                                <li><a href="#">中小企业创业与经营</a></li>
+                                <li><a href="#">工商管理类(中外合作办学)</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- 财经结束 -->
+                    <!-- 医药卫生开始 -->
+                    <div class="contain-r-yyws junior-details">
+                        <div class="classes">
+                            <div class="classes-hd">临床医学类 (6301)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">临床医学</a></li>
+                                <li><a href="#">口腔医学</a></li>
+                                <li><a href="#">中医学</a></li>
+                                <li><a href="#">蒙医学</a></li>
+                                <li><a href="#">藏医学</a></li>
+                                <li><a href="#">维医学</a></li>
+                                <li><a href="#">中西医结合</a></li>
+                                <li><a href="#">针灸推拿</a></li>
+                                <li><a href="#">中医骨伤</a></li>
+                                <li><a href="#">傣医学</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">护理类 (6302)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">护理</a></li>
+                                <li><a href="#">助产</a></li>
+                                <li><a href="#">护理类(中外合作办学)</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">药学类 (6303)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">药学</a></li>
+                                <li><a href="#">中药</a></li>
+                                <li><a href="#">中药鉴定与质量检测技术</a></li>
+                                <li><a href="#">现代中药技术</a></li>
+                                <li><a href="#">蒙药学</a></li>
+                                <li><a href="#">药学类(中外合作办学)</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">医学技术类 (6304)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">医学检验技术</a></li>
+                                <li><a href="#">医学生物技术</a></li>
+                                <li><a href="#">医学影像技术</a></li>
+                                <li><a href="#">眼视光技术</a></li>
+                                <li><a href="#">康复治疗技术</a></li>
+                                <li><a href="#">口腔医学技术</a></li>
+                                <li><a href="#">医学营养</a></li>
+                                <li><a href="#">医疗美容技术</a></li>
+                                <li><a href="#">呼吸治疗技术</a></li>
+                                <li><a href="#">卫生检验与检疫技术</a></li>
+                                <li><a href="#">医疗仪器维修技术</a></li>
+                                <li><a href="#">康复工程技术</a></li>
+                                <li><a href="#">临床工程技术</a></li>
+                                <li><a href="#">中医保健康复技术</a></li>
+                                <li><a href="#">制药设备管理与维护</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">卫生管理类 (6305)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">卫生监督</a></li>
+                                <li><a href="#">卫生信息管理</a></li>
+                                <li><a href="#">公共卫生管理</a></li>
+                                <li><a href="#">医学文秘</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- 医药卫生结束 -->
+                    <!-- 旅游开始 -->
+                    <div class="contain-r-ly junior-details">
+                        <div class="classes">
+                            <div class="classes-hd">旅游管理类 (6401)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">旅游管理</a></li>
+                                <li><a href="#">涉外旅游</a></li>
+                                <li><a href="#">导游</a></li>
+                                <li><a href="#">旅行社经营管理</a></li>
+                                <li><a href="#">景区开发与管理</a></li>
+                                <li><a href="#">酒店管理</a></li>
+                                <li><a href="#">会展策划与管理</a></li>
+                                <li><a href="#">历史文化旅游</a></li>
+                                <li><a href="#">英语导游</a></li>
+                                <li><a href="#">旅游服务与管理</a></li>
+                                <li><a href="#">休闲服务与管理</a></li>
+                                <li><a href="#">休闲旅游</a></li>
+                                <li><a href="#">旅游管理类(中外合作办学)</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">餐饮管理与服务类 (6402)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">餐饮管理与服务</a></li>
+                                <li><a href="#">烹饪工艺与营养</a></li>
+                                <li><a href="#">中西面点工艺</a></li>
+                                <li><a href="#">餐饮食品安全</a></li>
+                                <li><a href="#">西餐工艺</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- 旅游结束 -->
+                    <!-- 公共事业开始 -->
+                    <div class="contain-r-ggsy junior-details">
+                        <div class="classes">
+                            <div class="classes-hd">公共事业类 (6501)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">社会工作</a></li>
+                                <li><a href="#">社区管理与服务</a></li>
+                                <li><a href="#">青少年工作与管理</a></li>
+                                <li><a href="#">社会福利事业管理</a></li>
+                                <li><a href="#">公共关系</a></li>
+                                <li><a href="#">商检技术</a></li>
+                                <li><a href="#">人民武装</a></li>
+                                <li><a href="#">涉外事务管理</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">公共管理类 (6502)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">公共事务管理</a></li>
+                                <li><a href="#">民政管理</a></li>
+                                <li><a href="#">行政管理</a></li>
+                                <li><a href="#">人力资源管理</a></li>
+                                <li><a href="#">劳动与社会保障</a></li>
+                                <li><a href="#">国土资源管理</a></li>
+                                <li><a href="#">海关管理</a></li>
+                                <li><a href="#">环境规划与管理</a></li>
+                                <li><a href="#">电子政务</a></li>
+                                <li><a href="#">客运站务管理</a></li>
+                                <li><a href="#">婚庆服务与管理</a></li>
+                                <li><a href="#">人防与应急管理</a></li>
+                                <li><a href="#">安全服务与管理</a></li>
+                                <li><a href="#">国际质量管理体系认证</a></li>
+                                <li><a href="#">公共管理类(中外合作办学)</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">公共服务类 (6503)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">家政服务</a></li>
+                                <li><a href="#">老年服务与管理</a></li>
+                                <li><a href="#">社区康复</a></li>
+                                <li><a href="#">心理咨询</a></li>
+                                <li><a href="#">科技成果中介服务</a></li>
+                                <li><a href="#">职业中介服务</a></li>
+                                <li><a href="#">现代殡仪技术与管理</a></li>
+                                <li><a href="#">戒毒康复</a></li>
+                                <li><a href="#">手语翻译</a></li>
+                                <li><a href="#">家政管理</a></li>
+                                <li><a href="#">知识产权管理</a></li>
+                                <li><a href="#">健康管理</a></li>
+                                <li><a href="#">康复辅助器具应用与服务</a></li>
+                                <li><a href="#">网络舆情分析</a></li>
+                                <li><a href="#">传媒策划</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- 公共事业结束 -->
+                    <!-- 文化教育开始 -->
+                    <div class="contain-r-whjy junior-details">
+                        <div class="classes">
+                            <div class="classes-hd">语言文化类 (6601)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">汉语</a></li>
+                                <li><a href="#">应用英语</a></li>
+                                <li><a href="#">应用日语</a></li>
+                                <li><a href="#">应用俄语</a></li>
+                                <li><a href="#">应用德语</a></li>
+                                <li><a href="#">应用法语</a></li>
+                                <li><a href="#">应用韩语</a></li>
+                                <li><a href="#">商务英语</a></li>
+                                <li><a href="#">旅游英语</a></li>
+                                <li><a href="#">商务日语</a></li>
+                                <li><a href="#">旅游日语</a></li>
+                                <li><a href="#">文秘</a></li>
+                                <li><a href="#">文物鉴定与修复</a></li>
+                                <li><a href="#">文化事业管理</a></li>
+                                <li><a href="#">文化市场经营与管理</a></li>
+                                <li><a href="#">图书档案管理</a></li>
+                                <li><a href="#">应用西班牙语</a></li>
+                                <li><a href="#">应用阿拉伯语</a></li>
+                                <li><a href="#">应用意大利语</a></li>
+                                <li><a href="#">应用越南语</a></li>
+                                <li><a href="#">应用泰国语</a></li>
+                                <li><a href="#">应用缅甸语</a></li>
+                                <li><a href="#">应用柬埔寨语</a></li>
+                                <li><a href="#">应用老挝语</a></li>
+                                <li><a href="#">中国少数民族语言文化</a></li>
+                                <li><a href="#">书法教育</a></li>
+                                <li><a href="#">茶文化</a></li>
+                                <li><a href="#">应用外国语</a></li>
+                                <li><a href="#">应用葡萄牙语</a></li>
+                                <li><a href="#">应用印尼语</a></li>
+                                <li><a href="#">应用马来语</a></li>
+                                <li><a href="#">文秘速录</a></li>
+                                <li><a href="#">文化艺术管理</a></li>
+                                <li><a href="#">古玩艺术品投资管理</a></li>
+                                <li><a href="#">文化创意与策划</a></li>
+                                <li><a href="#">语言文化类(中外合作办学)</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">教育类 (6602)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">语文教育</a></li>
+                                <li><a href="#">数学教育</a></li>
+                                <li><a href="#">英语教育</a></li>
+                                <li><a href="#">物理教育</a></li>
+                                <li><a href="#">化学教育</a></li>
+                                <li><a href="#">生物教育</a></li>
+                                <li><a href="#">历史教育</a></li>
+                                <li><a href="#">地理教育</a></li>
+                                <li><a href="#">音乐教育</a></li>
+                                <li><a href="#">美术教育</a></li>
+                                <li><a href="#">体育教育</a></li>
+                                <li><a href="#">思想政治教育</a></li>
+                                <li><a href="#">初等教育</a></li>
+                                <li><a href="#">学前教育</a></li>
+                                <li><a href="#">现代教育技术</a></li>
+                                <li><a href="#">特殊教育</a></li>
+                                <li><a href="#">儿童康复</a></li>
+                                <li><a href="#">人群康复</a></li>
+                                <li><a href="#">综合文科教育</a></li>
+                                <li><a href="#">综合理科教育</a></li>
+                                <li><a href="#">计算机教育</a></li>
+                                <li><a href="#">应用心理学</a></li>
+                                <li><a href="#">书法教育</a></li>
+                                <li><a href="#">俄语教育</a></li>
+                                <li><a href="#">幼教保育</a></li>
+                                <li><a href="#">科学教育</a></li>
+                                <li><a href="#">小学教育</a></li>
+                                <li><a href="#">幼儿园管理</a></li>
+                                <li><a href="#">教育类(中外合作办学)</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">体育类 (6603)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">竞技体育</a></li>
+                                <li><a href="#">运动训练</a></li>
+                                <li><a href="#">社会体育</a></li>
+                                <li><a href="#">体育保健</a></li>
+                                <li><a href="#">体育服务与管理</a></li>
+                                <li><a href="#">太极拳</a></li>
+                                <li><a href="#">高尔夫球场服务与管理</a></li>
+                                <li><a href="#">武术</a></li>
+                                <li><a href="#">运动休闲服务与管理</a></li>
+                                <li><a href="#">高尔夫服务与管理</a></li>
+                                <li><a href="#">高尔夫运动技术与管理</a></li>
+                                <li><a href="#">棋艺</a></li>
+                            </ul>
+                        </div>
+                    </div>                
+                    <!-- 文化教育结束 -->
+                    <!-- 艺术设计传媒开始 -->
+                    <div class="contain-r-yssjcm junior-details">
+                        <div class="classes">
+                            <div class="classes-hd">艺术设计类 (6701)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">艺术设计</a></li>
+                                <li><a href="#">产品造型设计</a></li>
+                                <li><a href="#">视觉传达艺术设计</a></li>
+                                <li><a href="#">电脑艺术设计</a></li>
+                                <li><a href="#">人物形象设计</a></li>
+                                <li><a href="#">装潢艺术设计</a></li>
+                                <li><a href="#">装饰艺术设计</a></li>
+                                <li><a href="#">雕塑艺术设计</a></li>
+                                <li><a href="#">珠宝首饰工艺及鉴定</a></li>
+                                <li><a href="#">雕刻艺术与家具设计</a></li>
+                                <li><a href="#">旅游工艺品设计与制作</a></li>
+                                <li><a href="#">广告设计与制作</a></li>
+                                <li><a href="#">多媒体设计与制作</a></li>
+                                <li><a href="#">陶瓷艺术设计</a></li>
+                                <li><a href="#">广告与会展</a></li>
+                                <li><a href="#">美术</a></li>
+                                <li><a href="#">舞台艺术设计</a></li>
+                                <li><a href="#">首饰设计</a></li>
+                                <li><a href="#">皮具设计</a></li>
+                                <li><a href="#">动画设计</a></li>
+                                <li><a href="#">灯具设计与工艺</a></li>
+                                <li><a href="#">游艇装饰设计与工艺</a></li>
+                                <li><a href="#">景观设计</a></li>
+                                <li><a href="#">展示设计</a></li>
+                                <li><a href="#">眼镜设计</a></li>
+                                <li><a href="#">影视制作</a></li>
+                                <li><a href="#">室内装饰设计</a></li>
+                                <li><a href="#">数字媒体设计与制作</a></li>
+                                <li><a href="#">游戏设计与制作</a></li>
+                                <li><a href="#">数字城市技术</a></li>
+                                <li><a href="#">雕刻艺术与工艺</a></li>
+                                <li><a href="#">摄影与摄像艺术</a></li>
+                                <li><a href="#">出版印刷美术设计</a></li>
+                                <li><a href="#">湘绣设计与营销</a></li>
+                                <li><a href="#">湘绣设计与工艺</a></li>
+                                <li><a href="#">服装表演与设计</a></li>
+                                <li><a href="#">广告与装潢设计</a></li>
+                                <li><a href="#">会展艺术设计</a></li>
+                                <li><a href="#">艺术设计类(中外合作办学)</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">表演艺术类 (6702)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">表演艺术</a></li>
+                                <li><a href="#">音乐表演</a></li>
+                                <li><a href="#">舞蹈表演</a></li>
+                                <li><a href="#">服装表演</a></li>
+                                <li><a href="#">影视表演</a></li>
+                                <li><a href="#">戏曲表演</a></li>
+                                <li><a href="#">编导</a></li>
+                                <li><a href="#">模特与礼仪</a></li>
+                                <li><a href="#">武术艺术表演</a></li>
+                                <li><a href="#">钢琴调律</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">广播影视类 (6703)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">广播电视技术</a></li>
+                                <li><a href="#">摄影摄像技术</a></li>
+                                <li><a href="#">音像技术</a></li>
+                                <li><a href="#">影视多媒体技术</a></li>
+                                <li><a href="#">影视动画</a></li>
+                                <li><a href="#">影视广告</a></li>
+                                <li><a href="#">主持与播音</a></li>
+                                <li><a href="#">新闻采编与制作</a></li>
+                                <li><a href="#">电视节目制作</a></li>
+                                <li><a href="#">电视制片管理</a></li>
+                                <li><a href="#">新闻与传播</a></li>
+                                <li><a href="#">信息传播与策划</a></li>
+                                <li><a href="#">传媒策划与管理</a></li>
+                                <li><a href="#">现代传播</a></li>
+                                <li><a href="#">影视灯光艺术</a></li>
+                                <li><a href="#">网络新闻与编辑</a></li>
+                                <li><a href="#">数字传媒艺术</a></li>
+                                <li><a href="#">摄影</a></li>
+                                <li><a href="#">网络与新媒体传播</a></li>
+                                <li><a href="#">广播影视类(中外合作办学)</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- 艺术设计传媒结束 -->
+                    <!-- 公安开始 -->
+                    <div class="contain-r-ga junior-details">
+                        <div class="classes">
+                            <div class="classes-hd">公安管理类 (6801)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">侦查</a></li>
+                                <li><a href="#">经济犯罪侦查</a></li>
+                                <li><a href="#">安全保卫</a></li>
+                                <li><a href="#">警卫</a></li>
+                                <li><a href="#">治安管理</a></li>
+                                <li><a href="#">交通管理</a></li>
+                                <li><a href="#">警察管理</a></li>
+                                <li><a href="#">公共安全管理</a></li>
+                                <li><a href="#">信息网络安全监察</a></li>
+                                <li><a href="#">防火管理</a></li>
+                                <li><a href="#">森林消防</a></li>
+                                <li><a href="#">边防检查</a></li>
+                                <li><a href="#">边境管理</a></li>
+                                <li><a href="#">禁毒</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">公安指挥类 (6802)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">警察指挥与战术</a></li>
+                                <li><a href="#">边防指挥</a></li>
+                                <li><a href="#">边防船艇指挥</a></li>
+                                <li><a href="#">边防通信指挥</a></li>
+                                <li><a href="#">消防指挥</a></li>
+                                <li><a href="#">参谋业务</a></li>
+                                <li><a href="#">抢险救援</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">公安技术类 (6803)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">刑事技术</a></li>
+                                <li><a href="#">警犬技术</a></li>
+                                <li><a href="#">船艇动力管理</a></li>
+                                <li><a href="#">船艇技术</a></li>
+                                <li><a href="#">边防机要</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">部队基础工作类 (6804)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">部队政治工作</a></li>
+                                <li><a href="#">部队财务会计</a></li>
+                                <li><a href="#">部队后勤管理</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- 公安结束 -->
+                    <!-- 法律开始 -->
+                    <div class="contain-r-fl junior-details">
+                        <div class="classes">
+                            <div class="classes-hd">法律实务类 (6901)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">司法助理</a></li>
+                                <li><a href="#">法律文秘</a></li>
+                                <li><a href="#">司法警务</a></li>
+                                <li><a href="#">法律事务</a></li>
+                                <li><a href="#">书记官</a></li>
+                                <li><a href="#">检察事务</a></li>
+                                <li><a href="#">经济法律事务</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">法律执行类 (6902)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">刑事执行</a></li>
+                                <li><a href="#">民事执行</a></li>
+                                <li><a href="#">行政执行</a></li>
+                                <li><a href="#">监狱管理</a></li>
+                                <li><a href="#">劳教管理</a></li>
+                                <li><a href="#">社区矫正</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">司法技术类 (6903)<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">司法鉴定技术</a></li>
+                                <li><a href="#">刑事侦查技术</a></li>
+                                <li><a href="#">司法鉴定技术</a></li>
+                                <li><a href="#">安全防范技术</a></li>
+                                <li><a href="#">司法信息技术</a></li>
+                                <li><a href="#">司法信息安全</a></li>
+                                <li><a href="#">罪犯心理测量与矫正技术</a></li>
+                                <li><a href="#">司法会计</a></li>
+                                <li><a href="#">涉毒人员矫治</a></li>
+                                <li><a href="#">职务犯罪预防与控制</a></li>
+                                <li><a href="#">安全技术与文秘</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- 法律结束 -->
+                <!-- 专科分类结束 -->
+                </div>
+            </div>
+                <!-- 右侧分类结束 -->
+        </div>
+
+            <!-- 专业库分类选择结束 -->
+        <!-- 查专业内容结束 -->
+        <!--版权开始-->
+        <footer class="copyright">
+            <div class="copyright-l-hd row">
+            	<a class="about col col-50" href="about.html">关于</a>
+                <a class="contact col col-50" href="feedback.html">反馈</a>
+            </div>
+            <div class="copyright-l-ft">
+             Copyright © 2014 ( 粤ICP备14080709号-2 )
+             <br />utowin from 优途	
+            </div>
+        </footer>
+        <!--版权结束-->
+        <!-- 回到顶部 -->
+        <div class="toTop"></div>
+	</section>
+</section>     
+</body>
+</html>

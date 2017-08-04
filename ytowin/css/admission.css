@@ -1,0 +1,28 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*录取信息查询内容开始*/
+    /*信息查询导航开始*/
+.admission-nav{ text-align: center; padding-top: 0.2rem; padding-bottom: 0.2rem; margin-top: 0.4rem; background: #e2e3e3; overflow:hidden;}
+.admission-nav .tab{ border-right: 1px solid #a0a0a0; height: 0.8rem; color: #737373; line-height: 0.8rem;}
+.admission-nav .tab.on{ color:#fff; background: #ff7357;border-right: 1px solid #ff7357;}
+    /*信息查询导航结束*/
+.inquiry-mn{ height:15.4rem ;width: 12.8rem; position: relative; overflow: hidden;}
+.query{ width: 12.0rem;position: absolute;top: 0; left:0;}
+    /*根据院校查询开始*/
+.query{ padding-left: 0.4rem; padding-right: 0.4rem; margin-top: 0.4rem; font-size: 0.4rem; line-height:1rem;}    
+.query-hd{ background: #21abff; height:1rem; line-height: 1rem; color: #fff;}
+.query-hd span{ position:relative; padding-left: 1.04rem;}
+.query-hd span:before{ content:"\e619"; font-family: "iconfont"; position:absolute; top: -0.18rem; color:#95ccee; left:  0.2rem; font-size: 0.6rem;}
+.query-mn li{ padding-top: 0.4rem; padding-bottom: 0.4rem; }
+.form-text{display:block; height: 1rem;  line-height: 1rem; text-align: right;}
+.form-select{ height: 1rem;line-height: 1rem; border:1px solid #ccc; border-radius: 0.1rem; margin-left: 0.4rem; font-size: 0.46rem;display:block; padding-left: 0.2rem;}
+.error-tip{ display:block; height: 1rem; text-align: center;color: red;}
+.query-mn-ft{ text-align: center;}
+.query-mn-ft .submit{ margin-left: auto; margin-right: auto;  display: block; color: #fff;  background-color: #ff7457; width:4.0rem; border-radius: 0.1rem;}
+.query-mn-ft p{ padding-top: 0.4rem; color: #21abff;}
+    /*根据院校查询结束*/
+    /*根据分数/位次选学校开始*/
+.radio-ipt{ height: 0.6rem; width:0.6rem; margin-top: 0.24rem; margin-left: 0.4rem; margin-right: 0.1rem;}
+    /*根据分数/位次选学校结束*/
+/*录取信息查询内容结束*/

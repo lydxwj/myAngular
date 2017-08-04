@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telphone=no, email=no" />
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="MobileOptimized" content="320">
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-orientation" content="portrait">
+    <meta name="full-screen" content="yes">
+    <meta name="x5-fullscreen" content="true">
+    <meta name="browsermode" content="application">
+    <meta name="x5-page-mode" content="app">
+    <meta name="msapplication-tap-highlight" content="no">
+    <title>艺文办公—专业办公用品采购平台</title>
+	<link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="css/base.css" />
+	<script src="js/TouchSlide.1.1.js"></script>
+    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+	<script type="application/javascript" src="http://cdn.bootcss.com/fastclick/1.0.6/fastclick.js"></script>
+    <script type="text/javascript">
+	    if ('addEventListener' in document) {
+	        document.addEventListener('DOMContentLoaded', function() {
+	            FastClick.attach(document.body);
+	        }, false);
+	    }
+    </script>
+</head>
+<body>
+   <section class="in-body">
+   		<section class="hidded">
+		   <!-- 头部分区 -->
+			<header class="header wrap">
+				<div class="header-left">
+					<ul>
+						<li><a href="#">登录</a></li>
+						<li><a href="#">注册</a></li>
+						<li><a href="#">购物车</a></li>
+					</ul>
+				</div>
+				<div class="header-right">
+					<a href="javascript:;" class="language-img"><img class="img" src="img/language1.png" alt="" /></a>
+					<div class="language">
+						<ul>
+							<li><a href="#"><img src="img/language1.png" alt="" /></a></li>
+							<li><a href="#"><img src="img/language2.png" alt="" /></a></li>
+						</ul>
+					</div>
+				</div>
+			</header>
+			<!--焦点图分区-->
+			<section class="banner wrap">
+				<div id="focus" class="focus">
+						<div class="hd">
+							<ul></ul>
+						</div>
+						<div class="bd">
+							<ul>
+								<li><a href="#"><img src="img/banner01.jpg" /></a></li>
+								<li><a href="#"><img src="img/banner02.jpg" /></a></li>
+								<li><a href="#"><img src="img/banner03.jpg" /></a></li>
+							</ul>
+						</div>
+					</div>
+					<script type="text/javascript">
+						TouchSlide({ 
+							slideCell:"#focus",
+							titCell:".hd ul", //开启自动分页 autoPage:true ，此时设置 titCell 为导航元素包裹层
+							mainCell:".bd ul", 
+							effect:"leftLoop", 
+							autoPlay:true,//自动播放
+							autoPage:true //自动分页
+						});
+					</script>
+			</section>
+			<!--搜索分区-->
+			<section class="search wrap">
+				<div class="search-in">搜索千驹堂商品</div>
+			</section>
+			<!--搜索弹窗-->
+			<section class="search-bg">
+				<div class="search-bg">
+					<div class="search-bg-top">
+						<div class="to-search">&#xe61e;</div>
+						<span></span>
+						<form method="post">
+							
+							<input class="search-bg-ipt" name="in_sl" placeholder="搜索千驹堂商品" required   type="search" list="tips" />
+							<datalist id="tips">
+								<option>办公设备</option>
+								<option>生活用品</option>
+								<option>本册纸品</option>
+								<option>数码产品</option>
+								<option>办公家具</option>
+								<option>办公耗材</option>
+							</datalist>
+							<input class="search-bg-btn" type="submit" value="" />
+						</form>
+					</div>
+				</div>
+			</section>
+			<!--商品标题商品分类-->
+			<section class="shop row wrap">
+				<div class="shop-fl col col-25">
+					<div class="shop-fl-hd"><a href="#"></a></div>
+					<div class="shop-fl-mn"><a href="#">商品分类</a></div>
+				</div>
+				<div class="shop-zc col col-25">
+					<div class="shop-zc-hd"><a href="#"></a></div>
+					<div class="shop-zc-mn"><a href="#">会员注册</a></div>
+				</div>
+				<div class="shop-dl col col-25">
+					<div class="shop-dl-hd"><a href="#"></a></div>
+					<div class="shop-dl-mn"><a href="#">会员登录</a></div>
+				</div>
+				<div class="shop-car col col-25">
+					<div class="shop-car-hd"><a href="#"></a></div>
+					<div class="shop-car-mn"><a href="#">购物车</a></div>
+				</div>
+			</section>
+			<!--商品展示一区一楼-->
+			<section class="shopping1 wrap row">
+				<div class="col-25 col">
+					<div class="shopping-hd"><a href="#"></a></div>
+					<div class="shopping-mn"><a href="#">办公设备</a></div>
+				</div>
+				<div class="col-25 col">
+					<div class="shopping-hd"><a href="#"></a></div>
+					<div class="shopping-mn"><a href="#">办公耗材</a></div>
+				</div>
+				<div class="col-25 col">
+					<div class="shopping-hd"><a href="#"></a></div>
+					<div class="shopping-mn"><a href="#">本册纸品</a></div>
+				</div>
+				<div class="col-25 col">
+					<div class="shopping-hd"><a href="#"></a></div>
+					<div class="shopping-mn"><a href="#">生活用品</a></div>
+				</div>
+			</section>
+			<!--商品展示一区二楼-->
+			<section class="shopping2 wrap row">
+				<div class="col-25 col">
+					<div class="shopping-hd"><a href="#"></a></div>
+					<div class="shopping-mn"><a href="#">生活用品</a></div>
+				</div>
+				<div class="col-25 col">
+					<div class="shopping-hd"><a href="#"></a></div>
+					<div class="shopping-mn"><a href="#">数码产品</a></div>
+				</div>
+				<div class="col-25 col">
+					<div class="shopping-hd"><a href="#"></a></div>
+					<div class="shopping-mn"><a href="#">礼品街</a></div>
+				</div>
+				<div class="col-25 col">
+					<div class="shopping-hd"><a href="#"></a></div>
+					<div class="shopping-mn"><a href="#">办公家具</a></div>
+				</div>
+			</section>
+			<!--商品展示一区三楼-->
+			<section class="shopping3 wrap row">
+				<div class="col-50  col"><a href="#">潮流服饰</a>
+					<p><a href="#">—Fashion—</a></p>
+				</div>
+				<div class="col-50 col">
+					<a href="#"></a>
+				</div>
+			</section>
+			<!--商品展示一区四楼-->
+			<section class="shopping4 wrap row">
+				<div class="col-50 col">
+					<a href="#"></a>
+				</div>
+				<div class="col-50 col"><a href="#">潮流服饰</a>
+					<p><a href="#">—Fashion—</a></p>
+				</div>		
+			</section>
+			<!--新品上市-->
+			<section class="newHot wrap row">
+				<div class="newHot-l col col-50"><a href="#">新货上市</a></div>
+				<div class="newHot-mn col col-25">
+					<div class="newHot-mn-hd"><a href="#">在线客服</a></div>
+					<div class="newHot-mn-ft"><a href="#">门店信息</a></div>
+				</div>
+				<div class="newHot-r col col-25">
+					<div class="newHot-r-hd"><a href="#">服装展示</a></div>
+					<div class="newHot-r-ft"><a href="#">活动促销</a></div>
+				</div>
+			</section>
+			<!--新品fashion的logo-->
+			<section class="newFh-logo wrap row">
+				<div class="news col col-50"><a href="#"></a></div>
+				<div class="fashion-line col col-50">
+					<div class="fashion"><a href="#"></a></div>
+				</div>
+			</section>
+			<!--VIP会员-->
+			<section class="vip wrap row">
+				<div class="newHot-l col col-50"><a href="#">VIP会员</a></div>
+				<div class="newHot-mn col col-25">
+					<div class="newHot-mn-hd"><a href="#">货到付款</a></div>
+					<div class="newHot-mn-ft"><a href="#">购物指南</a></div>
+				</div>
+				<div class="newHot-r col col-25">
+					<div class="newHot-r-hd"><a href="#">全天营业</a></div>
+					<div class="newHot-r-ft"><a href="#">极速送货</a></div>
+				</div>
+			</section>
+			<!--课程安排-->
+			<section class="classes wrap row">
+				<div class="classes-l col col-50"><a href="#">课程安排</a></div>
+				<div class="classes-r col col-50">
+					<div class="classes-r-hd"><a href="#">注册会员</a></div>
+					<div class="classes-r-ft"><a href="#">在线客服</a></div>
+				</div>
+			</section>
+			<!--商品展示二区一楼-->
+			<section class="shopping-1 wrap row">
+				<div class="shopping-line col col-50">
+					<div class="shopping-1-l">
+					<div class="shopping-1-l-hd"><a href="#"></a></div>
+					<div class="shopping-1-l-ft">
+						<p><a href="#">2013新款 得力3904高端点钞机银行专用全智能 验钞机USB升级正品</a></p>
+						<p><a href="#">品牌: 得力/deli</a></p>
+						<p><a href="#">颜色: 白色</a></p>
+						<div><a href="#">&yen;1420.00</a></div>
+					</div>		
+				</div>
+				</div>
+				<div class="shopping-line col col-50">
+					<div class="shopping-1-r">
+					<div class="shopping-1-l-hd"><a href="#"></a></div>
+					<div class="shopping-1-l-ft">
+						<p><a href="#">Deli/得力0386订书机 重型订书机 省力订书机 装订120页</a></p>
+						<p><a href="#">品牌: 得力/deli</a></p>
+						<p><a href="#">颜色: 黑色</a></p>
+						<div><a href="#">&yen;105.00</a></div>
+					</div>
+				</div>
+				</div>	
+			</section>
+			<!--商品展示二区二楼-->
+			<section class="shopping-2 wrap row">
+				<div class="shopping-line col col-50">
+					<div class="shopping-1-l">
+						<div class="shopping-1-l-hd"><a href="#"></a></div>
+						<div class="shopping-1-l-ft">
+							<p><a href="#">deli得力新款考勤机3953 纸卡打卡机 停电可打卡 全国联保特价</a></p>
+							<p><a href="#">品牌: 得力/deli</a></p>
+							<p><a href="#">颜色: 白色</a></p>
+							<div><a href="#">&yen;450.00</a></div>
+						</div>		
+					</div>
+				</div>
+				<div class="shopping-line col col-50">
+					<div class="shopping-1-r">
+					<div class="shopping-1-l-hd"><a href="#"></a></div>
+					<div class="shopping-1-l-ft">
+						<p><a href="#">HP Color LaserJet Professional CP5225n (CE711A) 彩色激光打印</a></p>
+						<p><a href="#">品牌: 惠普/HP</a></p>
+						<p><a href="#">颜色: 彩色</a></p>
+						<div><a href="#">&yen;15999.00</a></div>
+					</div>
+				</div>
+				</div>	
+			</section>
+			<!--商品展示二区三楼-->
+			<section class="shopping-3 wrap row">
+				<div class="shopping-line col col-50">
+					<div class="shopping-1-l">
+					<div class="shopping-1-l-hd"><a href="#"></a></div>
+					<div class="shopping-1-l-ft">
+						<p><a href="#">HP LaserJet Pro 700 M701a A3黑白激光打印机 A3激光打印机新品</a></p>
+						<p><a href="#">品牌: 惠普/HP</a></p>
+						<p><a href="#">颜色: 黑白</a></p>
+						<div><a href="#">&yen;6388.00</a></div>
+					</div>		
+				</div>
+				</div>
+				<div class="shopping-line col col-50">
+					<div class="shopping-1-r">
+					<div class="shopping-1-l-hd"><a href="#"></a></div>
+					<div class="shopping-1-l-ft">
+						<p><a href="#">HP LaserJet 企业级 700 MFP M725dn 数码多功能一体机 CF066A</a></p>
+						<p><a href="#">品牌: 惠普/HP</a></p>
+						<p><a href="#">颜色: 黑白</a></p>
+						<div><a href="#">&yen;28888.00</a></div>
+					</div>
+				</div>
+				</div>	
+			</section>
+			<!--商品展示二区四楼-->
+			<section class="shopping-4 wrap row">
+				<div class="shopping-line col col-50">
+					<div class="shopping-1-l">
+					<div class="shopping-1-l-hd"><a href="#"></a></div>
+					<div class="shopping-1-l-ft">
+						<p><a href="#">HP LaserJet 企业级 700 MFP M725f 数码多功能一体机 CF067A</a></p>
+						<p><a href="#">品牌: 惠普/HP</a></p>
+						<p><a href="#">颜色: 黑白</a></p>
+						<div><a href="#">&yen;33599.00</a></div>
+					</div>		
+				</div>
+				</div>
+				<div class="shopping-line col col-50">	
+					<div class="shopping-1-r">
+					<div class="shopping-1-l-hd"><a href="#"></a></div>
+					<div class="shopping-1-l-ft">
+						<p><a href="#">HP 惠普 Deskjet 1018 家庭彩色喷墨打印机  包邮替代HP2010</a></p>
+						<p><a href="#">品牌: 惠普/HP</a></p>
+						<p><a href="#">颜色: 彩色</a></p>
+						<div><a href="#">&yen;399.00</a></div>
+					</div>
+				</div>
+				</div>	
+			</section>
+			 <!-- toTop -->
+			<section class="toTop wrap"><a href="#">Top</a></section>
+			<!--底部版权-->
+			<footer class="footer wrap">
+				<p>&copy;2014 QIANJUTANG.COM 版权所有</p>
+			</footer>
+		</section>
+		<!--导航--> 
+   		<nav class="nav wrap">
+			<div class="nav-mn">
+				<div class="nav-btn"></div>
+				<ul class="nav-tap">
+					<li class="current"><a href="#">首页</a></li>
+					<li><a href="#"><span></span>全部商品分类</a></li>
+					<li><a href="#"><span></span>设计坊</a></li>
+					<li><a href="#"><span></span>礼品街</a></li>
+					<li><a href="#">购物车</a></li>
+					<li><a href="#">会员中心</a></li>
+				</ul>
+			</div>
+		</nav>
+	</section>
+</body>
+</html>

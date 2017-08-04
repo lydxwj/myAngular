@@ -1,0 +1,24 @@
+@charset "utf-8";
+/* CSS Document */
+html,body{ height: 100%;}
+/*测评记录内容开始*/
+.collecthistory .empty{ padding-left: 0.4rem; padding-right: 0.4rem;}
+.collecthistory .empty a{display: inline-block;padding-right: 0.2rem; padding-left: 0.2rem;white-space: nowrap;line-height: 0.8rem;border-radius: 0.1rem; border: 1px solid #2fbbd6; margin-left: 0.4rem;}
+    /*大学展示开始*/
+.college-show{ padding-left: 0.4rem; padding-right: 0.4rem;}
+.college-list{ border: 1px solid #ccc; padding:0.2rem; margin-top: 0.4rem;border-radius: 0.2rem;}
+.college-logo{ height: 2.0rem; width:2.0rem;}
+.college-logo img{ height:100%; width: 100%;}
+
+.college-logo a{ display:block; width:100%; height: 100%;}
+.college-name{width: 7.8rem;padding-left: 0.2rem;}
+.college-name .name{ border-bottom: 1px solid #ccc;line-height: 0.9rem; font-weight: 700; display: inline-block;}
+.college-collect{display:inline-block; padding-right: 0.4rem; padding-left: 0.4rem;white-space: nowrap;line-height: 0.8rem;border-radius: 0.1rem; border: 1px solid #2fbbd6; margin-top: 0.2rem;}
+.college-collect.current{ background-color: #FD3919; color:#fff;border-color: #FD3919;}
+.college-tb{ display:inline-block; width: 0.7rem; height: 0.6rem;background-image:url(../img/college-tub1.png); background-size: cover; background-position: center; background-repeat: no-repeat; margin-top: 0.26rem;}
+.college-tub2{ background-image:url(../img/college-tub2.png); }
+.college-tub3{ background-image:url(../img/college-tub3.png); }
+.college-tub4{ background-image:url(../img/college-tub4.png); }
+.college-name .rank{ line-height: 1rem;}
+.college-cancel a{ display: inline-block; width: 1.2rem; text-align: center; line-height: 1rem; background: #f24a09; color:#fff;border-radius: 0.1rem;}
+

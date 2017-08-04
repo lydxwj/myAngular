@@ -1,0 +1,39 @@
+@charset "utf-8";
+/* CSS Document */
+/*查询详情内容开始*/
+.admissionContent{ padding-left: 0.2rem; padding-right: 0.2rem;}
+
+    /*根据分数/位次查询详情开始*/
+        /*头部标题*/
+.ac-header{ text-align: center; font-size: 0.5rem; line-height: 1.0rem;padding-top: 0.2rem;}
+        /*表格标题*/
+.ac-chart-tt{ margin-top: 0.4rem; border-radius: 0.1rem; border: 1px solid #2fbbd6; padding-left: 0.2rem;padding-right: 0.2rem; line-height: 0.8rem;margin-bottom: 0.4rem; }
+        /*表格开始*/
+.ac-chart-hd{ text-align: center; line-height: 0.8rem; border-top: 1px solid #ccc;border-left: 1px solid #ccc;border-bottom: 1px solid #ccc;border-right: 1px solid #ccc;background-color: #2bbfd6;}
+.ac-chart-hd .chart-td{ padding-left: 0.2rem; padding-right: 0.2rem; box-sizing: border-box; border-right: 1px solid #ccc;  color: #fff;}
+.ac-chart-hd .chart-td.chart-td-mid{display:flex;-webkit-box-align: center;  -moz-box-align: center;-ms-flex-align: center;-webkit-align-items: center; align-items: center;   display: -webkit-box;  display: -moz-box; display: -ms-flexbox; display: -webkit-flex;-webkit-box-pack: center; -moz-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center;justify-content: center;}
+.ac-chart-mn .chart-td.chart-td-mid{display:flex;-webkit-box-align: center;  -moz-box-align: center;-ms-flex-align: center;-webkit-align-items: center; align-items: center;   display: -webkit-box;  display: -moz-box; display: -ms-flexbox; display: -webkit-flex;-webkit-box-pack: center; -moz-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center;justify-content: center;}
+.ac-chart-hd .chart-td.nobor{ border-right: 0 none;}
+.ac-chart-mn .chart-td.nobor{ border-right: 0 none;}
+.ac-chart-mn{ text-align: center; line-height: 0.8rem; border-left: 1px solid #ccc;border-bottom: 1px solid #ccc;border-right: 1px solid #ccc;}
+.ac-chart-mn .chart-td{ padding-left: 0.2rem; padding-right: 0.2rem; box-sizing: border-box; border-right: 1px solid #ccc; word-wrap: break-word;}
+.ac-chart-mn a{ display: block; color: #2191a3;}
+    /*根据分数/位次查询详情结束*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

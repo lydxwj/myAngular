@@ -1,0 +1,12 @@
+@charset "utf-8";
+/* CSS Document */
+/*注册页面第二页开始*/
+.reg-act-ipt{ height: 1rem; width: 10.4rem; background: #2bbfd6; color:#fff;  margin-top: 0.4rem; margin-bottom: 0.4rem; text-align: center; font-size: 0.52rem; line-height: 1.0rem; border-radius: 0.1rem;}
+.register-ipt-ft a{  padding-left: 0.32rem; padding-right: 0.32rem; border: 1px solid #ccc; border-radius: 0.1rem;  line-height: 0.8rem; background: #2bbfd6; color:#fff;} 
+.active-limite{ padding-right: 1.2rem; padding-left: 1.2rem;}   
+.limite-hd{color: #fe4141;position:relative; font-size: 0.48rem;padding-left: 0.8rem; margin-top: 0.4rem; margin-bottom: 0.8rem;}
+.limite-hd span{ position: absolute; left:0;top: 0.04rem; height: 0.64rem; width: 0.64rem;background-image:url(../img/reg-act.jpg); background-size: cover; background-position: center; background-repeat: no-repeat; }
+.limite-mn{ padding-bottom: 0.8rem;}
+.limite-mn li{ float: left; padding-left: 0.32rem; padding-right: 0.32rem; border: 1px solid #ccc; border-radius: 0.1rem; margin-right:0.3rem; line-height: 0.8rem; margin-bottom: 0.4rem;}   
+/*注册页面第二页结束*/
+

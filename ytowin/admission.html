@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telphone=no, email=no" />
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="MobileOptimized" content="320">
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-orientation" content="portrait">
+    <meta name="full-screen" content="yes">
+    <meta name="x5-fullscreen" content="true">
+    <meta name="browsermode" content="application">
+    <meta name="x5-page-mode" content="app">
+    <meta name="msapplication-tap-highlight" content="no">
+    <title>录取信息查询</title>
+	<link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="css/base.css" />
+    <link rel="stylesheet" type="text/css" href="css/admission.css" />
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/device.min.js"></script>
+    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+	<script type="application/javascript" src="http://cdn.bootcss.com/fastclick/1.0.6/fastclick.js"></script>
+    <script type="text/javascript" src="js/base.js"></script>
+    <script type="text/javascript" src="js/admission.js"></script>
+</head>
+<body>
+<section class="wrap return">   	
+	<section class="fixed"> 
+    <!--头部开始-->
+    	<header class="header clearfix">
+            <div class="pageup fl"><a href="javascript:history.go(-1);"></a></div>
+    		<h1 class="fl">录取信息查询</h1>
+            <nav class="nav fr">
+                <div class="nav-mn">
+                    <div class="nav-btn"></div>
+                    <ul class="nav-tap">
+                        <li>
+                            <a class="nav-tap-login" href="login.html">登录</a>
+                            <a class="nav-tap-info" href="users.html">个人中心</a>
+                        </li>
+                        <li class="nav-tabLi">
+                            <a class="nav-tap-login" href="register.html">注册</a>
+                            <a class="nav-tap-info" href="javascript:;">退出</a>
+                        </li>
+                        <li><a href="index.html">首页</a></li>
+                        <li><a href="college.html">找大学</a></li>
+                        <!-- <li><a href="voluntary.html">志愿模拟填报</a></li> -->
+                        <li><a href="evaluation.html">性格与专业测</a></li>
+                        <li><a href="major.html">搜专业</a></li>
+                        <li><a href="branch.html">文理分科测</a></li>
+                        <li><a href="admission.html">录取信息查询</a></li>
+                        <li><a href="industry.html">行业职业库</a></li>
+                        <li><a href="insight.html">自我洞悉</a></li>
+                        
+                    </ul>
+                </div>
+            </nav>
+    	</header>
+	</section>          
+    <!--头部结束-->
+	<section class="main">
+        <!-- 录取信息查询内容开始 -->
+            <!-- 信息查询导航开始 -->
+        <div class="admission-nav row">
+            <div class="tab on col col-20">院校</div>
+            <div class="tab col col-20">类型</div>
+            <div class="tab col col-20">分数</div>
+            <div class="tab col col-20">专业</div>
+            <div class="tab col col-20">同分</div>    
+        </div>
+            <!-- 信息查询导航结束 -->
+            <!-- 根据院校查询开始 -->
+        <section class="inquiry-mn">
+            <div class="query">
+                <div class="query-hd">
+                    <span>根据院校查询</span>
+                </div>   
+                <ul class="query-mn">
+                    <li class="row">
+                        <span class="form-text col col-40">院校所在省份：</span>
+                        <select id="province-1" class="form-select col col-50">
+                            <option value="">请选择省份</option>
+                            <option value="34">A 安徽</option>
+                            <option value="11">B 北京</option>
+                            <option value="50">C 重庆</option>
+                            <option value="35">F 福建</option>
+                            <option value="44">G 广东</option>
+                            <option value="62">G 甘肃</option>
+                            <option value="52">G 贵州</option>
+                            <option value="45">G 广西</option>
+                            <option value="42">H 湖北</option>
+                            <option value="23">H 黑龙江</option>
+                            <option value="13">H 河北</option>
+                            <option value="41">H 河南</option>
+                            <option value="43">H 湖南</option>
+                            <option value="46">H 海南</option>
+                            <option value="32">J 江苏</option>
+                            <option value="22">J 吉林</option>
+                            <option value="36">J 江西</option>
+                            <option value="21">L 辽宁</option>
+                            <option value="64">N 宁夏</option>
+                            <option value="15">N 内蒙古</option>
+                            <option value="63">Q 青海</option>
+                            <option value="31">S 上海</option>
+                            <option value="51">S 四川</option>
+                            <option value="61">S 陕西</option>
+                            <option value="37">S 山东</option>
+                            <option value="14">S 山西</option>
+                            <option value="12">T 天津</option>
+                            <option value="54">X 西藏</option>
+                            <option value="65">X 新疆</option>
+                            <option value="53">Y 云南</option>
+                            <option value="33">Z 浙江</option>
+                        </select>
+                    </li>
+                    <li class="row">
+                        <span class="form-text col col-40">选择批次：</span>
+
+                        <select id="batch-1" class="form-select col col-50">
+                            <option value="">请选择批次</option>
+                            <option value="1">本科提前批</option>
+                            <option value="2">本科一批</option>
+                            <option value="3">本科二批A</option>
+                            <option value="4">本科二批B</option>
+                            <option value="5">专科提前批</option>
+                            <option value="6">专科A</option>
+                            <option value="7">专科B</option>
+                        </select>
+                    </li>
+                    <li class="row">
+                        <span class="form-text col col-40">学校名称：</span>
+                        <select class="form-select col col-50" id="college-1">
+                            <option value="">请选择学校</option>    
+                        </select>
+                    </li>
+                    <li>
+                        <span class="error-tip"></span>
+                    </li>
+                    <li class="query-mn-ft">
+                        <a href="admissionContent.html" class="submit" id="submit-1">点击确定</a>
+                        <p>查询该院校往年录取详细情况( 1 点 )</p>
+                    </li>
+                </ul>
+            </div>
+                <!-- 根据院校查询结束 -->
+                <!-- 根据学校类型查询开始 -->
+            <div class="query">
+                <div class="query-hd">
+                    <span>根据学校类型查询</span>
+                </div>   
+                <ul class="query-mn">
+                    <li class="row">
+                        <span class="form-text col col-40">选择学校类型：</span>
+                        <select id="type-2" class="form-select col col-50">
+                            <option value="">请选择类型</option>
+                            <option value="综合">综合</option>
+                            <option value="理工">理工</option>
+                            <option value="农业">农业</option>
+                            <option value="医药">医药</option>
+                            <option value="师范">师范</option>
+                            <option value="语言">语言</option>
+                            <option value="财经">财经</option>
+                            <option value="政法">政法</option>
+                            <option value="体育">体育</option>
+                            <option value="艺术">艺术</option>
+                            <option value="民族">民族</option>
+                        </select>
+                    </li>
+                    <li class="row">
+                        <span class="form-text col col-40">选择批次：</span>
+                        <select id="batch-2" class="form-select col col-50">
+                            <option value="">请选择批次</option>
+                            <option value="1">本科提前批</option>
+                            <option value="2">本科一批</option>
+                            <option value="3">本科二批A</option>
+                            <option value="4">本科二批B</option>
+                            <option value="5">专科提前批</option>
+                            <option value="6">专科A</option>
+                            <option value="7">专科B</option>
+                        </select>
+                    </li>
+                    <li>
+                        <span class="error-tip"></span>
+                    </li>
+                    <li class="query-mn-ft">
+                        <a href="admissionContent2.html" class="submit" id="submit-2">点击确定</a>
+                        <p>查询符合该类型的院校( 1 点 )</p>
+                    </li>
+                </ul>
+            </div>
+                <!-- 根据学校类型查询结束 -->
+                <!-- 根据分数/位次选学校开始 -->
+            <div class="query">
+                <div class="query-hd">
+                    <span>根据分数/位次选学校</span>
+                </div>  
+                <ul class="query-mn">
+                    <li class="row">
+                        <span class="form-text col col-40">选择批次：</span>
+
+                        <select id="batch-3" class="form-select col col-50">
+                            <option value="">请选择批次</option>
+                            <option value="1">本科提前批</option>
+                            <option value="2">本科一批</option>
+                            <option value="3">本科二批A</option>
+                            <option value="4">本科二批B</option>
+                            <option value="5">专科提前批</option>
+                            <option value="6">专科A</option>
+                            <option value="7">专科B</option>
+                        </select>
+                    </li>
+                    <li class="row">
+                        <span class="form-text col col-40">对比年份：</span>
+                        <select id="year-3" class="form-select col col-50">
+                            <option value="">请选择年份</option>
+                            <option value="2014">2014</option>
+                            <option value="2013">2013</option>
+                            <option value="2012">2012</option>
+                            <option value="2011">2011</option>
+                        </select>
+                    </li>
+                    <li class="row">
+                        <span class="form-text col col-40">查询方式：</span>
+                        <select class="form-select col col-50" id="score-3">
+                            <option value="0">按分数查询</option>
+                            <option value="1">按排名查询</option>
+                        </select>
+                    </li>
+                    <li class="row">
+                        <span class="form-text col col-40">输入分数/位次：</span>
+                        <input id="score-text3" class="form-select col col-50" type="number"  value="">
+                    </li>
+                    <li class="row">
+                        <span class="form-text col col-40">选择院校所在地：</span>
+                        <select class="form-select col col-50" id="province-3">
+                            <option value="">请选择</option>
+                            <option value="34">A 安徽</option>
+                            <option value="11">B 北京</option>
+                            <option value="50">C 重庆</option>
+                            <option value="35">F 福建</option>
+                            <option value="44">G 广东</option>
+                            <option value="62">G 甘肃</option>
+                            <option value="52">G 贵州</option>
+                            <option value="45">G 广西</option>
+                            <option value="42">H 湖北</option>
+                            <option value="23">H 黑龙江</option>
+                            <option value="13">H 河北</option>
+                            <option value="41">H 河南</option>
+                            <option value="43">H 湖南</option>
+                            <option value="46">H 海南</option>
+                            <option value="32">J 江苏</option>
+                            <option value="22">J 吉林</option>
+                            <option value="36">J 江西</option>
+                            <option value="21">L 辽宁</option>
+                            <option value="64">N 宁夏</option>
+                            <option value="15">N 内蒙古</option>
+                            <option value="63">Q 青海</option>
+                            <option value="31">S 上海</option>
+                            <option value="51">S 四川</option>
+                            <option value="61">S 陕西</option>
+                            <option value="37">S 山东</option>
+                            <option value="14">S 山西</option>
+                            <option value="12">T 天津</option>
+                            <option value="71">T 台湾</option>
+                            <option value="54">X 西藏</option>
+                            <option value="72">X 香港</option>
+                            <option value="65">X 新疆</option>
+                            <option value="53">Y 云南</option>
+                            <option value="33">Z 浙江</option>
+                        </select>
+                    </li>
+                    <li>
+                        <span class="error-tip"></span>
+                    </li>
+                    <li class="query-mn-ft">
+                        <a href="admissionContent3.html" class="submit" id="submit-3">点击确定</a>
+                        <p>查询该分数/位次能够录取的院校( 1 点 )</p>
+                    </li>
+                </ul>
+            </div>
+                <!-- 根据分数/位次选学校结束 -->
+                <!-- 根据专业选学校开始 -->
+            <div class="query">
+                <div class="query-hd">
+                    <span>根据专业选学校</span>
+                </div>   
+                <ul class="query-mn">
+                    <li class="row">
+                        <span class="form-text col col-40">选择层次：</span>
+                        <select id="level-4" class="form-select col col-50">
+                            <option value="本科">本科</option>
+                            <option value="专科">专科</option>
+                        </select>
+                    </li>
+                    <li class="row">
+                        <span class="form-text col col-40">选择批次：</span>
+                        <select id="batch-4" class="form-select col col-50">
+                            <option value="">请选择批次</option>
+                            <option value="1">本科提前批</option>
+                            <option value="2">本科一批</option>
+                            <option value="3">本科二批A</option>
+                            <option value="4">本科二批B</option>
+                            <option value="5">专科提前批</option>
+                            <option value="6">专科A</option>
+                            <option value="7">专科B</option>
+                        </select>
+                    </li>
+                    <li class="row">
+                        <span class="form-text col col-40">专业大类：</span>
+                        <select id="major-4" class="form-select col col-50">
+                            <option value="">请选择专业类别</option>
+                            <option value="01">哲学类</option>
+                            <option value="02">经济学类</option>
+                            <option value="03">法学类</option>
+                            <option value="04">教育学类</option>
+                            <option value="05">文学类</option>
+                            <option value="06">历史学类</option>
+                            <option value="07">理学类</option>
+                            <option value="08">工学类</option>
+                            <option value="09">农学类</option>
+                            <option value="10">医学类</option>
+                            <option value="12">管理学类</option>
+                        </select>
+                        <select class="" name="" id="" onchange="" style="display:none;">
+                            <option value="">请选择专业类别</option>
+                            <option value="51">农林牧渔大类</option>
+                            <option value="52">交通运输大类</option>
+                            <option value="53">生化与药品大类</option>
+                            <option value="54">资源开发与测绘大类</option>
+                            <option value="55">材料与能源大类</option>
+                            <option value="56">土建大类</option>
+                            <option value="57">水利大类</option>
+                            <option value="58">制造大类</option>
+                            <option value="59">电子信息大类</option>
+                            <option value="60">环保、气象与安全大类</option>
+                            <option value="61">轻纺食品大类</option>
+                            <option value="62">财经大类</option>
+                            <option value="63">医药卫生大类</option>
+                            <option value="64">旅游大类</option>
+                            <option value="65">公共事业大类</option>
+                            <option value="66">文化教育大类</option>
+                            <option value="67">艺术设计传媒大类</option>
+                            <option value="68">公安大类</option>
+                            <option value="69">法律大类</option>
+                        </select>
+                    </li>
+                    <li class="row">
+                        <span class="form-text col col-40">具体专业：</span>
+                        <select id="majores-4" class="form-select col col-50">
+                            <option value="">请选择专业</option>
+                            <option value=""></option>
+                        </select>
+                    </li>
+                    <li>
+                        <span class="error-tip"></span>
+                    </li>
+                    <li class="query-mn-ft">
+                        <a href="admissionContent4.html" class="submit" id="submit-4">点击确定</a>
+                        <p>查询开设该专业的院校( 1 点 )</p>
+                    </li>
+                </ul>
+            </div>   
+                <!-- 根据专业选学校结束 -->
+                <!-- 查同分同排名考生去向开始 -->
+            <div class="query">
+                <div class="query-hd">
+                    <span>根据专业选学校</span>
+                </div>   
+                <ul class="query-mn">
+                    <li class="row">
+                        <span class="form-text col col-40">选择层次：</span>
+                        <select id="level-5" class="form-select col col-50">
+                            <option value="本科">本科</option>
+                            <option value="专科">专科</option>
+                        </select>
+                    </li>
+                    <li class="row">
+                        <span class="form-text col col-40">同分年份：</span>
+                        <select id="year-5" class="form-select col col-50">
+                            <option value="2014">2014</option>
+                            <option value="2013">2013</option>
+                            <option value="2012">2012</option>
+                            <option value="2011">2011</option>
+                        </select>
+                    </li>
+                    <li class="row">
+                        <span class="form-text col col-40">查询方式：</span>
+                        <select class="form-select col col-50" id="score-5">
+                            <option value="0">按分数查询</option>
+                            <option value="1">按排名查询</option>
+                        </select>
+                    </li>
+                    <li class="row">
+                        <span class="form-text col col-40">输入分数/位次：</span>
+                        <input id="score-text5" class="form-select col col-50"  type="number" value="">
+                    </li>
+                    <li>
+                        <span class="error-tip"></span>
+                    </li>
+                    <li class="query-mn-ft">
+                        <a href="admissionContent5.html" class="submit" id="submit-5">点击确定</a>
+                        <p>查询该考生去向( 5 点 )</p>
+                    </li>
+                </ul>
+            </div>
+                <!-- 查同分同排名考生去向结束 -->
+        </section>
+        <!-- 录取信息查询内容结束 -->
+        <!--版权开始-->
+        <footer class="copyright">
+            <div class="copyright-l-hd row">
+            	<a class="about col col-50" href="about.html">关于</a>
+                <a class="contact col col-50" href="feedback.html">反馈</a>
+            </div>
+            <div class="copyright-l-ft">
+             Copyright © 2014 ( 粤ICP备14080709号-2 )
+             <br />utowin from 优途	
+            </div>
+        </footer>
+        <!--版权结束-->
+        <!-- 回到顶部 -->
+        <div class="toTop"></div>
+	</section>
+</section>     
+</body>
+</html>

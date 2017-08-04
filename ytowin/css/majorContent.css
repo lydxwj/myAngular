@@ -1,0 +1,31 @@
+@charset "utf-8";
+/* CSS Document */
+/*专业详情内容开始*/
+    /*专业详情名称开始*/
+.mc-hd{ text-align: center; line-height: 1.2rem; }
+.mc-hd span{ color:#2bbfd6;}
+    /*专业详情名称结束*/
+    /*专业详情导航开始*/
+.mc-nav{ text-align: center; padding-top: 0.2rem; padding-bottom: 0.2rem; background: #e2e3e3; overflow:hidden;}
+.mc-nav .tab{ border-right: 1px solid #a0a0a0; height: 0.8rem; color: #737373; line-height: 0.8rem;}
+.mc-nav .tab.on{ color:#fff; background: #ff7357;border-right: 1px solid #ff7357;}
+    /*专业详情导航结束*/
+    /*专业解读开始*/
+.majorContent{ height: 18rem; overflow-y: auto;}
+.mc-details{ padding-left: 1.6rem; border: 1px solid #2bbfd6; border-radius: 0.4rem; margin-left: 1.4rem; margin-right: 0.4rem; margin-top: 0.8rem; position: relative; padding-top: 0.4rem; padding-right: 0.4rem; padding-bottom: 0.4rem;}
+.mc-details-l{ width: 2.0rem; height: 2.0rem; border-radius: 50%; background-color: #ff7457; position: absolute; left:-1rem; top:-0.02rem; text-align: center; line-height: 2.0rem; color: #fff;}
+.mc-details-l.two{ background-color: #ffc124;}
+.mc-details-l.three{ background-color: #51cc4f;}
+    /*专业解读结束*/
+    /*学习科目开始*/
+.subject{ border: 1px solid #2bbfd6; border-radius: 0.4rem;margin: 0.4rem;  display: none;}
+.subject-details{  padding: 0.8rem 0.74rem 0 0.74rem; width: 4.32rem; text-align: center;}
+.subject-hd{ width: 3.2rem; margin-right: auto; margin-left: auto; height: 4.4rem; background-image:url(../img/mc-major.jpg); background-size: cover; background-position: center; background-repeat: no-repeat;}
+.subject-mn{ line-height: 0.8rem;}
+    /*学习科目结束*/
+    /*开设院校开始*/
+.college .subject-hd{ background-image:url(../img/college-fd.jpeg); height: 3.2rem;}
+    /*开设院校结束*/
+
+
+/*专业详情内容结束*/

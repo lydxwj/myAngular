@@ -1,0 +1,34 @@
+@charset "utf-8";
+/* CSS Document */
+html,body{ height: 100%; }
+.wrap{ overflow-y: auto;}
+/*忘记密码内容开始*/
+    /*忘记密码导航开始*/
+.forget-nav{ text-align: center; padding-top: 0.2rem; padding-bottom: 0.2rem; margin-top: 0.4rem; background: #e2e3e3;overflow: hidden;}
+.forget-nav .tab{ border-right: 1px solid #a0a0a0; height: 0.8rem;color: #737373;line-height: 0.8rem;}
+.forget-nav .tab.on { color: #fff; background: #ff7357; border-right: 1px solid #ff7357;}
+    /*忘记密码导航结束*/
+    /*确认账号开始*/
+.forget-mn{ padding-left: 0.4rem; padding-right: 0.4rem;}
+.forget-mn ul{ padding-top: 1.0rem;}
+.mn-txt{ text-align: right; margin-right: 0.2rem;line-height: 1.2rem;}
+.mn-ipt{  height: 1.2rem; padding-top: 0.2rem; padding-bottom: 0.2rem; margin-bottom: 0.6rem; font-size: 0.48rem; padding-left: 0.4rem; line-height: 1.2rem; border: 1px solid #ccc; border-radius: 0.1rem; box-sizing: border-box;}
+.proving{ margin-left: 0.4rem; text-align: center; }
+.submit{ margin-left: auto; margin-right: auto; display: block;color: #fff; background-color: #ff7457; width: 4.0rem; border-radius: 0.1rem;line-height: 1.2rem;font-size: 0.48rem; text-align: center;}
+    /*确认账号结束*/
+    /*选择验证方式开始*/
+.test span{ display: block; }
+.test li{ margin-bottom: 0.8rem; height:1.6rem; line-height: 0.8rem;}
+.test .phone-logo,.test .email-logo{ height:1.6rem; width: 1.6rem; position: relative; float: right;}
+.test .phone-logo:before,.test .email-logo:before{height:1.6rem; width: 1.6rem; content:"\e61a"; font-family: "iconfont"; position:absolute; top: 0.26rem; left: 0; font-size: 1.6rem; color:#a9a9a9;}
+.test .email-logo:before{ content:"\e61b";left: -0.2rem;}
+.test .email-l a,.test .email-r a{ display: block; height:1.6rem;}
+    /*选择验证方式结束*/
+    /*验证/修改开始*/
+.mn-btn{ background: #d3d3d3; border:0 none; margin-left: 0.4rem;  line-height: 0.8rem; padding-left: 0.2rem; padding-right:0.2rem; width: 2.4rem; white-space: nowrap; text-align: center;}
+.way-email-hd{ text-align: center; font-size: 0.8rem;}    
+.way-email-mn{ line-height: 0.8rem; padding-left: 0.4rem; padding-right: 0.4rem;}
+.mailto{ margin-bottom: 0.4rem; margin-top: 0.4rem;}
+.way-email-mn .way-btn{ display: block; width:4.4rem ;background: #d3d3d3;line-height: 1rem; height:1rem; text-align: center; margin-left: auto; margin-right: auto; margin-top: 0.4rem; margin-bottom: 0.4rem; border-radius: 0.1rem;}
+    /*验证/修改结束*/
+/*忘记密码内容结束*/

@@ -1,0 +1,25 @@
+@charset "utf-8";
+/* CSS Document */
+/*性格与专业测试内容开始*/
+    /*性格与专业测试内容头部开始*/
+.main-fixed{ height: 2.0rem;}
+.evaluation{ width: 12.0rem;padding-left: 0.4rem; padding-right: 0.4rem;line-height: 0.8rem; position: fixed;left: auto;top: 1.6rem; background: #f8f9fa;padding-bottom: 0.2rem;overflow:hidden;}
+.evaluation-rate .rate-hd{ color: #27b4c9; font-size: 0.36rem; line-height: 0.6rem;}
+.evaluation-rate .rate-mn{ width: 12.0rem; background: #D4D2D2;height: 0.8rem;}
+.evaluation-rate .rate-mn span{ background: #27b4c9; color: #fff;text-align: center; width:0;height: 0.8rem; line-height: 0.8rem; font-size: 0.6rem;display: block;}
+    /*性格与专业测试内容头部结束*/
+    /*性格与专业测试题目开始*/
+.evaluation-mn{ padding-left: 0.4rem;line-height: 0.8rem; padding-right: 0.4rem;}
+.evaluation-mn .test{ padding-top: 0.4rem; padding-bottom: 0.12rem; border-bottom: 1px solid #ccc;}
+.evaluation-mn .test-mn{ padding-left: 0.4rem;}
+.evaluation-mn .test-mn .choice{display:block;}
+.test-mn .choice span{ display: inline-block; width:0.4rem;height:0.4rem; border-radius: 50%; background: #f5f5f5; margin-right: 0.2rem;line-height: 0.8rem; }
+.test-mn .choice.current{ color: #cc3031;}
+.test-mn .choice.current span{ background: #cc3031;}
+    /*性格与专业测试题目结束*/
+.tips-help{ margin-top: 0.4rem; margin-bottom: 0.4rem; line-height: 0.8rem; background-color: #2bbfd6; padding-left: 0.2rem; border-radius: 0.1rem; color:#fff;}
+    /*性格与专业测试提交开始*/
+.evaluation-ft{ padding-left: 1.0rem; padding-right: 1.0rem; padding-bottom: 0.6rem; padding-top: 0.6rem;}
+.evaluation-ft a{ display:block; color:#fff; background: #FF7357;text-align: center;line-height: 1.2rem; border-radius: 0.1rem;}
+    /*性格与专业测试提交结束*/
+/*性格与专业测试内容结束*/

@@ -1,0 +1,27 @@
+@charset "utf-8";
+/* CSS Document */
+html,body{ height: 100%;}
+/*登录内容开始*/
+.login-logo,.register-logo{ width: 3.6rem; height: 1.48rem; background-image:url(../img/login-logo.png); background-size: cover; background-position: center; background-repeat: no-repeat; margin-top: 1.0rem; margin-bottom: 1.0rem;margin-left: auto; margin-right: auto; }
+.login-ipt,.register-ipt{ width: 10.4rem;  position: relative; padding-left: 1.2rem; padding-right: 1.2rem; }
+.userName,.passWord,.verify{ width: 9.6rem; height: 1.2rem; padding-top: 0.2rem; padding-bottom: 0.2rem; margin-bottom: 0.6rem; font-size: 0.48rem; padding-left: 0.8rem; line-height: 1.2rem; border: 1px solid #ccc; border-radius: 0.1rem; box-sizing: border-box;}
+         /* 账号和密码小图标开始*/
+.ico-usern,.ico-passw{ width: 0.8rem; height: 0.8rem; position: absolute; left:1.3rem; top:0.14rem;}
+.ico-passw{ top:1.9rem;}
+.ico-usern:before,.ico-passw:before{width: 0.8rem; height: 0.8rem; content:"\e60d"; font-family: "iconfont"; position:absolute; top: 0; left: 0; font-size: 0.6rem; color:#a9a9a9;}
+.ico-passw:before{ content:"\e60f"; }
+        /* 账号和密码小图标结束*/
+.submit{ height: 1rem; width: 10.4rem; background: #2bbfd6; color:#fff;  margin-top: 0.4rem; margin-bottom: 0.4rem; text-align: center; font-size: 0.52rem; line-height: 1.0rem; border-radius: 0.1rem; }
+.login-ipt-ft a{ color: #fe4141; width: 2.4rem;}
+.login-ipt-ft a.fr{ text-align: right;}
+        /*第三方登录开始*/
+.other-way{ position:relative; border-top: 1px solid #ccc; margin-right: 0.4rem; margin-left: 0.4rem; margin-top: 0.8rem;}
+.other-way span{ position: absolute; width: 3.6rem; top: -0.32rem; left:50%; text-align: center; margin-left: -1.8rem; background: #fff;}
+.other-way-mn{ height: 2.32rem; padding-top: 1.6rem; padding-bottom: 1.0rem;}
+.other-way-mn a{ display:block; height: 2.3rem; width: 2.3rem; background-image:url(../img/login-qq.png); background-size: cover; background-position: center; background-repeat: no-repeat; margin: 0 auto;}
+.other-way-mn .weixin a{  background-image:url(../img/login-weixin.png); }
+.other-way-mn .weibo a{  background-image:url(../img/login-weibo.png); }
+        /*第三方登录结束*/
+/*登录内容结束*/
+
+

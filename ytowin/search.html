@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telphone=no, email=no" />
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="MobileOptimized" content="320">
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-orientation" content="portrait">
+    <meta name="full-screen" content="yes">
+    <meta name="x5-fullscreen" content="true">
+    <meta name="browsermode" content="application">
+    <meta name="x5-page-mode" content="app">
+    <meta name="msapplication-tap-highlight" content="no">
+    <title>专业搜索</title>
+	<link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="css/base.css" />
+    <link rel="stylesheet" type="text/css" href="css/search.css" />
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/device.min.js"></script>
+    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+	<script type="application/javascript" src="http://cdn.bootcss.com/fastclick/1.0.6/fastclick.js"></script>
+    <script type="text/javascript" src="js/base.js"></script>
+    <script type="text/javascript" src="js/search.js"></script>
+</head>
+<body>
+<section class="wrap return">   	
+	<section class="fixed"> 
+    <!--头部开始-->
+    	<header class="header clearfix">
+            <div class="pageup fl"><a href="javascript:history.go(-1);"></a></div>
+    		<h1 class="fl">专业搜索</h1>
+            <nav class="nav fr">
+                <div class="nav-mn">
+                    <div class="nav-btn"></div>
+                    <ul class="nav-tap">
+                        <li>
+                            <a class="nav-tap-login" href="login.html">登录</a>
+                            <a class="nav-tap-info" href="users.html">个人中心</a>
+                        </li>
+                        <li class="nav-tabLi">
+                            <a class="nav-tap-login" href="register.html">注册</a>
+                            <a class="nav-tap-info" href="javascript:;">退出</a>
+                        </li>
+                        <li><a href="index.html">首页</a></li>
+                        <li><a href="college.html">找大学</a></li>
+                        <!-- <li><a href="voluntary.html">志愿模拟填报</a></li> -->
+                        <li><a href="evaluation.html">性格与专业测</a></li>
+                        <li><a href="major.html">搜专业</a></li>
+                        <li><a href="branch.html">文理分科测</a></li>
+                        <li><a href="admission.html">录取信息查询</a></li>
+                        <li><a href="industry.html">行业职业库</a></li>
+                        <li><a href="insight.html">自我洞悉</a></li>
+                        
+                    </ul>
+                </div>
+            </nav>
+    	</header>
+	</section>        
+    <!--头部结束-->
+	<section class="main">
+        <!-- 专业搜索内容开始 -->
+            <!-- 搜索框开始 -->
+        <div class="search">
+            <form action="" method="post">
+                <input name="maj-search" type="search" placeholder="请输入专业名称" id="maj-search" class="search-ipt" list="tip" required="required" />
+                <datalist id="tip">
+                    <option value="哲学">哲学</option>
+                    <option value="经济学">经济学</option>
+                    <option value="法学">法学</option>
+                    <option value="教育学">教育学</option>
+                    <option value="文学">文学</option>
+                    <option value="历史学">历史学</option>
+                    <option value="理学">理学</option>
+                    <option value="工学">工学</option>
+                    <option value="农学">农学</option>
+                    <option value="医学">医学</option>
+                    <option value="管理学">管理学</option>
+                    <option value="金融学">金融学</option>
+                    <option value="国际经济与贸易">国际经济与贸易</option>
+                    <option value="财政学">财政学</option>
+                    <option value="经济与金融">经济与金融</option>
+                    <option value="信息与计算科学">信息与计算科学</option>
+                    <option value="人力资源管理">人力资源管理</option>
+                    <option value="工商管理">工商管理</option>
+                    <option value="财务管理">财务管理</option>
+                    <option value="市场营销">市场营销</option>
+                    <option value="电子商务">电子商务</option>
+                    <option value="旅游管理">旅游管理</option>
+                    <option value="物流管理">物流管理</option>
+                    <option value="工程造价">工程造价</option>
+                    <option value="信息管理与信息系统">信息管理与信息系统</option>
+                    <option value="护理学">护理学</option>
+                    <option value="应用药学">应用药学</option>
+                    <option value="生物工程">生物工程</option>
+                 </datalist>
+                <label for="col-search" class="ico-search"></label> 
+                <input type="submit" value="查找" class="search-submit" /> 
+            </form>
+        </div>
+            <!-- 搜索框结束 -->
+            <!-- 选择框开始 -->
+        <div class="search-chose">
+            <div class="search-chose-list">
+                <a class="clearfix" href="#">
+                    <span class="fl">经济学</span>
+                    <span class="fr">本科</span>
+                </a>
+            </div>
+            <div class="search-chose-list clearfix">
+                <a class="clearfix" href="#">
+                    <span class="fl">基地班经济学</span>
+                    <span class="fr">本科</span>
+                </a>
+            </div>
+            <div class="search-chose-list clearfix">
+                <a class="clearfix" href="#">
+                    <span class="fl">国际经济与贸易</span>
+                    <span class="fr">本科</span>
+                </a>
+            </div>
+            <div class="search-chose-list clearfix">
+                <a class="clearfix" href="#">
+                    <span class="fl">经济学</span>
+                    <span class="fr">本科</span>
+                </a>
+            </div>
+            <div class="search-chose-list clearfix">
+                <a class="clearfix" href="#">
+                    <span class="fl">财政学</span>
+                    <span class="fr">本科</span>
+                </a>
+            </div>    
+            <div class="search-chose-list clearfix">
+                <a class="clearfix" href="#">
+                <span class="fl">经济学</span>
+                <span class="fr">专科</span>
+                </a>
+            </div>
+            <div class="search-chose-more"><a href="javascript:;">加载更多</a></div>
+        </div>
+            <!-- 选择框结束 -->
+        <!-- 专业搜索内容结束 -->
+        <!--版权开始-->
+        <footer class="copyright">
+            <div class="copyright-l-hd row">
+            	<a class="about col col-50" href="about.html">关于</a>
+                <a class="contact col col-50" href="feedback.html">反馈</a>
+            </div>
+            <div class="copyright-l-ft">
+             Copyright © 2014 ( 粤ICP备14080709号-2 )
+             <br />utowin from 优途	
+            </div>
+        </footer>
+        <!--版权结束-->
+        <!-- 回到顶部 -->
+        <div class="toTop"></div>
+	</section>
+</section>     
+</body>
+</html>

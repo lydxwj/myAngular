@@ -1,0 +1,289 @@
+/*样式初始化*/
+@charset "utf-8";
+/* 禁用iPhone中Safari的字号自动调整 */
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+/* 去除iPhone中默认的input样式 */
+input[type="submit"], input[type="reset"], input[type="button"], input{ -webkit-appearance:none; resize: none; }
+/* 取消链接高亮  */
+body,div,ul,li,ol,h1,h2,h3,h4,h5,h6,input,textarea,select,p,dl,dt,dd,a,img,button,form,table,th,tr,td,tbody,article,aside, details,figcaption,figure,footer,header,hgroup, menu,nav,section{ -webkit-tap-highlight-color:rgba(0, 0, 0, 0); }
+/* 设置HTML5元素为块 */
+article, aside, details,figcaption,figure,footer,header,hgroup, menu,nav,section {display: block; }
+/* 图片自适应 */
+img {max-width: 100%; height: auto; width:auto\9; /* ie8 */ -ms-interpolation-mode:bicubic;/*为了照顾ie图片缩放失真*/ }
+/* 初始化 */
+body,div,ul,li,ol,h1,h2,h3,h4,h5,h6,input,textarea,select,p,dl,dt,dd,a,img,button,form,table,th,tr,td,tbody,article, 
+aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{margin:0; padding:0; border:none;}
+body{font: normal 14px/1.5 Tahoma,"Lucida Grande",Verdana,"Microsoft Yahei",STXihei,hei;}
+em,i{font-style:normal;}
+strong{font-weight: normal;}
+a{ text-decoration:none; color:#969696; font-family: Microsoft YaHei,Tahoma,Arial,sans-serif;}
+a:hover{color:#f60;}
+ul,ol{list-style:none;}
+h1, h2, h3, h4, h5, h6{ font-size:100%; font-family: Microsoft YaHei;}
+img{ border: none; vertical-align: middle; }
+
+.clearfix:after{content:""; display:block; visibility:hidden; height:0; clear:both;}
+.clearfix{zoom:1;}
+
+
+/*媒体查询*/
+html { font-size: 50px; }
+body { font-size: 24px; }
+@media screen and (max-width: 359px) {
+    html { font-size: 25px;}
+    body { font-size: 12px; }
+}
+@media screen and (min-width: 360px) {
+    html { font-size: 28.13px;}
+    body { font-size: 12px; }
+}
+@media screen and (min-width: 375px) {
+    html { font-size: 29.30px;}
+    body { font-size: 14px; }
+}
+@media screen and (min-width: 384px) {
+    html { font-size: 30px;}
+    body { font-size: 14px; }
+}
+@media screen and (min-width: 400px) {
+    html { font-size: 31.25px;}
+    body { font-size: 15px; }
+}
+@media screen and (min-width: 414px) {
+    html { font-size: 32.34px;}
+    body { font-size: 16px; }
+}
+@media screen and (min-width: 424px) {
+    html { font-size: 33.13px;}
+    body { font-size: 16px; }
+}
+@media screen and (min-width: 480px) {
+    html { font-size: 37.50px;}
+    body { font-size: 18px; }
+}
+@media screen and (min-width: 540px) {
+    html { font-size: 42.19px;}
+    body { font-size: 20px; }
+}
+@media screen and (min-width: 640px) {
+    html { font-size: 50px;}
+    body { font-size: 24px; }
+}
+
+
+.row {
+  /*横*/
+    display: -webkit-box;
+    display: -webkit-flex; /* Safari */
+    display: -moz-box;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%; 
+}
+.row-wrap {/*横不换行*/
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; 
+}
+.col {/*列*/
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -moz-box-flex: 1;
+  -moz-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  display: block;
+  width: 100%; 
+}
+.col-10 {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 10%;
+  -moz-box-flex: 0;
+  -moz-flex: 0 0 10%;
+  -ms-flex: 0 0 10%;
+  flex: 0 0 10%;
+  max-width: 10%; 
+}
+
+.col-20 {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 20%;
+  -moz-box-flex: 0;
+  -moz-flex: 0 0 20%;
+  -ms-flex: 0 0 20%;
+  flex: 0 0 20%;
+  max-width: 20%; 
+}
+
+.col-25 {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 25%;
+  -moz-box-flex: 0;
+  -moz-flex: 0 0 25%;
+  -ms-flex: 0 0 25%;
+  flex: 0 0 25%;
+  max-width: 25%; 
+}
+
+.col-33, .col-34 {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 33.3333%;
+  -moz-box-flex: 0;
+  -moz-flex: 0 0 33.3333%;
+  -ms-flex: 0 0 33.3333%;
+  flex: 0 0 33.3333%;
+  max-width: 33.3333%; 
+}
+
+.col-50 {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 50%;
+  -moz-box-flex: 0;
+  -moz-flex: 0 0 50%;
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%; 
+}
+
+.col-66, .col-67 {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 66.6666%;
+  -moz-box-flex: 0;
+  -moz-flex: 0 0 66.6666%;
+  -ms-flex: 0 0 66.6666%;
+  flex: 0 0 66.6666%;
+  max-width: 66.6666%; 
+}
+
+.col-75 {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 75%;
+  -moz-box-flex: 0;
+  -moz-flex: 0 0 75%;
+  -ms-flex: 0 0 75%;
+  flex: 0 0 75%;
+  max-width: 75%; 
+}
+
+.col-80 {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 80%;
+  -moz-box-flex: 0;
+  -moz-flex: 0 0 80%;
+  -ms-flex: 0 0 80%;
+  flex: 0 0 80%;
+  max-width: 80%; 
+}
+
+.col-90 {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 90%;
+  -moz-box-flex: 0;
+  -moz-flex: 0 0 90%;
+  -ms-flex: 0 0 90%;
+  flex: 0 0 90%;
+  max-width: 90%; 
+}
+
+.wrap{width: 12.8rem; margin-left: auto; margin-right: auto;}
+body{background: #282828;}
+.title-img{width: 0.88rem; height: 0.88rem; display:inline-block;}
+.more-img{width: 0.8rem; height: 0.8rem; display:inline-block;} 
+
+/*文字图标*/
+@font-face {font-family: 'iconfont';
+    src: url('../font/iconfont.eot'); /* IE9*/
+    src: url('../font/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../font/iconfont.woff') format('woff'), /* chrome、firefox */
+    url('../font/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('../font/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+.iconfont{
+    font-family:"iconfont" !important;
+    font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;}
+
+/*------------------------------------------------------------*/
+/*头部分区*/
+.header-zong{width: 12.8rem; height:2.2rem; position:relative; z-index: 3;}
+.header{width: 12.8rem; height:2.2rem; background: #801346;  position: fixed; left:50%; transform:translate(-50%); -webkit-transform: translate(-50%); top: 0;}
+.header .line{width:1.6rem; height:1.6rem; border: 1px solid #751543; box-shadow: 0 -0.02rem 0.1rem #8c375e,0 0.02rem 0.1rem #7e1646 inset; border-radius: 0.3rem; margin-top: 0.36rem; margin-left: 0.48rem; position: relative; cursor: pointer;}
+.header h1{height:2.2rem; line-height: 2.2rem; color:#fff; font-size: 0.8rem; font-weight: normal; margin-left: 1.6rem;}
+
+.line span{width: 70%; height: 0.1rem; background: #fff; position: absolute; left:0.2rem; border-radius: 0.04rem; transition: all .2s; }
+.line span:nth-of-type(1){top:0.4rem;}
+.line span:nth-of-type(2){top:0.72rem;}
+.line span:nth-of-type(3){top:1.08rem;}
+
+.on span:nth-of-type(1){display: none;}
+.on span:nth-of-type(3){top:0.72rem; transform:rotate(45deg); -webkit-transform: rotate(45deg);}
+.on span:nth-of-type(2){transform:rotate(-45deg); -webkit-transform:rotate(-45deg);}
+
+
+/*导航部分*/
+.header .nav{width: 6.0rem; height: 8.0rem; position: absolute; left:0; top: 2.2rem; display: none;} 
+.nav li{width: 6.0rem; height:1.6rem; border-bottom: 1px solid #474747;}
+.nav li a{width: 6.0rem; height:1.6rem; color:#fff; display: block; text-align: center; line-height: 1.6rem; background: #333;}
+.nav li a:active{background: #801346;}
+
+
+/*第一分区*/
+.section1{width: 12.8rem; height: 1.56rem; background: #171717; position: relative; z-index: 2;}
+.section1 .section1-right .img{position:absolute; right: 0.52rem; top: 0.2rem;}
+.section1 .section1-left{width: 7.4rem; height: 1.56rem;}
+.section1 .section1-left li{width: 1.12rem;  height: 1.56rem; float: left; padding-left: 1.08rem; padding-top: 0.3rem; position: relative;}
+.section1 .section1-left li:nth-of-type(3){width:1.52rem;}
+.section1 .section1-left li:nth-of-type(3) a{width:1.52rem;}
+.section1 .section1-left li a{width: 1.12rem;  height: 1.56rem; display: block; color:#fff;}
+
+
+.section1-left li a:before{content:"\e609"; font-family: "iconfont"; position:absolute; top: 0.16rem; left: 0.44rem; font-size: 0.6rem;}
+.section1-left li:nth-of-type(2) a:before{content:"\e60b";}
+.section1-left li:nth-of-type(3) a:before{content:"\e60a";}
+
+/*语言选择*/
+.language-img .img{width: 0.88rem; height: 0.6rem; display:block;}
+.language{width: 3.6rem; height: 3.6rem; background: #e8e8e8; position: absolute; right:0.2rem; top: 0; overflow: hidden; display: none;}
+.language li{width: 1.2rem; height: 1.2rem; padding-left: 2.4rem; position: relative;}
+.language li a{width: 1.2rem; height: 1.2rem; text-align: center; line-height: 1.2rem; display: block;}
+.language li a:before{position:absolute; right:1.56rem; top:0.02rem; color:#666;}
+.language li:nth-of-type(1) a:before{content:"中文"; }
+.language li:nth-of-type(2) a:before{content:"English"; }
+.language li:nth-of-type(3) a:before{content:"繁体";}
+
+
+
+/*toTop*/
+.toTop a{width: 12.8rem; height: 1.12rem; background: #730439; line-height: 1.12rem; display:block; font-size: .6rem; color:#fff; text-align: center; position: relative; font-weight: bold;}
+.toTop a:hover{color:#fff;}
+.toTop a:after{content:""; border-width:0.3rem; border-color: transparent transparent #fff transparent ; border-style: dashed dashed solid dashed ; position:absolute; left:50%; transform:translate(120%); -webkit-transform: translate(120%); top:0.16rem;}
+
+/*尾部分区*/
+.footer{width: 12.8rem; height:5.0rem; background:#171717;}
+.footer .shenming{width: 12.8rem; height: 2.92rem; font-size: 0.4rem; color:#666;  background:#171717;}
+.shenming p{line-height: 1.2rem;  color:#666;  text-align: center;}
+.jishu{line-height: 0.6rem;  color:#666;  text-align: center;}
+.jishu a:hover{color:#666;}
+
+
+.know{width: 12.0rem; height: 0.84rem; background: #801346; padding:0 0.4rem; padding-top: 1.2rem; position: fixed; left:50%; transform:translate(-50%); -webkit-transform: translate(-50%); bottom: 0;}
+.know li{width:2.38rem; height: 0.84rem; float: left; position: relative;}
+.know li a{width:2.38rem; text-align: center; float: left; font-size: 0.48rem; color:#fff; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;}
+
+
+
+.know li a:before{content:"\e60c"; font-family: "iconfont"; position:absolute; left: 0.74rem; top: -1.3rem; font-size: 0.9rem;}
+.know li:nth-of-type(2) a:before{content:"\e60f"; left: 0.8rem;}
+.know li:nth-of-type(3) a:before{content:"\e60d";}
+.know li:nth-of-type(4) a:before{content:"\e60e";}
+.know li:nth-of-type(5) a:before{content:"\e611"; font-size: 1.3rem; left: 0.56rem; top: -1.6rem;}
+
+
+

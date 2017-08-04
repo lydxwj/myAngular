@@ -1,0 +1,17 @@
+@charset "utf-8";
+/* CSS Document */
+/*意见反馈内容开始*/
+.Feedback{ padding:0.2rem;}
+.Feedback-hd{ height: 1rem; line-height: 1rem; position: relative; padding-left: 2rem; font-size: 0.6rem;}
+.Feedback-hd:before{ content:""; width: 1rem; position: absolute; left:0.6rem; height: 1rem; background-image:url(../img/fk.png); background-size: cover; background-position: center; background-repeat: no-repeat;}
+.Feedback-mn{ text-indent: 2em;padding-top: 0.2rem;}
+form label{ display:block;padding-bottom: 0.2rem;}
+textarea{ height:10rem;width:10.0rem;display:block;margin-left: auto; margin-right:auto;border: 1px solid #ccc; border-radius: 0.1rem;font-size: 0.4rem;padding:0.2rem;}
+.submit{background-color: #ff7457;border-radius: 0.1rem;width: 6.0rem;height: 1.2rem;line-height: 1.2rem;color: #fff;text-align: center;margin-left: auto;margin-right: auto;display: block; padding: 0; font-size: 0.48rem;  border: 1px solid #ccc;margin-top:0.4rem;}
+
+
+
+
+
+
+/*意见反馈内容结束*/

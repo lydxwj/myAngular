@@ -1,0 +1,16 @@
+@charset "utf-8";
+/* CSS Document */
+/*关于我们内容开始*/
+.aboutContent{ padding:0.2rem;}
+.atc-hd{ height: 1rem; line-height: 1rem; position: relative; padding-left: 1rem; font-size: 0.6rem;}
+.atc-hd:before{ content:""; width: 0.16rem; position: absolute; left:0.6rem; height: 1rem; background-image:url(../img/lsf.jpg); background-size: cover; background-position: center; background-repeat: no-repeat;}
+.atc-mn p{ text-indent: 2em;padding-top: 0.2rem;}
+.act-img{ height:8.0rem; width:8.0rem;margin-left: auto; margin-right:auto;}
+
+
+
+
+
+
+
+/*关于我们内容结束*/

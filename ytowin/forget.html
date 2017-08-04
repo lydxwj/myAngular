@@ -1,0 +1,201 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telphone=no, email=no" />
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="MobileOptimized" content="320">
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-orientation" content="portrait">
+    <meta name="full-screen" content="yes">
+    <meta name="x5-fullscreen" content="true">
+    <meta name="browsermode" content="application">
+    <meta name="x5-page-mode" content="app">
+    <meta name="msapplication-tap-highlight" content="no">
+    <title>忘记密码</title>
+	<link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="css/base.css" />
+    <link rel="stylesheet" type="text/css" href="css/forget.css" />
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/device.min.js"></script>
+    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+	<script type="application/javascript" src="http://cdn.bootcss.com/fastclick/1.0.6/fastclick.js"></script>
+    <script type="text/javascript" src="js/base.js"></script>
+    <script type="text/javascript" src="js/forget.js"></script>
+</head>
+<body>
+<section class="wrap return">       
+    <section class="fixed"> 
+    <!--头部开始-->
+        <header class="header clearfix">
+            <div class="pageup fl"><a href="javascript:history.go(-1);"></a></div>
+            <h1 class="fl">忘记密码</h1>
+            <nav class="nav fr">
+                <div class="nav-mn">
+                    <div class="nav-btn"></div>
+                    <ul class="nav-tap">
+                        <li>
+                            <a class="nav-tap-login" href="login.html">登录</a>
+                            <a class="nav-tap-info" href="users.html">个人中心</a>
+                        </li>
+                        <li class="nav-tabLi">
+                            <a class="nav-tap-login" href="register.html">注册</a>
+                            <a class="nav-tap-info" href="javascript:;">退出</a>
+                        </li>
+                        <li><a href="index.html">首页</a></li>
+                        <li><a href="college.html">找大学</a></li>
+                        <!-- <li><a href="voluntary.html">志愿模拟填报</a></li> -->
+                        <li><a href="evaluation.html">性格与专业测</a></li>
+                        <li><a href="major.html">搜专业</a></li>
+                        <li><a href="branch.html">文理分科测</a></li>
+                        <li><a href="admission.html">录取信息查询</a></li>
+                        <li><a href="industry.html">行业职业库</a></li>
+                        <li><a href="insight.html">自我洞悉</a></li>
+                        
+                    </ul>
+                </div>
+            </nav>
+        </header>
+    </section>        
+        <!--头部结束-->
+    <section class="main">
+        <!--忘记密码内容开始-->
+            <!-- 忘记密码导航开始 -->
+        <div class="forget-nav row">
+            <div class="tab on col col-25">确认账号</div>
+            <div class="tab col col-25">选择验证方式</div>
+            <div class="tab col col-25">验证/修改</div>
+            <div class="tab col col-25">完成</div>   
+        </div>
+            <!-- 忘记密码导航结束 -->
+        <div class="forget-mn">
+                <!-- 确认账号开始 -->                            
+            <ul class="forget-tab">
+                <form action="">
+                    <li class="row">
+                        <label class="mn-txt col col-20" for="for-users">账号：</label>
+                        <input class="mn-ipt col" id="for-users" placeholder="请输入登录名/手机号/邮箱" type="text" required="required" />
+                    </li>
+                    <li class="row">
+                        <label class="mn-txt col col-20" for="for-users">验证码：</label>
+                        <input class="mn-ipt col col-33" id="for-users" required="required" placeholder="请输入验证码" type="text" />
+                        <span class="mn-ipt proving col"></span>
+                    </li>
+                    <li>
+                        <input type="submit" id="submit1" value="下一步" class="submit" />
+                    </li>
+                </form> 
+            </ul>          
+                <!-- 确认账号结束 -->
+                <!-- 选择验证方式开始 -->            
+            <ul class="forget-tab test">
+                <li class="row totest-message">
+                    <div class="phone-l col col-40">
+                        <span class="phone-logo"></span>
+                    </div>
+                    <div class="phone-r col col-60">
+                        <span>通过短信验证</span>
+                        <span>需要您绑定的手机可以短信</span>
+                    </div>
+                </li>
+                <li class="row totest-mail">
+                    <div class="email-l col col-40">
+                        <a href="mailto:aaa@xxx.com?cc=bbb@yyy.com&bcc=ccc@zzz.com&subject=主题&body=邮件内容">
+                            <span class="email-logo"></span>
+                        </a>
+                    </div>
+                    <div class="email-r col col-60">
+                        <a href="mailto:aaa@xxx.com?cc=bbb@yyy.com&bcc=ccc@zzz.com&subject=主题&body=邮件内容">
+                            <span>通过绑定邮箱</span>
+                            <span>安全链接将发送到您绑定的邮箱</span>
+                        </a>
+                    </div>
+                </li>
+            </ul>              
+                <!-- 选择验证方式结束 -->
+                <!-- 验证/修改开始 -->
+            <ul class="forget-tab">
+                <form action="">
+                    <li class="row">
+                        <label class="mn-txt col col-30" for="for-users">手机号：</label>
+                        <input class="mn-ipt col" id="for-usersphone" placeholder="请输入手机号" type="text" required="required" />
+                    </li>
+                    <li class="row">
+                        <label class="mn-txt col col-30" for="for-users">验证码：</label>
+                        <input class="mn-ipt col col-30" id="for-userstest" required="required" placeholder="验证码" type="text" />
+                        <span class="mn-ipt proving col
+                        "></span>
+                    </li>
+                    <li class="row">
+                        <label class="mn-txt col col-30" for="for-users">短信验证码：</label>
+                        <input class="mn-ipt col col-30" id="for-message" required="required" placeholder="短信验证码" type="text" />
+                        <a href="sms:**?body=cxye" class="mn-btn mn-ipt  col">发送验证码</a>
+                    </li>
+                    <li>
+                        <input type="submit" id="submit3" value="下一步" class="submit" />
+                    </li>
+                </form> 
+            </ul>
+            <ul class="forget-tab">
+                <li>
+                    <div class="way-email-hd">邮件已发送</div>
+                    <div class="way-email-mn">请到<span>lyd*****@163.com</span>查阅来自优途的邮件，点击邮件中的链接重置您的登录密码。</div>
+                </li>
+                                    
+                <li class="mailto">
+                    <a href="http://wap.mail.163.com/?come=wap" class="submit">去邮箱查看邮件</a>
+                </li>
+                <li class="way-mail">
+                <div class="way-email-hd">没有收到邮件？</div> 
+                <div class="way-email-mn">1.请先检查是否在垃圾邮件中。如果还没收到，请重新发送邮件<a class="way-btn" href="mailto:aaa@xxx.com?cc=bbb@yyy.com&bcc=ccc@zzz.com&subject=主题&body=邮件内容">点击重新发送邮件</a>2.还是没收到？请选择<a href="javascript:;" class="way-btn other-way">其他找回方式</a></div>
+                </li>
+            </ul>         
+
+
+                <!-- 验证/修改结束 -->
+
+
+
+
+                <!-- 完成开始 -->
+            <ul class="forget-tab">
+                <form action="">                
+                    <li class="row">
+                        <label class="mn-txt col col-20" for="for-password">新密码：</label>
+                        <input class="mn-ipt col" id="for-password" placeholder="请输入密码" type="text" required="required" />
+                    </li>
+                    <li class="row">
+                        <label class="mn-txt col col-20" for="for-password2">确认密码：</label>
+                        <input class="mn-ipt col" id="for-password2" placeholder="请再次输入密码" type="text" required="required" />
+                    </li>
+                    <li>
+                        <input type="submit" value="提交" class="submit" />
+                    </li>
+                </form>
+            </ul>                       
+                <!-- 完成结束 -->
+        </div>
+        <!--忘记密码内容结束-->
+        <!--版权开始-->
+        <footer class="copyright">
+            <div class="copyright-l-hd row">
+            	<a class="about col col-50" href="about.html">关于</a>
+                <a class="contact col col-50" href="feedback.html">反馈</a>
+            </div>
+            <div class="copyright-l-ft">
+             Copyright © 2014 ( 粤ICP备14080709号-2 )
+             <br />utowin from 优途	
+            </div>
+        </footer>
+        <!--版权结束-->
+        <!-- 回到顶部 -->
+        <div class="toTop"></div>
+    </section>
+</section>
+</body>
+</html>

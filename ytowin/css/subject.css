@@ -1,0 +1,39 @@
+@charset "utf-8";
+/* CSS Document */
+body{ font-size:0.46rem;}
+/*图说升学内容开始*/
+    /*顶部banner*/
+.tu-banner{ width:12.8rem;  height:6.4rem; background-image: url(../img/mbanner2.png); background-size: cover; background-position: center; background-repeat: no-repeat;}
+    /*导读开始*/
+.introduction{ background:#ebebeb; margin-bottom: 0.2rem;  padding-left: 0.4rem; padding-right: 0.4rem;}
+.intro-hd .fl{ color:#e64607; font-size: 0.48rem;padding-top: 0.24rem;}
+.intro-hd .fr{ color:#9d9d9d; padding-top: 0.24rem;}
+.introduction .mn{ float:left; line-height: 0.6rem;}
+    /*导读结束*/
+    /*策略调整开始*/
+.adjust{ line-height: 0.6rem;}
+.adjust-hd{ width:12.8rem; height: 4.0rem;background-image: url(../img/adjust-hd-bg.png); background-size: cover; background-position: center; background-repeat: no-repeat;}
+.adjust-hd-l{ width: 8.4rem; padding-left: 0.4rem; padding-top: 0.4rem;  line-height: 0.6rem;}
+.adjust-hd-r{ width: 3.8rem; height:2.8rem; margin-top: 0.6rem; background-image: url(../img/adjust-hd-mn-r.png); background-size: cover; background-position: center; background-repeat: no-repeat;}
+        /*策略调整一楼开始*/
+.adjust-fl1{ margin-top: 0.8rem; margin-bottom: 0.4rem;}        
+.adjust-fl-hd{ height: 1.36rem; width: 12.8rem; background-image: url(../img/adjust-floor.png); background-size: cover; background-position: 0.2rem center; background-repeat: no-repeat; color:#fff; margin-bottom: 0.4rem;}
+.adjust-fl-hd .number{ font-size: 1.0rem; padding-left: 0.6rem; padding-right: 0.4rem; padding-top: 0.34rem;}
+.adjust-fl-hd .text{line-height: 1.37rem; font-size: 0.4rem;}
+.adjust-fl-mn{height: 4.0rem; width: 7.2rem; margin-left: auto; margin-right: auto; margin-bottom: 0.4rem; background-image: url(../img/adjust-floor1.png); background-size: cover; background-position: center; background-repeat: no-repeat;}
+.adjust-fl-ft{ padding-left: 0.4rem; padding-right: 0.4rem;}
+.adjust-fl-ft p{ padding-top: 0.2rem;}
+        /*策略调整一楼结束*/
+        /*策略调整二楼*/
+.adjust-fl2 .adjust-fl-mn{ width: 6.0rem;  background-image: url(../img/adjust-floor2.png);}
+        /*策略调整三楼*/
+.adjust-fl3 .adjust-fl-mn{ width: 6.36rem;  background-image: url(../img/adjust-floor3.png);}
+        /*策略调整四楼*/
+.adjust-fl4 .adjust-fl-mn{ width: 8.28rem;  background-image: url(../img/adjust-floor4.png);}
+.adjust-fl4 .adjust-fl-ft .title{ font-size: 0.4rem; font-weight: bold; padding-left: 1.8rem;}
+    /*策略调整结束*/
+    /*相关推荐开始*/
+.recommend{ padding-left: 1.0rem; padding-right: 1rem; padding-top: 0.4rem; padding-bottom: 0.4rem; background: #11b3d0; color:#fff; line-height: 0.8rem;}
+.recommend-tt{ font-size: 0.4rem; display:block;}   
+    /*相关推荐结束*/
+/*途说升学内容结束*/

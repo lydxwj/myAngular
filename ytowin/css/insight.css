@@ -1,0 +1,35 @@
+@charset "utf-8";
+/* CSS Document */
+html,body{ height: 100%; }
+.wrap{ overflow-y: auto;}
+/*自我洞悉内容开始*/
+.insight{ padding-top: 0.4rem; padding-bottom: 0.4rem; height:13rem;}
+    /*自我洞悉内容左侧开始*/
+.insight-l{ overflow-y: auto;}
+.insight-l .l-nav{ padding-left: 0.4rem; padding-right: 0.4rem; }
+.insight-l .l-nav-tab ul{ display:none;}
+.insight-l .l-nav-tab .tab-header{ background-color: #2f87e1; padding-left: 0.8rem; height: 1.4rem; line-height: 1.4rem;  border-radius: 0.1rem; color:#fff; position: relative; }
+.insight-l .l-nav-tab .tab-header:after{ content:"\e613"; font-family: "iconfont"; position:absolute; top: -2px; right:  0.52rem; font-size: 0.68rem;}
+.l-nav-tab.active .tab-header:after{ content:"\e606";}
+.insight-l .l-nav-tab ul{  border-radius: 0.1rem; color:#ffc124;}
+.insight-l .l-nav-tab ul li{ background-color:#3D9EFF; padding-left: 1.2rem; border-bottom: 1px solid #DADADA;height:1rem; line-height: 1rem; border-radius: 0.1rem;}
+.l-nav-tab ul li.on{ background-color: #FF7357; color:#fff;}
+    /*自我洞悉内容左侧结束*/
+    /*自我洞悉内容右侧开始*/
+.insight-r{ overflow-y: auto;}
+        /*励志激励右侧详细开始*/
+.insight-r .encourage .hide,.insight-r .relax,.insight-r .method,.insight-r .healthy
+{ display:none; }
+.insight-r .encourage a{  display: block; position:relative; white-space: nowrap; text-overflow: ellipsis; line-height: 1.2rem; padding-left: 0.8rem; padding-right: 0.4rem; overflow: hidden; font-size: 0.46rem;}
+
+.insight-r .encourage a:after{ content:"\e61d"; font-family: "iconfont"; position:absolute; top: -0.06rem; left:0; font-size: 0.68rem; color: #ccc;}
+.insight-r .encourage .more{ color:#2bbfd6; text-align: right; position: relative; padding-right: 1.2rem;}
+.insight-r .encourage .more:after{ content:"";}
+.insight-r .encourage .more:before{ content:"\e61c"; font-family: "iconfont"; width:0.8rem;height:1.2rem; position:absolute; top: 0; right:0.64rem; font-size: 0.46rem; color: #2bbfd6;}
+        /*励志激励右侧详细结束*/
+
+
+
+
+    /*自我洞悉内容右侧结束*/
+/*自我洞悉内容结束*/

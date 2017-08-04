@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telphone=no, email=no" />
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="MobileOptimized" content="320">
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-orientation" content="portrait">
+    <meta name="full-screen" content="yes">
+    <meta name="x5-fullscreen" content="true">
+    <meta name="browsermode" content="application">
+    <meta name="x5-page-mode" content="app">
+    <meta name="msapplication-tap-highlight" content="no">
+    <title>找大学</title>
+	<link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="css/base.css" />
+    <link rel="stylesheet" type="text/css" href="css/college.css" />
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/device.min.js"></script>
+    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+	<script type="application/javascript" src="http://cdn.bootcss.com/fastclick/1.0.6/fastclick.js"></script>
+    <script type="text/javascript" src="js/base.js"></script>
+    <script type="text/javascript" src="js/college.js"></script>
+</head>
+<body>
+<section class="wrap return">   	
+	<section class="fixed"> 
+    <!--头部开始-->
+    	<header class="header clearfix">
+            <div class="pageup fl"><a href="javascript:history.go(-1);"></a></div>
+    		<h1 class="fl">找大学</h1>
+            <nav class="nav fr">
+                <div class="nav-mn">
+                    <div class="nav-btn"></div>
+                    <ul class="nav-tap">
+                        <li>
+                            <a class="nav-tap-login" href="login.html">登录</a>
+                            <a class="nav-tap-info" href="users.html">个人中心</a>
+                        </li>
+                        <li class="nav-tabLi">
+                            <a class="nav-tap-login" href="register.html">注册</a>
+                            <a class="nav-tap-info" href="javascript:;">退出</a>
+                        </li>
+                        <li><a href="index.html">首页</a></li>
+                        <li><a href="college.html">找大学</a></li>
+                        <!-- <li><a href="voluntary.html">志愿模拟填报</a></li> -->
+                        <li><a href="evaluation.html">性格与专业测</a></li>
+                        <li><a href="major.html">搜专业</a></li>
+                        <li><a href="branch.html">文理分科测</a></li>
+                        <li><a href="admission.html">录取信息查询</a></li>
+                        <li><a href="industry.html">行业职业库</a></li>
+                        <li><a href="insight.html">自我洞悉</a></li>
+                        
+                    </ul>
+                </div>
+            </nav>
+    	</header>
+	</section>          
+    <!--头部结束-->
+	<section class="main">
+        <!-- 找大学内容开始 -->
+        <div class="search">
+            <form action="" method="post">
+                <input name="col-search" type="search" placeholder="请输入院校名称" id="col-search" class="search-ipt" list="tips" required="required" />
+                <datalist id="tips">
+                    <option>北京大学</option>
+                    <option>清华大学</option>
+                    <option>复旦大学</option>
+                    <option>武汉大学</option>
+                    <option>上海交通大学</option>
+                    <option>浙江大学</option>
+                    <option>中国人民大学</option>
+                    <option>南京大学</option>
+                    <option>吉林大学</option>
+                    <option>中山大学</option>
+                    <option>北京师范大学</option>
+                    <option>华中科技大学</option>
+                    <option>四川大学</option>
+                    <option>中国科学技术大学</option>
+                    <option>南开大学</option>
+                    <option>山东大学</option>
+                    <option>中南大学</option>
+                    <option>西安交通大学</option>
+                    <option>厦门大学</option>
+                    <option>哈尔滨工业大学</option>
+                 </datalist>
+                <label for="col-search" class="ico-search"></label> 
+                <input type="submit" value="查找" class="search-submit" /> 
+            </form>
+        </div>
+            <!-- 筛选部分开始 -->
+        <div class="choose row">
+            <div class="province col col-25"><span>省份</span><i></i></div>
+            <div class="type col col-25"><span>类型</span><i></i></div>
+            <div class="batch col col-25"><span>批次</span><i></i></div>
+            <div class="level col col-25"><span>层次</span><i></i></div>   
+        </div>
+            <!-- 筛选部分结束 -->
+            <!-- 大学展示开始 -->
+        <div class="college-show">
+            <div class="college-list clearfix">
+                <div class="college-logo fl">
+                    <a href="collegeContent.html"><img src="img/college-bj.jpeg" alt="北京大学" /></a>
+                </div>
+                <div class="college-name fl">
+                    <a class="row name" href="collegeContent.html">北京大学</a>
+                    <div class="row">
+                        <div class="col">
+                            <span class="college-tb fl"></span>
+                            <span class="college-tb  fl college-tub2"></span>
+                            <span class="college-tb fl college-tub3"></span>
+                        </div>
+                        <div class="col">
+                            <span class="college-collect">收藏</span>
+                        </div>
+                    </div>                    
+                </div> 
+                <div class="college-details fr">
+                    <a href="collegeContent.html">院校<br />详情</a>
+                </div>  
+            </div>
+            <div class="college-list clearfix">
+                <div class="college-logo fl">
+                    <a href="collegeContent.html"><img src="img/college-qh.jpeg" alt="清华大学" /></a>
+                </div>
+                <div class="college-name fl">
+                    <a class="row name" href="collegeContent.html">清华大学</a>
+                    <div class="row">
+                        <div class="col">
+                            <span class="college-tb fl"></span>
+                            <span class="college-tb  fl college-tub2"></span>
+                            <span class="college-tb fl college-tub3"></span>
+                        </div>
+                        <div class="col">
+                            <span class="college-collect">收藏</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="college-details fr">
+                    <a href="collegeContent.html">院校<br />详情</a>
+                </div>   
+            </div>
+            <div class="college-list clearfix">
+                <div class="college-logo fl">
+                    <a href="collegeContent.html"><img src="img/college-shjt.jpeg" alt="上海交通大学" /></a>
+                </div>
+                <div class="college-name fl">
+                    <a class="row name" href="collegeContent.html">上海交通大学</a>
+                    <div class="row">
+                        <div class="col">
+                            <span class="college-tb fl"></span>
+                            <span class="college-tb  fl college-tub2"></span>
+                            <span class="college-tb fl college-tub3"></span>
+                        </div>
+                        <div class="col">
+                            <span class="college-collect">收藏</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="college-details fr">
+                    <a href="collegeContent.html">院校<br />详情</a>
+                </div>   
+            </div>
+            <div class="college-list clearfix">
+                <div class="college-logo fl">
+                    <a href="collegeContent.html"><img src="img/college-fd.jpeg" alt="复旦大学" /></a>
+                </div>
+                <div class="college-name fl">
+                    <a class="row name" href="collegeContent.html">复旦大学</a>
+                    <div class="row">
+                        <div class="col">
+                            <span class="college-tb fl"></span>
+                            <span class="college-tb  fl college-tub2"></span>
+
+                        </div>
+                        <div class="col">
+                            <span class="college-collect">收藏</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="college-details fr">
+                    <a href="collegeContent.html">院校<br />详情</a>
+                </div>    
+            </div>
+            <div class="college-list clearfix">
+                <div class="college-logo fl">
+                    <a href="collegeContent.html"><img src="img/college-wh.jpeg" alt="武汉大学" /></a>
+                </div>
+                <div class="college-name fl">
+                    <a class="row name" href="collegeContent.html">武汉大学</a>
+                    <div class="row">
+                        <div class="col">
+                            <span class="college-tb fl"></span>
+                            <span class="college-tb  fl college-tub2"></span>
+                            <span class="college-tb fl college-tub3"></span>
+                        </div>
+                        <div class="col">
+                            <span class="college-collect">收藏</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="college-details fr">
+                    <a href="collegeContent.html">院校<br />详情</a>
+                </div>   
+            </div>
+            <div class="college-list clearfix">
+                <div class="college-logo fl">
+                    <a href="collegeContent.html"><img src="img/college-zj.jpeg" alt="浙江大学" /></a>
+                </div>
+                <div class="college-name fl">
+                    <a class="row name" href="collegeContent.html">浙江大学</a>
+                    <div class="row">
+                        <div class="col">
+                            <span class="college-tb fl"></span>
+                            <span class="college-tb  fl college-tub2"></span>
+                            <span class="college-tb fl college-tub3"></span>
+                        </div>
+                        <div class="col">
+                            <span class="college-collect">收藏</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="college-details fr">
+                    <a href="collegeContent.html">院校<br />详情</a>
+                </div>   
+            </div>
+            <div class="college-list clearfix">
+                <div class="college-logo fl">
+                    <a href="collegeContent.html"><img src="img/college-zgrm.jpeg" alt="中国人民大学" /></a>
+                </div>
+                <div class="college-name fl">
+                    <a class="row name" href="collegeContent.html">中国人民大学</a>
+                    <div class="row">
+                        <div class="col">
+                            <span class="college-tb fl"></span>
+                            <span class="college-tb  fl college-tub2"></span>
+                            
+                        </div>
+                        <div class="col">
+                            <span class="college-collect">收藏</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="college-details fr">
+                    <a href="collegeContent.html">院校<br />详情</a>
+                </div>   
+            </div>
+            <div class="college-list clearfix">
+                <div class="college-logo fl">
+                    <a href="collegeContent.html"><img src="img/college-nj.jpeg" alt="南京大学" /></a>
+                </div>
+                <div class="college-name fl">
+                    <a class="row name" href="collegeContent.html">南京大学</a>
+                    <div class="row">
+                        <div class="col">
+                            <span class="college-tb fl"></span>
+                            <span class="college-tb  fl college-tub2"></span>
+                            <span class="college-tb fl college-tub3"></span>
+                        </div>
+                        <div class="col">
+                            <span class="college-collect">收藏</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="college-details fr">
+                    <a href="collegeContent.html">院校<br />详情</a>
+                </div>  
+            </div>
+            <div class="college-list clearfix">
+                <div class="college-logo fl">
+                    <a href="collegeContent.html"><img src="img/college-jl.jpeg" alt="吉林大学" /></a>
+                </div>
+                <div class="college-name fl">
+                    <a class="row name" href="collegeContent.html">吉林大学</a>
+                    <div class="row">
+                        <div class="col">
+                            <span class="college-tb fl"></span>
+                            <span class="college-tb  fl college-tub2"></span>
+                            <span class="college-tb fl college-tub3"></span>
+                        </div>
+                        <div class="col">
+                            <span class="college-collect">收藏</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="college-details fr">
+                    <a href="collegeContent.html">院校<br />详情</a>
+                </div>   
+            </div>
+            <div class="college-list clearfix">
+                <div class="college-logo fl">
+                    <a href="collegeContent.html"><img src="img/college-zs.jpeg" alt="中山大学" /></a>
+                </div>
+                <div class="college-name fl">
+                    <a class="row name" href="collegeContent.html">中山大学</a>
+                    <div class="row">
+                        <div class="col">
+                            <span class="college-tb fl"></span>
+                            <span class="college-tb  fl college-tub2"></span>
+                            
+                        </div>
+                        <div class="col">
+                            <span class="college-collect">收藏</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="college-details fr">
+                    <a href="collegeContent.html">院校<br />详情</a>
+                </div>   
+            </div>
+            <div class="college-more"><a href="#">加载更多</a></div>
+        </div>
+            <!-- 大学展示结束 -->
+
+
+        <!-- 找大学内容结束 -->
+        <!--版权开始-->
+        <footer class="copyright">
+            <div class="copyright-l-hd row">
+            	<a class="about col col-50" href="about.html">关于</a>
+                <a class="contact col col-50" href="feedback.html">反馈</a>
+            </div>
+            <div class="copyright-l-ft">
+             Copyright © 2014 ( 粤ICP备14080709号-2 )
+             <br />utowin from 优途	
+            </div>
+        </footer>
+        <!--版权结束-->
+        <!-- 回到顶部 -->
+        <div class="toTop"></div>
+	</section>
+    <!-- 弹窗背景 -->
+    <div class="popup"></div>
+    <div class="popup-choose popup-province">
+        <div class="hd">
+            <span>省市</span>
+            <i></i>
+        </div>
+        <div class="mn clearfix">
+            <a class="current" href="javascript:;">全部</a>
+            <a href="javascript:;">安徽</a>
+            <a href="javascript:;">北京</a>
+            <a href="javascript:;">重庆</a>
+            <a href="javascript:;">福建</a>
+            <a href="javascript:;">广东</a>
+            <a href="javascript:;">甘肃</a>
+            <a href="javascript:;">贵州</a>
+            <a href="javascript:;">广西</a>
+            <a href="javascript:;">湖北</a>
+            <a href="javascript:;">河北</a>
+            <a href="javascript:;">河南</a>
+            <a href="javascript:;">湖南</a>
+            <a href="javascript:;">海南</a>
+            <a href="javascript:;">江苏</a>
+            <a href="javascript:;">吉林</a>
+            <a href="javascript:;">江西</a>
+            <a href="javascript:;">辽宁</a>
+            <a href="javascript:;">宁夏</a>
+            <a href="javascript:;">青海</a>
+            <a href="javascript:;">上海</a>
+            <a href="javascript:;">四川</a>
+            <a href="javascript:;">陕西</a>
+            <a href="javascript:;">山东</a>
+            <a href="javascript:;">山西</a>
+            <a href="javascript:;">天津</a>
+            <a href="javascript:;">台湾</a>
+            <a href="javascript:;">西藏</a>
+            <a href="javascript:;">香港</a>
+            <a href="javascript:;">新疆</a>
+            <a href="javascript:;">云南</a>
+            <a href="javascript:;">浙江</a>
+            <a href="javascript:;">黑龙江</a>
+            <a href="javascript:;">内蒙古</a>
+        </div>
+    </div>
+    <div class="popup-type popup-choose">
+        <div class="hd">
+            <span>类型</span>
+            <i></i>
+        </div>
+        <div class="mn clearfix">
+            <a class="current" href="javascript:;">全部</a>
+            <a href="javascript:;">综合</a>
+            <a href="javascript:;">理工</a>
+            <a href="javascript:;">农业</a>
+            <a href="javascript:;">林业</a>
+            <a href="javascript:;">医药</a>
+            <a href="javascript:;">师范</a>
+            <a href="javascript:;">语言</a>
+            <a href="javascript:;">财经</a>
+            <a href="javascript:;">政法</a>
+            <a href="javascript:;">体育</a>
+            <a href="javascript:;">艺术</a>
+            <a href="javascript:;">民族</a>
+            <a href="javascript:;">军事</a>
+        </div>
+    </div>
+    <div class="popup-batch popup-choose">        
+        <div class="hd">
+            <span>批次</span>
+            <i></i>
+        </div>
+        <div class="mn">
+            <a class="current" href="javascript:;">全部</a>
+            <a href="javascript:;">本科一批</a>
+            <a href="javascript:;">本科二批A</a>
+            <a href="javascript:;">本科二批B</a>
+            <a href="javascript:;">专科A</a>
+            <a href="javascript:;">专科B</a>     
+        </div>
+    </div>
+    <div class="popup-level popup-choose">
+        <div class="hd">
+            <span>层次</span>
+            <i></i>
+        </div>
+        <div class="mn">
+            <a class="current" href="javascript:;">全部</a>
+            <a href="javascript:;">211</a>
+            <a href="javascript:;">985</a>
+            <a href="javascript:;">卓越计划</a>
+            <a href="javascript:;">省属重点院校</a>
+        </div>
+    </div>
+</section>     
+</body>
+</html>

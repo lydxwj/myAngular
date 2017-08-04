@@ -1,0 +1,45 @@
+@charset "utf-8";
+/* CSS Document */
+/*优途名师课程内容开始*/
+
+.vc-hd{ height: 4rem;}
+.vc-hd a{ display:block; height: 100%; background-image:url(../img/teacher.png); background-size: cover; background-position: center; background-repeat: no-repeat;}
+       /*课程内容头部简介开始*/
+.vc-mn-f1{ padding-bottom: 0.2rem; background: #3b87d3; border-bottom: 1px solid #ccc; color: #fff;}
+.vc-mn-l a{ height: 3.76rem; width: 5.32rem; display: block; margin: 0.2rem 0 0 0.2rem; background-image:url(../img/teacher-l01.png); background-size: cover; background-position: center; background-repeat: no-repeat;}
+.vc-mn-r p{ line-height: 0.72rem;}
+.vc-mn-r .hd{ font-weight: 700; line-height: 0.8rem; height:1.6rem;padding-right: 0.1rem;display:table-cell; vertical-align: middle;} 
+.vc-mn-r p span{ color:#ffe400;}
+.vc-mn-r a{ color: #fff;} 
+        /*课程内容头部简介结束*/
+        /*名师简介开始*/
+.teacher-about{ box-sizing: border-box;}
+.teacher-about-l{ text-align: center;}
+.teacher-about .about-l-logo{ height: 2.6rem; width: 2.6rem;background-image:url(../img/teacher-photo.png); background-size: cover; background-position: center; background-repeat: no-repeat;margin-left: auto; margin-right: auto;}
+        /*名师简介结束*/
+        /*课程说明开始*/
+.vc-mn-f2{ margin: 0.4rem; }
+.vc-mn-f2 .mn-f2-hd{ font-size: 0.6rem; color: #fff;}
+.mn-f2-hd .font{ background: #3B87D3; height:0.9rem; padding-left: 0.4rem; padding-right: 0.4rem; border-radius: 0.1rem;}
+.vc-mn-f2 .mn-f2-mn{ border: 1px solid #3B87D3;padding: 0.4rem; border-radius: 0.1rem; line-height: 0.8rem;}
+        /*课程说明结束*/
+        /*课程内容开始*/
+.vc-mn-f3 .f3-mn-hd span{ height: 0; width: 0; display: inline-block; border-top:0.34rem solid #3B87D3; border-left: 0.26rem dashed transparent;border-right: 0.26rem dashed transparent; margin-right: 0.2rem; margin-bottom: -0.06rem;}
+.vc-mn-f3 .mn-f3-mn ul{ padding-left: 0.6rem;}
+.mn-f3-mn ul li{ padding-top:0.2rem;padding-bottom:0.2rem;}
+.mn-f3-mn ul a{ display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; color: #2135fd; float: left; width: 100%;line-height: 1rem;}
+.vc-mn-f3 .circle{ width: 1rem; height:1rem; background: #8D96F7;color: #fff;line-height: 1rem; float: left; margin-right: 10px; border-radius: 50%; text-align: center;} 
+.classes-about .mn-f2-mn{ display:none;}
+.classes-about .mn-f2-hd .colorB{ padding-left: 0.4rem;}
+        /*课程内容结束*/
+/*优途名师课程内容结束*/
+
+
+
+
+
+
+
+
+
+

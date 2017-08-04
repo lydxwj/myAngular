@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telphone=no, email=no" />
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="MobileOptimized" content="320">
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-orientation" content="portrait">
+    <meta name="full-screen" content="yes">
+    <meta name="x5-fullscreen" content="true">
+    <meta name="browsermode" content="application">
+    <meta name="x5-page-mode" content="app">
+    <meta name="msapplication-tap-highlight" content="no">
+    <title>优途名师课</title>
+	<link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="css/base.css" />
+    <link rel="stylesheet" type="text/css" href="css/industry.css" />
+    <link rel="stylesheet" type="text/css" href="css/video.css" />
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/device.min.js"></script>
+    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+	<script type="application/javascript" src="http://cdn.bootcss.com/fastclick/1.0.6/fastclick.js"></script>
+    <script type="text/javascript" src="js/base.js"></script>
+    <script type="text/javascript" src="js/industry.js"></script>
+    <script type="text/javascript" src="js/video.js"></script>
+</head>
+<body>
+<section class="wrap return">   	
+	<section class="fixed"> 
+    <!--头部开始-->
+    	<header class="header clearfix">
+            <div class="pageup fl"><a href="javascript:history.go(-1);"></a></div>
+    		<h1 class="fl">优途名师课</h1>
+            <nav class="nav fr">
+                <div class="nav-mn">
+                    <div class="nav-btn"></div>
+                    <ul class="nav-tap">
+                        <li>
+                            <a class="nav-tap-login" href="login.html">登录</a>
+                            <a class="nav-tap-info" href="users.html">个人中心</a>
+                        </li>
+                        <li class="nav-tabLi">
+                            <a class="nav-tap-login" href="register.html">注册</a>
+                            <a class="nav-tap-info" href="javascript:;">退出</a>
+                        </li>
+                        <li><a href="index.html">首页</a></li>
+                        <li><a href="college.html">找大学</a></li>
+                        <!-- <li><a href="voluntary.html">志愿模拟填报</a></li> -->
+                        <li><a href="evaluation.html">性格与专业测</a></li>
+                        <li><a href="major.html">搜专业</a></li>
+                        <li><a href="branch.html">文理分科测</a></li>
+                        <li><a href="admission.html">录取信息查询</a></li>
+                        <li><a href="industry.html">行业职业库</a></li>
+                        <li><a href="insight.html">自我洞悉</a></li>
+                        
+                    </ul>
+                </div>
+            </nav>
+    	</header>
+	</section>          
+    <!--头部结束-->
+	<section class="main">
+        <!-- 优途名师课程内容开始 -->
+            <!-- 优途名师课程按钮开始 -->
+        <div class="industry-tab row">
+            <div class="industry-hot col col-50">
+                <a class="tabOn" href="javascript:;">
+                    <span class="name-ku">高中课程</span>
+                </a>
+            </div>
+            <div class="industry-tradition col col-50">
+                <a href="javascript:;">
+                    <span class="name-ku">初中课程</span>
+                </a>
+            </div>
+        </div>
+            <!-- 优途名师课程按钮结束 -->
+            <!-- 搜索框开始 -->
+        <div class="search">
+            <form action="" method="post">
+                <input name="industry-search" type="search" placeholder="请输入课程名称" id="video" class="search-ipt" list="tip" required="required" />
+                <datalist id="tip">
+                    <option value="高三英语一轮复习（通用版）">高三英语一轮复习（通用版）</option>
+                    <option value="高二英语上学期词汇（通用版）">高二英语上学期词汇（通用版）</option>
+                    <option value="高一英语上学期词汇（通用版）">高一英语上学期词汇（通用版）</option>
+                    <option value="高二英语上学期阅读理解（通用版）">高二英语上学期阅读理解（通用版）</option>
+                    <option value="高一英语上学期阅读理解（通用版）">高一英语上学期阅读理解（通用版）</option>
+                    <option value="高二英语上学期写作（通用版）">高二英语上学期写作（通用版）</option>
+                    <option value="高三语文上学期同步课（通用版）">高三语文上学期同步课（通用版）</option>
+                    <option value="高二语文上学期同步课（通用版）">高二语文上学期同步课（通用版）</option>
+                    <option value="高三数学一轮复习（通用版）">高三数学一轮复习（通用版）</option>
+                    <option value="高二数学选修2-1同步课（北师大版）">高二数学选修2-1同步课（北师大版）</option>
+                    <option value="高三物理一轮复习（通用版）">高三物理一轮复习（通用版）</option>
+                 </datalist>
+                <label for="col-search" class="ico-search"></label> 
+                <input type="submit" value="查找" class="search-submit" /> 
+            </form>
+        </div>
+            <!-- 搜索框结束 -->
+            <!-- 优途名师课程分类选择开始 -->
+        <div class="industry-contain row">
+                <!-- 左侧分类开始 -->
+            <div class="industry-contain-l col col-20">
+                <ul class="left-mn left-hot">    
+                    <li class="active">语文</li>    
+                    <li>数学</li>
+                    <li>英语</li>
+                    <li>物理</li>
+                    <li>化学</li>
+                    <li>生物</li>
+                    <li>政治</li>
+                    <li>历史</li>
+                    <li>地理</li>
+                </ul>
+                <ul class="left-mn left-tradition">       
+                    <li class="active">语文</li>    
+                    <li>数学</li>
+                    <li>英语</li>
+                    <li>物理</li>
+                    <li>化学</li>
+                    <li>生物</li>
+                    <li>政治</li>
+                    <li>历史</li>
+                    <li>地理</li>
+                </ul> 
+            </div>
+                <!-- 左侧分类结束 -->
+                <!-- 右侧分类开始 -->
+            <div class="industry-contain-r col col-80">
+                <div class="contain-r-mn">
+                <!-- 高中课程开始-->
+                    <!-- 语文开始 -->
+                    <div class="contain-r-cm hot-details">
+                        <div class="classes">
+                            <div class="classes-hd">高一<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="videoContent.html">高一语文上学期同步课（通用版）</a></li>
+                                <li><a href="videoContent.html">高一下学期语文同步课程</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">高二<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">高二语文上学期同步课（通用版）</a></li>
+                                <li><a href="#">高二下学期语文同步课程</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">高三<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="">高三语文上学期同步课（通用版）</a></li>
+                                <li><a href="">高考语文冲刺课程</a></li>
+                            </ul>
+                        </div>
+                    </div> 
+                    <!-- 语文结束 -->
+                    <!-- 数学开始 -->
+                    <div class="contain-r-jr hot-details">
+                        <div class="classes">
+                            <div class="classes-hd">高一<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="">高一数学必修1同步课（通用版）</a></li>
+                                <li><a href="">高一数学必修1同步课（北师大版）</a></li>
+                                <li><a href="">高一数学必修1同步课（人教B版）</a></li>
+                                <li><a href="">高一数学必修1同步课（人教A版）</a></li>
+                                <li><a href="">高一下学期数学同步课程（北师大版）</a></li>
+                                <li><a href="">高一下学期数学同步课程（人教B版）</a></li>
+                                <li><a href="">高一下学期数学同步课程（人教A版）</a></li>
+                                <li><a href="">高一下学期数学同步课程（苏教版）</a></li>
+                                <li><a href="">高一下学期数学同步课程（通用版）</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">高二<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">高二数学选修2-1同步课（北师大版）</a></li>
+                                <li><a href="#">高二数学选修2-1同步课（人教B版）</a></li>
+                                <li><a href="#">高二数学选修2-1同步课（人教A版）</a></li>
+                                <li><a href="#">高二数学选修1-1同步课（通用版）</a></li>
+                                <li><a href="#">高二数学选修1-1同步课（北师大版）</a></li>
+                                <li><a href="#">高二数学选修1-1同步课（人教B版）</a></li>
+                                <li><a href="#">高二数学选修1-1同步课（人教A版）</a></li>
+                                <li><a href="#">高二数学（理）必修5同步课（通用版）</a></li>
+                                <li><a href="#">高二数学（理）必修5同步课（北师大版）</a></li>
+                                <li><a href="#">高二数学（理）必修5同步课（人教B版）</a></li>
+                                <li><a href="#">高二数学（理）必修5同步课（人教A版）</a></li>
+                                <li><a href="#">高二数学（文）必修5同步课（通用版）</a></li>
+                                <li><a href="#">高二数学（文）必修5同步课（北师大版）</a></li>
+                                <li><a href="#">高二数学（文）必修5同步课（人教B版）</a></li>
+                                <li><a href="#">高二数学（文）必修5同步课（人教A版）</a></li>
+                                <li><a href="#">高二数学必修2同步课（通用版）</a></li>
+                                <li><a href="#">高二数学必修2同步课（北师大版）</a></li>
+                                <li><a href="#">高二数学必修2同步课（人教B版）</a></li>
+                                <li><a href="#">高二数学必修2同步课（人教A版）</a></li>
+                                <li><a href="#">高二数学（理）选修2-2同步课程（通用版）</a></li>
+                                <li><a href="#">高二数学（文）选修4-4同步课程（人教A版）</a></li>
+                                <li><a href="#">高二数学（文）选修4-1同步课程（人教A版）</a></li>
+                                <li><a href="#">高二数学（理）选修2-3同步课程（北师大版）</a></li>
+                                <li><a href="#">高二数学（文）选修1-2同步课程（人教A版）</a></li>
+                                <li><a href="#">高二数学（理）选修2-3同步课程（人教B版）</a></li>
+                                <li><a href="#"> 高二数学（文）选修4-1同步课程（苏教版）</a></li>
+                                <li><a href="#">高二数学（理）选修2-2同步课程（北师大版）</a></li>
+                                <li><a href="#">高二数学（文）选修1-2同步课程（通用版）</a></li>
+                                <li><a href="#">高二数学（理)选修4同步课程（人教B版）</a></li>
+                                <li><a href="#">高二数学（文）选修4-4同步课程（苏教版）</a></li>
+                                <li><a href="#">高二数学（文）选修4-5同步课程（苏教版）</a></li>
+                                <li><a href="#">高二数学（文）选修4-5同步课程（北师大版）</a></li>
+                                <li><a href="#">高二数学（理）选修2-3同步课程（苏教版）</a></li>
+                                <li><a href="#">高二数学（文）选修4-5同步课程（人教A版）</a></li>
+                                <li><a href="#">高二数学（文）选修4-4同步课程（人教B版）</a></li>
+                                <li><a href="#">高二数学（理)选修4同步课程（人教A版）</a></li>
+                                <li><a href="#">高二数学（理）选修2-3同步课程（人教A版）</a></li>
+                                <li><a href="#">高二数学（理)选修4同步课程（北师大版）</a></li>
+                                <li><a href="#">高二数学（文）选修4-4同步课程（通用版）</a></li>
+                                <li><a href="#">高二数学（文）选修4-1同步课程（北师大版）</a></li>
+                                <li><a href="#">高二数学（文）选修1-2同步课程（苏教版）</a></li>
+                                <li><a href="#">高二数学（文）选修1-2同步课程（人教B版）</a></li>
+                                <li><a href="#">高二数学（文）选修4-4同步课程（北师大版）</a></li>
+                                <li><a href="#">高二数学（理)选修4同步课程（通用版）</a></li>
+                                <li><a href="#">高二数学（文）选修1-2同步课程（北师大版）</a></li>
+                                <li><a href="#">高二数学（文）选修4-1同步课程（人教B版）</a></li>
+                                <li><a href="#">高二数学（理）选修2-3同步课程（通用版）</a></li>
+                                <li><a href="#">高二数学（理）选修2-2同步课程（人教B版）</a></li>
+                                <li><a href="#">高二数学（理）选修2-2同步课程（苏教版）</a></li>
+                                <li><a href="#">高二数学（文）选修4-5同步课程（通用版）</a></li>
+                                <li><a href="#">高二数学（文）选修4-1同步课程（通用版）</a></li>
+                                <li><a href="#">高二数学（文）选修4-5同步课程（人教B版）</a></li>
+                                <li><a href="#">高二数学（理)选修4同步课程（苏教版）</a></li>
+                                <li><a href="#">高二数学（理）选修2-2同步课程（人教A版）</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">高三<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="">高三数学一轮复习（通用版）</a></li>
+                                <li><a href="">高考数学二轮复习课程</a></li>
+                                <li><a href="">高考数学三轮冲刺课程</a></li>
+                            </ul>
+                        </div>
+                    </div> 
+                    <!-- 数学结束 -->
+                    <!-- 英语开始 -->
+                    <div class="contain-r-jr hot-details">
+                        <div class="classes">
+                            <div class="classes-hd">高一<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="">高一英语上学期词汇（通用版）</a></li>
+                                <li><a href="">高一英语上学期阅读理解（通用版）</a></li>
+                                <li><a href="">高一英语上学期写作（通用版）</a></li>
+                                <li><a href="">高一英语上学期语法（通用版）</a></li>
+                                <li><a href="">高一下学期英语同步课程</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">高二<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">高二英语上学期词汇（通用版）</a></li>
+                                <li><a href="#">高二英语上学期阅读理解（通用版）</a></li>
+                                <li><a href="#">高二英语上学期写作（通用版）</a></li>
+                                <li><a href="#">高二英语上学期语法（通用版）</a></li>
+                                <li><a href="#">高二下学期英语同步课程</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">高三<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="">高三英语一轮复习（通用版）</a></li>
+                                <li><a href="">高考英语冲刺课程</a></li>
+                            </ul>
+                        </div>
+                    </div> 
+                    <!-- 英语结束 -->
+                    <!-- 物理开始 -->
+                    <div class="contain-r-jr hot-details">
+                        <div class="classes">
+                            <div class="classes-hd">高一<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="">高一物理必修1（教科版）</a></li>
+                                <li><a href="">高一物理必修1同步课（鲁科版）</a></li>
+                                <li><a href="">高一物理必修1同步课（人教版）</a></li>
+                                <li><a href="">高中物理必修2同步课程（教科版）</a></li>
+                                <li><a href="">高中物理必修2同步课程（人教版）</a></li>
+                                <li><a href="">高中物理必修2同步课程（鲁科版）</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">高二<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">高二物理选修3-2同步课（教科版）</a></li>
+                                <li><a href="#">高二物理选修3-2同步课（鲁科版）</a></li>
+                                <li><a href="#">高二物理选修3-2同步课（人教版）</a></li>
+                                <li><a href="#">高二物理选修3-1同步课（教科版）</a></li>
+                                <li><a href="#">高二物理选修3-1同步课（鲁科版）</a></li>
+                                <li><a href="#">高二物理选修3-1同步课（人教版）</a></li>
+                                <li><a href="#">高中物理选修3-5同步课程（教科版)</a></li>
+                                <li><a href="#">高中物理选修3-4同步课程（教科版)</a></li>
+                                <li><a href="#">高中物理选修3-3同步课程（教科版)</a></li>
+                                <li><a href="#">高中物理选修3-3同步课程（鲁科版)</a></li>
+                                <li><a href="#">高中物理选修3-3同步课程（人教版)</a></li>
+                                <li><a href="#">高中物理选修3-4同步课程（鲁科版)</a></li>
+                                <li><a href="#">高中物理选修3-5同步课程（人教版)</a></li>
+                                <li><a href="#">高中物理选修3-5同步课程（鲁科版)</a></li>
+                                <li><a href="#">高中物理选修3-4同步课程（人教版)</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">高三<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="">高三物理一轮复习（通用版）</a></li>
+                                <li><a href="">高三物理二轮同步课程</a></li>
+                                <li><a href="">高三物理三轮同步课程</a></li>
+                            </ul>
+                        </div>
+                    </div> 
+                    <!-- 物理结束 -->
+                    <!-- 化学开始 -->
+                    <div class="contain-r-jr hot-details">
+                        <div class="classes">
+                            <div class="classes-hd">高一<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="">高一化学上学期同步课（鲁科版）</a></li>
+                                <li><a href="">高一化学上学期同步课（苏教版）</a></li>
+                                <li><a href="">高一化学上学期同步课（人教版）</a></li>
+                                <li><a href="">高一下学期化学同步课程（苏教版）</a></li>
+                                <li><a href="">高一下学期化学同步课程（鲁科版）</a></li>
+                                <li><a href="">高一下学期化学同步课程（人教版）</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">高二<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">高二化学上学期同步课（鲁科版）</a></li>
+                                <li><a href="#">高二化学上学期同步课（苏教版）</a></li>
+                                <li><a href="#">高二化学上学期同步课（人教版）</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">高三<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="">高三化学上学期同步课（鲁科版）</a></li>
+                                <li><a href="">高三化学上学期同步课（苏教版）</a></li>
+                                <li><a href="">高三化学上学期同步课（人教版）</a></li>
+                                <li><a href="">高考化学冲刺课程（通用版）</a></li>
+                            </ul>
+                        </div>
+                    </div> 
+                    <!-- 化学结束 -->
+                    <!-- 生物开始 -->
+                    <div class="contain-r-jr hot-details">
+                        <div class="classes">
+                            <div class="classes-hd">高一<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="">生物的变异</a></li>
+                                <li><a href="">人类遗传病</a></li>
+                                <li><a href="">基因和染色体的关系</a></li>
+                                <li><a href="">遗传因子的发现</a></li>
+                                <li><a href="">生物变异在育种上应用</a></li>
+                                <li><a href="">生物的进化</a></li>
+                                <li><a href="">生物的遗传物质</a></li>
+                                <li><a href="">DNA分子的功能</a></li>
+                                <li><a href="">细胞呼吸与ATP</a></li>
+                                <li><a href="">细胞代谢与酶、实验变量</a></li>
+                                <li><a href="">光合作用</a></li>
+                                <li><a href="">细胞的生命历程</a></li>
+                                <li><a href="">细胞的分子组成</a></li>
+                                <li><a href="">细胞的结构</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">高二<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">微生物的利用</a></li>
+                                <li><a href="#">克隆技术</a></li>
+                                <li><a href="#">基础实验</a></li>
+                                <li><a href="#">实验法</a></li>
+                                <li><a href="#">基因工程</a></li>
+                                <li><a href="#">假说演绎法</a></li>
+                                <li><a href="#">调查法</a></li>
+                                <li><a href="#">生态系统的能量流动与稳态</a></li>
+                                <li><a href="#">植物的激素调节</a></li>
+                                <li><a href="#">脊椎动物激素的调节</a></li>
+                                <li><a href="#">人体神经调节的结构基础和调节过程</a></li>
+                                <li><a href="#">种群和群落</a></li>
+                                <li><a href="#">人体的内环境与稳态</a></li>
+                                <li><a href="#">人体免疫系统在维持稳态中的作用</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">高三<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="">专题2：遗传变异题的考查要点与解题思路</a></li>
+                                <li><a href="">专题3：生物技术题的考查要点与解题思路</a></li>
+                                <li><a href="">专题1：实验探究题的考查要点与解题思路</a></li>
+                                <li><a href="">生物学观点与疑难问题例析</a></li>
+                                <li><a href="">生物育种——方法、特点</a></li>
+                                <li><a href="">细胞呼吸——影响因素、研究</a></li>
+                                <li><a href="">减数分裂——图形识别、曲线识别</a></li>
+                                <li><a href="">生态系统的结构与物质循环</a></li>
+                                <li><a href="">光合作用——影响因素、研究</a></li>
+                                <li><a href="">酶——概念、研究</a></li>
+                                <li><a href="">基因突变——特点、原因分析</a></li>
+                                <li><a href="">蛋白质分子</a></li>
+                                <li><a href="">生物膜——结构、功能</a></li>
+                            </ul>
+                        </div>
+                    </div> 
+                    <!-- 生物结束 -->
+                    <!-- 政治开始 -->
+                    <div class="contain-r-jr hot-details">
+                        <div class="classes">
+                            <div class="classes-hd">高一<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="">发展社会主义市场经济</a></li>
+                                <li><a href="">投资理财的选择</a></li>
+                                <li><a href="">收入与分配</a></li>
+                                <li><a href="">发展社会主义民主政治</a></li>
+                                <li><a href="">当代国际社会</a></li>
+                                <li><a href="">《经济生活》模块总复习</a></li>
+                                <li><a href="">为人民服务的政府</a></li>
+                                <li><a href="">货币与价格</a></li>
+                                <li><a href="">公民的政治生活</a></li>
+                                <li><a href="">生产与消费</a></li>
+                                <li><a href="">《政治生活》模块总复习</a></li>
+                                <li><a href="">对外开放与经济全球化</a></li>
+                                <li><a href="">企业的经营与发展</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">高二<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">生活的智慧</a></li>
+                                <li><a href="#">会考复习指南（上）</a></li>
+                                <li><a href="#">《生活与哲学》总结</a></li>
+                                <li><a href="#">矛盾与辩证的否定观</a></li>
+                                <li><a href="#">用联系与发展的观点看问题</a></li>
+                                <li><a href="#">物质与意识</a></li>
+                                <li><a href="#">会考复习指南（下）</a></li>
+                                <li><a href="#">辩证唯物主义认识论</a></li>
+                                <li><a href="#">树立正确的人生观与价值观</a></li>
+                                <li><a href="#">文化的作用</a></li>
+                                <li><a href="#">中华文化与中华民族精神</a></li>
+                                <li><a href="#">发展社会主义先进文化</a></li>
+                                <li><a href="#">文化生活总结</a></li>
+                                <li><a href="#">历史唯物主义的基本观点</a></li>
+                                <li><a href="#">文化的继承与传播</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">高三<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="">《经济生活》第一单元</a></li>
+                                <li><a href="">主观性试题解题方法探讨（1）</a></li>
+                                <li><a href="">《生活与哲学》</a></li>
+                                <li><a href="">主观性试题解题方法探讨（2）</a></li>
+                                <li><a href="">《经济生活》第二、三、四单元</a></li>
+                                <li><a href="">《文化生活》</a></li>
+                                <li><a href="">《政治生活》</a></li>
+                                <li><a href="">十八大之“未来中国”篇</a></li>
+                                <li><a href="">高考政治：《政治生活》备考策略</a></li>
+                                <li><a href="">高考冲刺答题方法与技巧2——问答题</a></li>
+                                <li><a href="">十八大之“人民主体”篇</a></li>
+                                <li><a href="">高考政治：《经济生活》备考策略</a></li>
+                                <li><a href="">高考政治：《生活与哲学》备考策略</a></li>
+                                <li><a href="">高中思想政治必修3《文化生活》知识主题分析与运用</a></li>
+                                <li><a href="">高考冲刺答题方法与技巧1——选择题</a></li>
+                                <li><a href="">高中思想政治必修4《生活与哲学》知识主题分析与运用</a></li>
+                                <li><a href="">十八大之“深化改革”篇</a></li>
+                                <li><a href="">高考政治：《文化生活》备考策略</a></li>
+                                <li><a href="">从2012年高考试题，看应考复习思路和能力要求</a></li>
+                                <li><a href="">高中思想政治必修1《经济生活》知识主题分析与运用</a></li>
+                                <li><a href="">高中思想政治必修2《政治生活》知识主题分析与运用</a></li>
+                            </ul>
+                        </div>
+                    </div> 
+                    <!-- 政治结束 -->
+                    <!-- 历史开始 -->
+                    <div class="contain-r-jr hot-details">
+                        <div class="classes">
+                            <div class="classes-hd">高一<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="">中国近现代社会生活的变迁</a></li>
+                                <li><a href="">中国古代的政治制度（下）</a></li>
+                                <li><a href="">近代中国经济的成长历程</a></li>
+                                <li><a href="">从五四运动到解放战争</a></li>
+                                <li><a href="">从科学社会主义理论到社会主义制度的建立</a></li>
+                                <li><a href="">罗斯福新政与资本主义运行机制的调节</a></li>
+                                <li><a href="">古代中国经济的基本结构与特点</a></li>
+                                <li><a href="">近代西方资本主义政治制度的确立和发展</a></li>
+                                <li><a href="">中国古代的政治制度（上）</a></li>
+                                <li><a href="">资本主义世界市场的形成和发展</a></li>
+                                <li><a href="">从鸦片战争到辛亥革命</a></li>
+                                <li><a href="">苏联社会主义建设的经验与教训</a></li>
+                                <li><a href="">现代中国的对外关系</a></li>
+                                <li><a href="">现代中国的政治建设与祖国统一</a></li>
+                                <li><a href="">中国特色社会主义建设的道路</a></li>
+                                <li><a href="">当今世界政治格局的多极化趋势</a></li>
+                                <li><a href="">古代希腊罗马的政治制度</a></li>
+                                <li><a href="">经济的全球化</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">高二<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">近代以来中国的思想解放潮流和重大理论成果</a></li>
+                                <li><a href="#">中国古代、现代的科学技术、教育与文学艺术</a></li>
+                                <li><a href="#">20世纪的战争与和平</a></li>
+                                <li><a href="#">近代以来的世界科学发展历程和文学艺术的辉煌</a></li>
+                                <li><a href="#">西方人文主义思想的起源和发展</a></li>
+                                <li><a href="#">近代社会的民主思想与实践（下）</a></li>
+                                <li><a href="#">中外历史人物评说</a></li>
+                                <li><a href="#">近代社会的民主思想与实践（上）</a></li>
+                                <li><a href="#">历史上重大改革回眸（下）</a></li>
+                                <li><a href="#">历史上重大改革回眸（上）</a></li>
+                                <li><a href="#">中国传统文化主流思想的演变</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">高三<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="">高考解题思路与方法指导</a></li>
+                                <li><a href="">中国近代史</a></li>
+                                <li><a href="">专题二：民主化、法治化、多元化——政治与思想的考法与解法</a></li>
+                                <li><a href="">高中历史串讲：文明、技术与文化</a></li>
+                                <li><a href="">共和国史</a></li>
+                                <li><a href="">世界古代史</a></li>
+                                <li><a href="">专题三：个性化、大众化、民族化——社会与文艺的考法与解法</a></li>
+                                <li><a href="">世界近代史</a></li>
+                                <li><a href="">世界现代史</a></li>
+                                <li><a href="">专题一：私有化、市场化、工业化——经济与科技的考法与解法</a></li>
+                                <li><a href="">中国古代史</a></li>
+                            </ul>
+                        </div>
+                    </div> 
+                    <!-- 历史结束 -->
+                    <!-- 地理开始 -->
+                    <div class="contain-r-jr hot-details">
+                        <div class="classes">
+                            <div class="classes-hd">高一<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="">城市化</a></li>
+                                <li><a href="">交通运输布局及其影响</a></li>
+                                <li><a href="">农业生产活动</a></li>
+                                <li><a href="">人类与地理环境的协调发展</a></li>
+                                <li><a href="">工业生产活动</a></li>
+                                <li><a href="">城市的服务功能和空间结构</a></li>
+                                <li><a href="">水循环和洋流</a></li>
+                                <li><a href="">气压带、风带和季风环流</a></li>
+                                <li><a href="">锋面和气旋</a></li>
+                                <li><a href="">板块构造学说的运用</a></li>
+                                <li><a href="">地球的运动（一）</a></li>
+                                <li><a href="">地球与地图</a></li>
+                                <li><a href="">地球的运动（三）</a></li>
+                                <li><a href="">人口的变化</a></li>
+                                <li><a href="">自然环境的整体性和差异性</a></li>
+                                <li><a href="">地球的运动（二）</a></li>
+                                <li><a href="">大气热力性质和运动</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">高二<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">世界地理</a></li>
+                                <li><a href="#">中国地理——青藏高原</a></li>
+                                <li><a href="#">中国地理——西北地区</a></li>
+                                <li><a href="#">中国地理——南方地区</a></li>
+                                <li><a href="#">中国地理</a></li>
+                                <li><a href="#">世界地理——认识国家（以美国为例）</a></li>
+                                <li><a href="#">中国地理概述</a></li>
+                                <li><a href="#">中国地理——北方地区</a></li>
+                                <li><a href="#">世界地理——认识区域（以东南亚为例）</a></li>
+                                <li><a href="#">区域能源矿产的开发与可持续发展</a></li>
+                                <li><a href="#">区域农业可持续发展</a></li>
+                                <li><a href="#">区域工业化和城市化进程</a></li>
+                                <li><a href="#">世界地理——认识大洲</a></li>
+                                <li><a href="#">流域的综合开发和治理</a></li>
+                                <li><a href="#">区域生态环境建设</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">高三<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="">高考冲刺答题策略（二）</a></li>
+                                <li><a href="">特征描述类试题的答题策略与方法</a></li>
+                                <li><a href="">提高获取和解读信息能力的途径与方法</a></li>
+                                <li><a href="">原因分析类试题的答题方法</a></li>
+                                <li><a href="">高考冲刺答题策略（一）</a></li>
+                                <li><a href="">天气系统</a></li>
+                                <li><a href="">区位</a></li>
+                                <li><a href="">地理图像与等值线</a></li>
+                                <li><a href="">地球上的水</a></li>
+                                <li><a href="">地表形态的塑造</a></li>
+                                <li><a href="">区域差异与发展</a></li>
+                                <li><a href="">区域地理学习方法</a></li>
+                                <li><a href="">气候</a></li>
+                            </ul>
+                        </div>
+                    </div> 
+                    <!-- 地理结束 -->
+                <!-- 高中课程分类结束 -->
+                <!-- 初中分类开始 -->
+                    <!-- 语文开始 -->
+                    <div class="contain-r-cw tradition-details">
+                        <div class="classes">
+                            <div class="classes-hd">初一<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="">初中卡及教师VIP卡专享</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">初二<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">初中卡及教师VIP卡专享</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">初三<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="">初中卡及教师VIP卡专享</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- 语文结束 -->
+                    <!-- 数学开始 -->
+                    <div class="contain-r-xs tradition-details">
+                        <div class="classes">
+                            <div class="classes-hd">初一<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="">初中卡及教师VIP卡专享</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">初二<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">初中卡及教师VIP卡专享</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">初三<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="">初中卡及教师VIP卡专享</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                     <!-- 数学结束 -->
+                     <div class="contain-r-xs tradition-details">
+                        <div class="classes">
+                            <div class="classes-hd">初一<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="">初中卡及教师VIP卡专享</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">初二<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">初中卡及教师VIP卡专享</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">初三<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="">初中卡及教师VIP卡专享</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="contain-r-xs tradition-details">
+                        <div class="classes">
+                            <div class="classes-hd">初一<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="">初中卡及教师VIP卡专享</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">初二<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">初中卡及教师VIP卡专享</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">初三<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="">初中卡及教师VIP卡专享</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="contain-r-xs tradition-details">
+                        <div class="classes">
+                            <div class="classes-hd">初一<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="">初中卡及教师VIP卡专享</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">初二<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">初中卡及教师VIP卡专享</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">初三<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="">初中卡及教师VIP卡专享</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="contain-r-xs tradition-details">
+                        <div class="classes">
+                            <div class="classes-hd">初一<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="">初中卡及教师VIP卡专享</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">初二<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">初中卡及教师VIP卡专享</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">初三<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="">初中卡及教师VIP卡专享</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="contain-r-xs tradition-details">
+                        <div class="classes">
+                            <div class="classes-hd">初一<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="">初中卡及教师VIP卡专享</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">初二<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">初中卡及教师VIP卡专享</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">初三<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="">初中卡及教师VIP卡专享</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="contain-r-xs tradition-details">
+                        <div class="classes">
+                            <div class="classes-hd">初一<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="">初中卡及教师VIP卡专享</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">初二<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">初中卡及教师VIP卡专享</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">初三<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="">初中卡及教师VIP卡专享</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="contain-r-xs tradition-details">
+                        <div class="classes">
+                            <div class="classes-hd">初一<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="">初中卡及教师VIP卡专享</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">初二<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="#">初中卡及教师VIP卡专享</a></li>
+                            </ul>
+                        </div>
+                        <div class="classes">
+                            <div class="classes-hd">初三<i></i></div>
+                            <ul class="classesr-mn">
+                                <li><a href="">初中卡及教师VIP卡专享</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                <!-- 初中分类结束 -->
+                </div>
+            </div>
+                <!-- 右侧分类结束 -->
+        </div>
+            <!-- 优途名师课程分类选择结束 -->
+        <!-- 优途名师课程内容结束 -->
+        <!--版权开始-->
+        <footer class="copyright">
+            <div class="copyright-l-hd row">
+            	<a class="about col col-50" href="about.html">关于</a>
+                <a class="contact col col-50" href="feedback.html">反馈</a>
+            </div>
+            <div class="copyright-l-ft">
+             Copyright © 2014 ( 粤ICP备14080709号-2 )
+             <br />utowin from 优途	
+            </div>
+        </footer>
+        <!--版权结束-->
+        <!-- 回到顶部 -->
+        <div class="toTop"></div>
+	</section>
+</section>     
+</body>
+</html>

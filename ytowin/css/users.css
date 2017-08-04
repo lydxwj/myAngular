@@ -1,0 +1,58 @@
+@charset "utf-8";
+/* CSS Document */
+/*用户中心内容开始*/
+html,body{ height: 100%; }
+.wrap{ overflow-y: auto;}
+    /*应用中心开始*/
+.users{ background-color: #2bbfd6; margin-top: 0.4rem; text-align: center; font-size: 0.6rem;line-height: 1.4rem; padding-left: 0.4rem; padding-right: 0.4rem;}
+.users-hd{ color: #fff;}
+.users-mn{ overflow:hidden;}
+.users-mn .mn-details{ background-color: #fff;  margin-bottom: 0.4rem;}
+.users-mn .mn-details a{ display: block;}
+    /*应用中心内容结束*/
+/*用户中心内容结束*/
+/*个人资料内容开始*/
+.info{ overflow-y: auto;}
+.info li{ padding-top: 0.4rem;padding-bottom: 0.4rem; line-height: 0.8rem;}
+.info .tips{ color: #fc5633;text-align: center; display: block;position: relative;}
+.info .tips i{ position: absolute; width: 0.8rem; height: 0.8rem; left:0.6rem; top: 0; background-image:url(../img/reg-act.jpg); background-size: cover; background-position: center; background-repeat: no-repeat;}
+.info .textr{ width: 5rem; line-height: 1rem; text-align: right; padding-right: 0.1rem; white-space: nowrap; display: inline-block;}
+.info input{  height: 0.6rem; padding-top: 0.2rem; padding-bottom: 0.2rem; font-size: 0.48rem; padding-left: 0.2rem; line-height: 1rem; border: 1px solid #ccc; border-radius: 0.1rem; width: 6.8rem;}
+.info select{ width: 7rem; height: 1rem;border: 1px solid #ccc; border-radius: 0.1rem;font-size: 0.48rem; padding-left: 0.2rem; line-height: 0.8rem;}
+.info .selectTwo{ margin-left: 5.1rem; margin-top: 0.4rem;}
+.info .submit{ background-color: #ff7457; border-radius: 0.1rem; width: 6.0rem; height:1.2rem; line-height: 1.2rem; color: #fff; text-align: center; margin-left: auto; margin-right: auto; display: block; padding: 0;}
+/*个人资料内容结束*/
+/*修改头像内容开始*/
+.info .photo{ width: 4.0rem; height: 4.0rem; margin-left: auto; margin-right: auto; }
+.info .photo img{ height: 100%; width: 100%;}
+.info .file{ position: relative; }
+.info .file-hidden{opacity: 0; position: absolute; top: 0.4rem; left: 3.4rem;}
+/*修改头像内容结束*/
+.auto-tip li {
+	width:100%;
+	height:0.6rem;
+	line-height:0.6rem;
+	font-size:0.4rem;
+	padding:0.2rem;
+}
+.auto-tip li.hoverBg {
+	background:#ddd;
+	cursor:pointer;
+}
+.red {
+	color:#333;
+}
+.hidden {
+	display:none;
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,50 @@
+@charset "utf-8";
+/* CSS Document */
+/*行业职业库内容开始*/
+    /*行业职业库按钮开始*/
+.industry-hot,.industry-tradition{ padding-top: 0.4rem;}    
+.industry-hot a,.industry-tradition a{ display:block; border: 1px solid #ccc; border-radius: 0.1rem; margin:0 0.4rem 0.4rem 0.4rem; text-align: center; padding: 0.28rem 0.12rem;background-color: #54c7ec; color:#fff;}
+.industry-hot a.tabOn,.industry-tradition a.tabOn{ background-color: #FF7357;}
+.industry-hot a span,.industry-tradition a span{ display:block;}
+.industry-hot a .name-ku,.industry-tradition a .name-ku{ color:#ff0;}
+    /*行业职业库按钮结束*/
+   /*搜索开始*/
+.search{ padding: 0.4rem 0.8rem; position:relative;}
+.search-ipt,.search-submit{  height: 1.2rem; padding-top: 0.2rem; padding-bottom: 0.2rem; font-size: 0.48rem; padding-left: 0.8rem; line-height: 1.2rem; border: 1px solid #ccc; border-radius: 0.1rem; width: 7.6rem;box-sizing: border-box;}
+.search-submit{ width: auto; background: #ec6941;padding:0 0.8rem; text-align: center;height:1.2rem; margin-left: 0.56rem;color:#fff;}
+.ico-search{ width: 0.8rem; height: 0.8rem;position: absolute; top:0.56rem; left:1.0rem;}
+.ico-search:before{ width: 0.8rem; height: 0.8rem; content:"\e603"; font-family: "iconfont"; position:absolute; top: 0; left: 0; font-size: 0.6rem; color:#a9a9a9;}
+    /*搜索结束*/
+    /*行业职业库分类选择开始*/
+.industry-contain{ border-top: 1px solid #ccc; border-bottom: 1px solid #ccc; overflow: hidden;}
+        /*左侧分类开始*/
+.industry-contain-l{ height: 12rem; background: #f5f5f5; overflow: hidden;}
+.industry-contain-l .left-mn{ height: 12rem;overflow-y: auto;}
+.industry-contain-l .left-mn li{ border-bottom: 1px solid #ccc; border-right: 1px solid #ccc; padding: 0.2rem 0; text-align: center; font-size: 0.48rem; background: #f5f5f5;}
+.industry-contain-l .left-mn li.active{ color: #ec6941; background: #fff;border-right:0;}
+        /*左侧分类结束*/
+        /*右侧分类开始*/
+.industry-contain-r{ padding-left: 0.2rem;overflow: hidden;height: 12rem;}
+.industry-contain-r .contain-r-mn{ height: 12rem; overflow-y: auto;}
+            /*传媒|印刷|艺术|设计开始*/
+.contain-r-jr,.contain-r-it,.contain-r-cg,.contain-r-fc,.tradition-details
+{ display:none;}
+.industry-contain-r .contain-r-mn a{ display:block; width: 98%; white-space: nowrap;text-overflow: ellipsis ; overflow: hidden;}
+.classes-hd{ font-weight: 700;position: relative;}
+.classes-hd.act{color: #ec6941;} 
+.classes-hd i{ position: absolute; height: 0.6rem; width: 0.6rem; right:0.52rem; top: 0.12rem;}
+.classes-hd i:before{ width: 0.6rem; height: 0.6rem; content:"\e613"; font-family: "iconfont"; position:absolute; top: 0; left: 0; font-size: 0.6rem; color:#000;}
+.classes-hd.act i:before{ content:"\e606";color: #ec6941;}
+.classes-hd,.classesr-mn li{ border-bottom: 1px solid #ccc;padding: 0.2rem 0;font-size: 0.48rem;}
+            /*传媒|印刷|艺术|设计结束*/
+
+        /*右侧分类结束*/
+
+    /*行业职业库分类选择结束*/
+
+
+
+
+
+
+/*行业职业库内容结束*/

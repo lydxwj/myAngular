@@ -1,0 +1,33 @@
+@charset "utf-8";
+/* CSS Document */
+ /*顶部banner*/
+.tu-banner{ background-image: url(../img/mbanner3.png);}
+/*内容头部*/
+.adjust-hd{ background-image: url(../img/adjust-hd-bg1.png); }
+/*一楼*/
+.adjust-fl-mn{height: 4.0rem; width: 6.0rem; background-image: url(../img/adjust-floor1-1.png); }
+/*二楼*/
+.adjust-fl2 .adjust-fl-mn{ background-image: url(../img/adjust-floor2-1.png);}
+/*三楼*/
+.adjust-fl3 .adjust-fl-mn{ width: 4.8rem; background-image: url(../img/adjust-floor3-1.png);}
+
+/*四楼*/
+.adjust-fl4 .adjust-fl-mn{ width: 5.4rem; background-image: url(../img/adjust-floor4-1.png);}
+
+/*五楼*/
+.adjust-fl5 .adjust-fl-mn{ width: 6.0rem; background-image: url(../img/adjust-floor5-1.png);}
+/*六楼*/
+.adjust-fl6 .adjust-fl-mn{ width: 6.4rem; background-image: url(../img/adjust-floor6-1.png);}
+
+
+
+
+
+
+
+
+
+
+
+
+

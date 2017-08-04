@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telphone=no, email=no" />
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="MobileOptimized" content="320">
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-orientation" content="portrait">
+    <meta name="full-screen" content="yes">
+    <meta name="x5-fullscreen" content="true">
+    <meta name="browsermode" content="application">
+    <meta name="x5-page-mode" content="app">
+    <meta name="msapplication-tap-highlight" content="no">
+    <title>个人资料</title>
+	<link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="css/base.css" />
+    <link rel="stylesheet" type="text/css" href="css/users.css" />
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/device.min.js"></script>
+    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+	<script type="application/javascript" src="http://cdn.bootcss.com/fastclick/1.0.6/fastclick.js"></script>
+    <script type="text/javascript" src="js/base.js"></script>
+    <script type="text/javascript" src="js/users.js"></script>
+    <script type="text/javascript" src="js/info.js"></script>
+</head>
+<body>
+<section class="wrap return">   	
+	<section class="fixed"> 
+    <!--头部开始-->
+    	<header class="header clearfix">
+            <div class="pageup fl"><a href="javascript:history.go(-1);"></a></div>
+    		<h1 class="fl">个人资料</h1>
+            <nav class="nav fr">
+                <div class="nav-mn">
+                    <div class="nav-btn"></div>
+                    <ul class="nav-tap">
+                        <li>
+                            <a class="nav-tap-login" href="login.html">登录</a>
+                            <a class="nav-tap-info" href="users.html">个人中心</a>
+                        </li>
+                        <li class="nav-tabLi">
+                            <a class="nav-tap-login" href="register.html">注册</a>
+                            <a class="nav-tap-info" href="javascript:;">退出</a>
+                        </li>
+                        <li><a href="index.html">首页</a></li>
+                        <li><a href="college.html">找大学</a></li>
+                        <!-- <li><a href="voluntary.html">志愿模拟填报</a></li> -->
+                        <li><a href="evaluation.html">性格与专业测</a></li>
+                        <li><a href="major.html">搜专业</a></li>
+                        <li><a href="branch.html">文理分科测</a></li>
+                        <li><a href="admission.html">录取信息查询</a></li>
+                        <li><a href="industry.html">行业职业库</a></li>
+                        <li><a href="insight.html">自我洞悉</a></li>
+                        
+                    </ul>
+                </div>
+            </nav>
+    	</header>
+	</section>        
+    <!--头部结束-->
+	<section class="main">
+        <!-- 个人资料内容开始 -->
+        <form action="">
+            <ul class="info clearfix">
+                <li>
+                    <span class="tips"><i></i>为了正常使用系统请认真详细填写注册信息</span>
+                </li>
+                <li class="clearfix">              
+                    <span class="textr fl"><span class="colorRed">*</span>姓名：</span>
+                    <input type="text" placeholder="可设置为登录名/手机号/邮箱" class=" fl" name="truename" required="required" id="truename">
+                </li>
+                <li class="clearfix">
+                    <span class="textr fl"><span class="colorRed">*</span>性别：</span>
+                    <select class=" fl" id="sex">
+                        <option value="0">男</option>
+                        <option value="1">女</option>
+                    </select>
+                </li>
+                <li class="clearfix">
+                    <span class="textr fl"><span class="colorRed">*</span>地区：</span>
+                    <select class="fl" id="cmbprovince" name="province">
+                        <option value="34">安徽</option>
+                        <option value="11">北京</option>
+                        <option value="50">重庆</option>
+                        <option value="35">福建</option>
+                        <option value="44">广东</option>
+                        <option value="62">甘肃</option>
+                        <option value="52">贵州</option>
+                        <option value="45">广西</option>
+                        <option value="42">湖北</option>
+                        <option value="23">黑龙江</option>
+                        <option value="13">河北</option>
+                        <option value="41">河南</option>
+                        <option value="43">湖南</option>
+                        <option value="46">海南</option>
+                        <option value="32">江苏</option>
+                        <option value="22">吉林</option>
+                        <option value="36">江西</option>
+                        <option value="21">辽宁</option>
+                        <option value="64">宁夏</option>
+                        <option value="15">内蒙古</option>
+                        <option value="63">青海</option>
+                        <option value="31">上海</option>
+                        <option value="51">四川</option>
+                        <option value="61">陕西</option>
+                        <option value="37">山东</option>
+                        <option value="14">山西</option>
+                        <option value="12">天津</option>
+                        <option value="54">西藏</option>
+                        <option value="65">新疆</option>
+                        <option value="53">云南</option>
+                        <option value="33">浙江</option>
+                    </select>
+                    <select class="selectTwo" id="cmbcity" name="city">
+                        <option value="">请选择</option>
+                        <option value="208">惠州市</option>
+                        <option value="202">汕头市</option>
+                        <option value="215">中山市</option>
+                        <option value="216">潮州市</option>
+                        <option value="214">东莞市</option>
+                        <option value="199">韶关市</option>
+                        <option value="204">江门市</option>
+                        <option value="201">珠海市</option>
+                        <option value="218">云浮市</option>
+                        <option value="198">广州市</option>
+                        <option value="212">阳江市</option>
+                        <option value="207">肇庆市</option>
+                        <option value="217">揭阳市</option>
+                        <option value="206">茂名市</option>
+                        <option value="213">清远市</option>
+                        <option value="200">深圳市</option>
+                        <option value="209">梅州市</option>
+                        <option value="211">河源市</option>
+                        <option value="203">佛山市</option>
+                        <option value="205">湛江市</option>
+                        <option value="210">汕尾市</option>
+                    </select>
+                    <select class="selectTwo" id="cmbcounty" name="county">
+                        <option value="">请选择</option>
+                        <option value="1820">增城市</option>
+                        <option value="1816">白云区</option>
+                        <option value="1814">海珠区</option>
+                        <option value="1818">番禺区</option>
+                        <option value="1819">花都区</option>
+                        <option value="1822">南沙区</option>
+                        <option value="1815">天河区</option>
+                        <option value="1817">黄埔区</option>
+                        <option value="1813">越秀区</option>
+                        <option value="1823">萝岗区</option>
+                        <option value="1821">从化市</option>
+                        <option value="1812">荔湾区</option>
+                    </select>
+                </li>
+                <li class="clearfix">
+                    <span class="textr fl"><span class="colorRed">*</span>选择您就读的中学：</span>
+                    <select class="fl" id="middleSchool">
+                        <option value="0">广东实验中学附属天河学校</option>
+                        <option value="1">北京教育学院宣武分院附中</option>
+                    </select>
+                </li>
+                <li class="clearfix">
+                    <span class="textr fl"><span class="colorRed">*</span>选择您目前的年级：</span>
+                    <select class="fl" id="grade">
+                        <option value="0">高一</option>
+                        <option value="1">高二</option>
+                        <option value="2">高三</option>
+                    </select>
+                </li>
+                <li class="clearfix">
+                    <span class="textr fl"><span class="colorRed">*</span>学科倾向（学科）：</span>
+                    <select class="fl" id="artsic">
+                        <option value="0">文科</option>
+                        <option value="1">理科</option>
+                    </select>
+                </li>
+                <li class="clearfix">
+                    <span class="textr fl"><span class="colorRed">*</span>输入您目前的班级：</span>
+                    <input type="text" placeholder="请输入班级" class=" fl" name="trueClass" required="required" id="trueClass">
+                </li>
+                <li class="parentCls clearfix">
+                   <span class="textr fl">邮箱：</span>
+                    <input type="email" placeholder="请输入邮箱" class="inputElem fl" name="trueclass" required="required" id="email">
+                </li>
+                
+                <li class="clearfix">
+                    <span class="textr fl"><span class="colorRed">*</span>手机：</span>
+                    <input type="text" placeholder="请输入手机号" class=" fl" name="trueclass" required="required" id="phone">
+                </li>
+                <li class="">
+                    <input type="submit" class="submit" name="submit" id="submit" value="保存">
+                </li>
+            </ul>
+        </form>
+        <!-- 个人资料内容结束 -->
+        <!--版权开始-->
+        <footer class="copyright">
+            <div class="copyright-l-hd row">
+            	<a class="about col col-50" href="about.html">关于</a>
+                <a class="contact col col-50" href="feedback.html">反馈</a>
+            </div>
+            <div class="copyright-l-ft">
+             Copyright © 2014 ( 粤ICP备14080709号-2 )
+             <br />utowin from 优途	
+            </div>
+        </footer>
+        <!--版权结束-->
+        <!-- 回到顶部 -->
+        <div class="toTop"></div>
+	</section>
+</section>     
+</body>
+</html>

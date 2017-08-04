@@ -1,0 +1,30 @@
+@charset "utf-8";
+/* CSS Document */
+/*绑定开始*/
+.binding li{ padding-top: 0.4rem; padding-bottom: 0.4rem; line-height: 0.8rem;}
+.binding .tips {color: #fc5633; padding-left: 1.8rem;display: block;position: relative;}
+.binding .tips i { position: absolute;width: 0.8rem;height: 0.8rem; left: 0.6rem; top: 0; background-image: url(../img/reg-act.jpg); background-size: cover; background-position: center; background-repeat: no-repeat;}
+.binding .textr { width: 4rem;line-height: 1rem;text-align: right; padding-right: 0.1rem; white-space: nowrap; display: inline-block;}
+.binding input {height: 0.6rem;padding-top: 0.2rem;padding-bottom: 0.2rem; font-size: 0.48rem;padding-left: 0.2rem; line-height: 1rem;border: 1px solid #ccc;border-radius: 0.1rem;width: 7.4rem;}
+.verify-btn{background-color: #ff7457; height: 1rem; line-height: 1rem;font-size: 0.48rem;margin-left: 0.4rem;padding-left: 0.26rem;padding-right: 0.26rem; border: 1px solid #ccc;color: #fff;border-radius: 0.1rem;}
+.binding .bindemail{ width:4rem;}
+.binding .submit {background-color: #ff7457;border-radius: 0.1rem; width: 6.0rem;height: 1.2rem;line-height: 1.2rem;color: #fff;text-align: center;margin-left: auto;margin-right: auto;display: block;padding: 0;}
+/*绑定结束*/
+.auto-tip li {
+	width:100%;
+	height:0.6rem;
+	line-height:0.6rem;
+	font-size:0.4rem;
+	padding:0.2rem;
+}
+.auto-tip li.hoverBg {
+	background:#ddd;
+	cursor:pointer;
+}
+.red {
+	color:#333;
+}
+.hidden {
+	display:none;
+}
+
